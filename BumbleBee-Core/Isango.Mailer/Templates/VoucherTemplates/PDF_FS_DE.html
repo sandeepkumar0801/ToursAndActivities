@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isango! - experience the world with us</title>
+    <style>
+        @media print, screen {
+            table {
+                border: 0 none;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-size: 15px;
+                color: #333;
+                line-height: 1.5;
+            }
+
+            .pdf-container {
+                border: 3px solid #949599;
+                padding: 20pt;
+                position: relative;
+            }
+
+            .pdf-inner {
+                position: relative;
+                z-index: 1;
+            }
+
+            .box {
+                border: 5px solid #d8d59c;
+            }
+
+            .txt-blu {
+                color: #0075a7;
+            }
+
+            .h1 {
+                font-size: 30px;
+                text-align: center;
+                line-height: 2;
+                border-top: 5px dotted #5f9165;
+                border-bottom: 5px dotted #5f9165;
+                margin: 15px 0;
+                margin: 0;
+            }
+
+            .h2,
+            .h3,
+            .hh1 {
+                color: #7da231;
+                margin: 0;
+            }
+
+            .hh1 {
+                background-color: #f2f2d2;
+                padding: 5pt 10pt;
+                font-size: 25px;
+                position: relative;
+            }
+
+            .h2 {
+                background-color: #f2f2d2;
+                color: #7da231;
+                border-top: 5px solid #d8d59c;
+                border-bottom: 5px solid #d8d59c;
+                margin: 0;
+                font-size: 25px;
+                padding: 5pt 10pt;
+                position: relative;
+            }
+
+                .h2::before,
+                .hh1::before {
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    border-bottom: 48px solid #f2f2d2;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                .h2 b,
+                .hh1 b {
+                    position: relative;
+                    z-index: 2;
+                }
+
+            .bullet {
+                width: 0;
+                height: 0;
+                display: inline-block;
+                border-radius: 100%;
+                border: 14px solid #7da231;
+                color: #FFFFFF;
+                line-height: 0px;
+                text-align: center;
+                text-indent: -3px;
+                font-style: normal;
+                font-size: 23px;
+            }
+
+            .spcr {
+                width: 15px;
+            }
+
+            .col1 {
+                width: 45%;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            .hSpcr {
+                height: 20px;
+                font-size: 0px;
+            }
+
+            .hSpcr10 {
+                height: 10px;
+                font-size: 0px;
+            }
+
+            .cols {
+                text-align: right;
+                vertical-align: top;
+                width: 200px;
+            }
+
+            .brdrBtm {
+                border-bottom: 2px dashed #444;
+            }
+
+            .pdf-footer {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+
+            img {
+                border: 0 none;
+            }
+
+            .link {
+                text-decoration: underline;
+                color: #003d90;
+            }
+
+            .igo {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+                .igo img {
+                    display: block;
+                }
+
+            .bdr-rt {
+                border-right: 1px solid #999999;
+            }
+
+            .bdr-rt {
+                border-right: 1px solid #999999;
+            }
+
+            .warn {
+                text-align: center;
+                color: #ee1d25;
+                font-size: 20px;
+            }
+
+            .mSave {
+                background-color: #f2f2d2;
+            }
+
+            .priceTable td {
+                padding: 2px 5px;
+            }
+
+            .vat {
+                vertical-align: top;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" border="0">
+        <tr>
+            <td class="pdf-container">
+                <table class="pdf-inner">
+                    <tr>
+                        <td><a target="_blank" href="https://www.isango.com/"><img width="150" alt="" src="##IsangoLogo##"></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="h1"><b class="txt-blu">Buchungsnummer / Booking Voucher Number -</b> <span>##BookingVoucherNumber##</span></h1>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td class="box">
+                            <h2 class="hh1"><b>Buchungsinformation / Booking Information</b></h2>
+                            <table>
+                                <tr><td colspan="2" class="hSpcr">&nbsp;</td></tr>
+                                <tr>
+                                    <td class="bdr-rt">
+                                        <table>
+                                            <tr>
+                                                <td class="col1"><b>Hauptteilnehmer</b> <br> <em>Lead Traveller</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##UserName##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Tourname</b> <br> <em>Tour Booked</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td><a href="##ProductWithProductPageLink##" style="text-decoration:none">##ProductPageName##</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Optionsname</b> <br> <em>Option Name</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##OptionName##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Gesamtpreis</b> <br> <em>Total Tour Price</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##TotalTourPrice##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Anmerkungen</b><br> <em>Special Request</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##SpecialRequest##</td>
+                                            </tr>
+                                            <tr style="display: ##displayQR##">
+                                                <td colspan="3">
+                                                    ##QRCodeTable##
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="vat">
+                                        <table>
+                                            <tr>
+                                                <td class="col1"><b>Anzahl der Erwachsenen</b> <br> <em>No of Adults</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##NumberOfAdults## Adult</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Anzahl der Kinder</b> <br> <em>No of Children</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##NumberOfChildren##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Datum</b> <br> <em>Date of Tour</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##DateOfTour##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Optionscode</b> <br>  <em>Option Code</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##OptionCode##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>isango! Partner vor Ort</b> <br> <em>Local isango! Partner</em></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##IsangoPartner##</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td colspan="2" class="hSpcr">&nbsp;</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Tourablauf / Tour Schedule</b></h2>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="cols"><b>Startpunkt</b> <br> <em>Pickup Point</em></td>
+                                    <td class="spcr"></td>
+                                    <td>##PickupPoint##</td>
+                                </tr>
+                                <tr>
+                                    <td class="cols"><b>Startpunkt</b> <br> <em>Drop off Point</em></td>
+                                    <td class="spcr"></td>
+                                    <td>##DropOffPoint##</td>
+                                </tr>
+                                <tr>
+                                    <td class="cols"><b>Verfügbarkeit</b> <br> <em>Schedule</em></td>
+                                    <td class="spcr"></td>
+                                    <td>##Schedule##</td>
+                                </tr>
+                                <tr>
+                                    <td class="cols"><b>Dauer</b> <br> <em>Duration</em></td>
+                                    <td class="spcr"></td>
+                                    <td>##Duration##</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Wichtige Informationen / Important Instructions</b></h2>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <i class="bullet">i</i> &nbsp; &nbsp; <span>##ImportantInstructions##</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Kontaktdetails / Contact Details</b></h2>
+                            <table>
+                                <tr><td class="hSpcr">&nbsp;</td></tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td width="30%">
+                                                    <h3>Organisatorische Details vor der Abreise <br> <em style="font-weight: normal">Pre-departure logistics</em></h3>
+                                                    <p>
+                                                        <b class="ltBlue">isango! Partner vor Ort <br></b> <em>Local isango! Partner</em><br />
+                                                        ##IsangoPartnerAddress##
+                                                    </p>
+                                                    <p>
+                                                        <b>Telephone Number</b><br>
+                                                        ##TelephoneNumber##
+                                                    </p>
+                                                    <p>
+                                                        <b>Emergency Number</b>
+                                                        ##EmergencyNumber##
+                                                    </p>
+                                                    <p>
+                                                        <b>Fax</b>
+                                                        ##Fax##
+                                                    </p>
+                                                    <p>
+                                                        <b>Email</b>
+                                                        ##Email##
+                                                    </p>
+                                                </td>
+                                                <td class="spcr"></td>
+                                                ##DestinationAssistance##
+                                                <td class="spcr"></td>
+                                                <td width="30%" class="vat">
+                                                    <h3>Kundenservice f&#xFC;r Fragen / weitere Buchungen <br> <em style="font-weight: normal">Need further assistance or bookings?</em></h3>
+                                                    <p>
+                                                        <b>isango! Kundenservice</b><br> <em>isango! customer support</em> <br>
+                                                        ##CustomerSupportNumbers##
+                                                    </p>
+                                                    <p>
+                                                        <b>Email</b>
+                                                        ##SupportEmail##
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td class="hSpcr">&nbsp;</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Allgemeine Gesch&#xE4;ftsbedingungen / Terms and Conditions</b></h2>
+                            <table>
+                                <tr><td class="hSpcr"></td></tr>
+                                <tr>
+                                    <td>
+                                        Sie sind pers&#xF6;nlich daf&#xFC;r verantwortlich, dass alle von Ihnen gemachten Angeben korrekt sind. Sie haben den Allgemeinen Gesch&#xE4;ftsbedingungen von isango! zugestimmt. Hier zu den <a target="_blank" class="link" href="##TermsAndConditionLink##">Buchungsbedingungen</a>  <br>
+                                        <em>It is your responsibility to ensure all the details provided while booking are correct. You have confirmed that you agree to the isango! <a target="_blank" class="link" href="##TermsAndConditionLink##">booking terms and conditions</a></em>
+                                    </td>
+                                </tr>
+                                <tr><td class="hSpcr"></td></tr>
+                                <tr><td class="brdrBtm"></td></tr>
+                                <tr><td class="hSpcr">&nbsp;</td></tr>
+                                <tr>
+                                    <td>
+                                        <h3>Nur f&#xFC;r den dienstlichen Gebrauch / For official use only</h3>
+                                        <p>Hinweis f&#xFC;r ##SupplierName##: Bitte stellen Sie diese Tour isango! in Rechnung. Bitte schicken Sie die Rechnung an finance@isango.com. <br><em>Note for ##SupplierName##: Please bill local isango Partner for this. Please send the invoice to finance@isango.com</em></p>
+                                        <p>sango! Limited arbeitet als Einzelhandelsagent f&#xFC;r ##SupplierName## mit dem Ihre Tour gebucht wurde. ##SupplierName## ist der Auftraggeber und dementsprechend ist Ihr Vertrag mit ##SupplierName## <br><em>isango! Limited act as a retail agent for ##SupplierName## with whom your tour is booked. ##SupplierName## is the principal and in accordance with our booking conditions your contract is ##SupplierName##</em> </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                </table>
+                <div class="igo"><img src="##GoGif##" width="255" height="442" alt=""> </div>
+            </td>
+        </tr>
+        <tr><td class="hSpcr10"></td></tr>
+    </table>
+    <div style='page-break-after: always;'> </div>
+</body>
+</html>

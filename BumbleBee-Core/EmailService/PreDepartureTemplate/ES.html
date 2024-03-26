@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <title>isango!</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            font-family: 'Roboto', sans-serif !important;
+            font-size: 14px;
+        }
+
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            margin: 0 auto !important;
+        }
+
+            table table table {
+                table-layout: auto;
+            }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: underline !important;
+        }
+
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1.75em 0;
+            padding: 0;
+        }
+
+        .vspcr {
+            font-size: .001px;
+            line-height: 1;
+            min-height: 1%;
+            width: 4%;
+        }
+
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+            .button-td:hover,
+            .button-a:hover {
+                background: #212121 !important;
+                border-color: #212121 !important;
+            }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .column-hide {
+                display: none !important;
+            }
+
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                width: 100% !important;
+                height: auto !important;
+                Margin-left: auto !important;
+                Margin-right: auto !important;
+            }
+
+            /* And center justify these ones. */
+            .fluid-centered {
+                Margin-left: auto !important;
+                Margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                Margin-left: auto !important;
+                Margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#ffffff" width="100%" style="margin: 0;">
+    <center style="width: 100%;">
+        <!-- Email Header : END -->
+        <!-- Email Body : BEGIN -->
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" style="margin: auto;" class="email-container">
+            <!-- 2 Even Columns -->
+            <tr>
+                <td>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;" class="email-container">
+                        <tr>
+                            <td style="vertical-align: center;text-align: center;padding: 10px 0px;">
+                                <a href="https://www.hop-on-hop-off-bus.com/es/?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021" target="_blank">
+                                    <img src="##logo##" width="65" height="auto"
+                                         alt="isango" border="0" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">
+                                <a href="https://www.hop-on-hop-off-bus.com/es/?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021" target="_blank">
+                                    <img src="##heroimg##" width="100%" height="auto"
+                                         alt="isango" border="0" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 40px;font-family: 'Roboto', sans-serif;font-size: 16px; font-weight: bold; text-align: center;">
+                                &#xBF;Listos? &#xA1;Ya es casi la hora de su viaje!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: 'Roboto', sans-serif;font-size: 12px; text-align: center;mso-height-rule: exactly; line-height: 20px;">
+                                &#xBF;Debe estar muy emocionado? Despu&#xE9;s de todo, es bueno tomarse un descanso y desconectar de vez en cuando. Nos alegramos de que haya elegido un tour en autob&#xFA;s tur&#xED;stico con nosotros. Es la forma perfecta de disfrutar de la ciudad. Explore, descubra, rel&#xE1;jese y pase un rato fabuloso.
+                                <br />
+                                Pero antes, hay espacio para m&#xE1;s diversi&#xF3;n. Eche un vistazo a nuestra selecci&#xF3;n de emocionantes recorridos que ser&#xE1;n el acompa&#xF1;amiento perfecto para sus visitas tur&#xED;sticas, ayud&#xE1;ndole a crear a&#xFA;n m&#xE1;s fant&#xE1;sticos recuerdos de viaje.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="25" style="font-size:0.0001em;line-height:1px; height:25px;"><img src="##imagespacer##" height="25" width="10" alt="" /> </td>
+                        </tr>
+                        <tr>
+                            <td height="1" style="font-size:0.0001em;line-height:1px; height:1px;border-bottom: 1px solid #CCC;"><img src="##imagespacer##" height="1" width="10" alt="" /> </td>
+                        </tr>
+                        <tr>
+                            <td height="30" style="font-size:0.0001em;line-height:1px; height:30px;"><img src="##imagespacer##" height="30" width="10" alt="" /> </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" valign="top">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        ##ProductDetail##
+                    </table>
+                </td>
+            </tr>
+            <!-- /2 Even Columns -->
+            <tr>
+                <td height="30" style="font-size:0.0001em;line-height:1px; height:30px;"><img src="##imagespacer##" height="30" width="10" alt="" /> </td>
+            </tr>
+            <tr>
+                <td style="background:#13A6C0;color: #FFF;" width="100%">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td height="40" style="font-size: 14px;font-family: 'Roboto', sans-serif;height:40px;text-align: center;color: #FFF;">Aqu&#xED; tiene un descuento especial para su pr&#xF3;xima reserva (V&#xE1;lido durante 48 horas)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 24px;font-family: 'Roboto', sans-serif;text-transform: uppercase;text-align: center;color: #FFF;">##vouchercode##</td>
+                        </tr>
+                        <tr>
+                            <td height="35" style="height:35px;text-align: center;"><em style="font-size: 10px;font-family: 'Roboto', sans-serif;opacity: .75;color: #FFF;">*Este c&#xF3;digo de descuento no es aplicable a los viajes ya rebajados o en oferta.</em></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="20" style="font-size:0.0001em;line-height:1px; height:20px;"><img src="##imagespacer##" height="20" width="10" alt="" /> </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td>
+                                <a href="https://www.isango.es/?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021" target="_blank">
+                                    <img src="##image1##" width="80" height="36" alt="" />
+                                </a>
+                            </td>
+                            <td style="font-family: 'Roboto', sans-serif;font-size: 12px;mso-height-rule: exactly; line-height: 18px; color: #212121;text-align: left; padding-left: 20px;">
+                                Hop on Hop off Bus es propiedad de isango! y est&#xE1;  impulsado por la misma. - un vendedor l&#xED;der de tours y actividades en destino.
+                                Echa un vistazo a las siguientes recomendaciones que ofrece isango! para que explores m&#xE1;s durante tus actuales vacaciones.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="20" style="font-size:0.0001em;line-height:1px; height:20px;"><img src="##imagespacer##" height="20" width="10" alt="" /> </td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:1px;border-bottom: 1px solid #CCC;"><img src="##imagespacer##" height="1" width="1" alt="" /></td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:30px;"><img src="##imagespacer##" height="30" width="10" alt="" /> </td>
+            </tr>
+            <!-- 2 Even Columns -->
+            <tr>
+                <td align="center" valign="top">
+                    <table cellspacing="0" cellpadding="0" border="0" width="600">
+                        <tr>
+                            <td colspan="3" style="text-align: center; padding-left: 20px;padding-bottom:5px;">
+                                <strong style="font-family: 'Roboto', sans-serif;font-size: 20px;mso-height-rule: exactly; line-height: 30px; color: #212121;">Prepárese para su próximo viaje 2 ##CrossSellHeaderText##?</strong>
+                            </td>
+                        </tr>
+                        <!-- repeatable content -->
+                        ##CrossSell##
+                        <!-- /repeatable content -->
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:20px;"><img src="##imagespacer##" height="20" width="10" alt="" /> </td>
+            </tr>
+            <!-- /2 Even Columns -->
+            <!-- Thumbnail Left, Text Right : BEGIN -->
+            <tr>
+                <td dir="ltr" align="center" valign="top" width="100%" style="padding: 20px 10px;border-bottom:1px solid #ccc;border-top:1px solid #ccc;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <!-- Column : BEGIN -->
+                            <td width="20%" class="stack-column-center">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" valign="top" style="padding: 0 10px;">
+                                            <img src="##imagefeefo##" width="106" width="60" alt="alt_text" border="0" class="center-on-narrow" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="80%" class="stack-column-center">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr" valign="top"
+                                            style="font-family: 'Roboto', sans-serif; font-size: 14px; mso-height-rule: exactly; line-height: 20px; color: #212121; padding: 0px 0px 0px 10px; text-align: left;"
+                                            class="center-on-narrow">
+                                            <strong>No olvide compartir su experiencia con nosotros despu&#xE9;s de completar su actividad. Recibir&#xE1; un correo de nuestro socio de opiniones Feefo, y nos encantar&#xED;a tener sus comentarios.</strong>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:0.0001em;line-height:1px; height:25px;"><img src="##imagespacer##" height="25" width="10" alt="" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="width: 100%;" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td style="height: 30px; vertical-align: top; text-align: center;font-family: 'Roboto', sans-serif; font-size: 14px; mso-height-rule: exactly; line-height: 20px; color: #212121;text-align: center;">
+                                Siempre puede visitar Mis Reservas para ver los detalles del itinerario, hacer cambios y mucho m&#xE1;s.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 40px; text-align: center;">
+                                <a href="https://www.hop-on-hop-off-bus.com/my?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021" target="_blank">
+                                    <img src="##imageguide##" width="154" alt="alt_text"
+                                         border="0" class="center-on-narrow" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:25px;"><img src="##imagespacer##" height="25" width="10" alt="" /> </td>
+            </tr>
+            <tr>
+                <td height="25" style="font-size:0.0001em;line-height:1px; height:1px;border-bottom: 1px solid #CCC;"><img src="##imagespacer##" height="1" width="1" alt="" /></td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:30px;"><img src="##imagespacer##" height="30" width="10" alt="" /> </td>
+            </tr>
+            <!-- Thumbnail Left, Text Right : END -->
+            <tr>
+                <td>
+                    ##BlogData##
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:22px;" height="22" width="10" alt=""><img src="##imagespacer##" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: auto;background-color: #d7e7fa;"
+                           class="email-container">
+                        <tr>
+                            <td style="font-size:0.0001em;line-height:1px; height:7px;height: 7px;"><img src="##imagespacer##" height="7" width="10" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px; width: 100%; font-family: 'Roboto', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #212121;">
+                                <strong style="font-size: 12px;">
+                                    Descubra m&#xE1;s aventuras &#xE9;picas y actividades que se adaptan a todos los intereses en isango! ahora.
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;height: 40px;">
+                                <table style="padding:0" width="300" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.facebook.com/isangotravels?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021"
+                                                   title="Facebook" target="_blank">
+                                                    <img src="https://marketing.isango.com/newsletters/2016/Newsletter/Fixed/facebook.png" alt="FB"
+                                                         class="Social" title="Facebook" width="30" height="auto" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://twitter.com/isango?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021"
+                                                   title="Twitter" target="_blank">
+                                                    <img src="https://marketing.isango.com/newsletters/2016/Newsletter/Fixed/twitter.png" alt="TW"
+                                                         class="Social" title="Twitter" width="30" height="auto" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://www.instagram.com/isangotravels?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021"
+                                                   title="Instagram" target="_blank">
+                                                    <img src="https://marketing.isango.com/newsletters/2016/Newsletter/Fixed/instagram.png" alt="IG"
+                                                         class="Social" title="Instagram" width="30" height="auto" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://uk.pinterest.com/isango/?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021"
+                                                   title="Pinterest" target="_blank">
+                                                    <img src="https://marketing.isango.com/newsletters/2016/Newsletter/Fixed/pintrest.png" alt="PIN"
+                                                         class="Social" title="Pinterest" width="30" height="auto" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="https://www.youtube.com/channel/UClSR166Oe6pL_qb2HE2ZY5w?utm_source=cross+sell&utm_medium=email&utm_campaign=Nov+2021"
+                                                   title="Youtube" target="_blank">
+                                                    <img src="https://marketing.isango.com/newsletters/2016/Newsletter/Fixed/youtube.png" alt="YOU"
+                                                         class="Social" title="Youtube" width="30" height="auto" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:0.0001em;line-height:1px;height: 5px;"><img src="##imagespacer##" height="5" width="10" alt="" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:0.0001em;line-height:1px; height:10px;"><img src="##imagespacer##" height="10" width="10" alt="" /></td>
+            </tr>
+        </table>
+
+    </center>
+</body>
+
+</html>

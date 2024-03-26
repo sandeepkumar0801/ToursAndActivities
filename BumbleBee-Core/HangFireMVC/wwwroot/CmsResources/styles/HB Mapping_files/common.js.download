@@ -1,0 +1,182 @@
+﻿(function ($) {
+    $.fn.visible = function (partial) {
+        var $t = $(this),
+            $w = $(window),
+            viewTop = $w.scrollTop(),
+            viewBottom = viewTop + $w.height(),
+            _top = $t.offset().top,
+            _bottom = _top + $t.height(),
+            compareTop = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+    };
+})(jQuery);
+
+$(document).ready(function () {
+    var height = window.outerHeight - $('header').outerHeight();
+    $('.allPages > .container').css('min-height', height);
+
+    $("#btnsubmitId").click(function (e) {
+        if ($('#myFile').get(0).files.length === 0) {
+            showStatusMsg('danger', 'No files selected.', 1500);
+            e.preventDefault();
+        }
+    });
+
+    $('#listGroupAccordian > li > a').click(function () {
+        var $this = $(this),
+            $li = $this.closest('li'),
+            $group = $li.find('.list-group'),
+            $groups = $this.closest('ul').find('.list-group'),
+            $items = $('#listGroupAccordian > li > a');
+
+        if ($this.hasClass('active')) {
+            $this.removeClass('active');
+            $group.slideUp();
+        } else {
+            $items.removeClass('active');
+            $this.addClass('active');
+            $groups.slideUp();
+            $group.slideDown();
+        }
+    });
+
+    $('#listGroupAccordian > li > .list-group > a').click(function () {
+        var $this = $(this),
+            href = $this.data().href;
+        if (href !== undefined) {
+            window.location = href;
+        }
+    });
+});
+
+function getUrlPrefix() {
+    var isLocal = $('body').data('islocal') === "True",
+        prefix = "",
+        href = window.location.href;
+
+    if (!isLocal) {
+        if (href.indexOf("/cmsstg/") >= 0) {
+            prefix = "/cmsstg";
+        }
+        if (href.indexOf("/cms/") >= 0) {
+            prefix = "/cms";
+        }
+        if (href.indexOf("/echo/") >= 0) {
+            prefix = "/echo";
+        }
+        if (href.indexOf("/cmsqa/") >= 0) {
+            prefix = "/cmsqa";
+        }
+    }
+
+    return prefix;
+}
+
+window.onload = function () {
+    if ($('#fileUploadCallBackMsg').length > 0) {
+        var $msg = document.getElementById('fileUploadCallBackMsg'),
+            msg = $msg.dataset.msg,
+            msgType = 'danger';
+        if (msg !== "") {
+            if (msg.toLowerCase().indexOf('error') < 0) {
+                msgType = 'success'
+            }
+            showStatusMsg(msgType, msg, 1500);
+            $($msg).attr('data-msg', '');
+        }
+    }
+    // $("#CopyTextFromTempElm").on('focus', function () { $(this).select(); });
+};
+
+function copyAndCloseIDs(elm) {
+    var $target = document.getElementById('divAllServiceID'),
+        dataValues = $target.dataset,
+        ids = dataValues.ids,
+        copyText = new Array();
+
+    ids.split(',').forEach(function (i, c) {
+        copyText.push(i.split(':')[0]);
+    });
+
+    copyThisText(copyText.toString());
+
+    $('#ShowAllServiceID').modal('hide');
+}
+
+function copyTextFrom(elm) {
+    var $target = $(elm).closest('div').find('.copyFromHere'),
+        nodeName = $target[0].nodeName.toLowerCase(),
+        isValidSource = nodeName === 'input' || nodeName === 'textarea',
+        selectData = false,
+        copyText;
+
+    copyThisText($target.text().trim());
+}
+
+function copyThisText(text) {
+    var tempElm = $('#CopyTextFromTempElm');
+    tempElm.val(text.trim());
+
+    var copyText = document.querySelector("#CopyTextFromTempElm");
+    $('#CopyTextFromTempElm').focus();
+    copyText.select();
+    document.execCommand("copy");
+
+    copyText = document.getElementById("CopyTextFromTempElm");
+    setTimeout(function () {
+        copyText.select();
+        try {
+            document.execCommand("Copy");
+            showStatusMsg('success', "Copied the text: " + copyText.value, 1500);
+        } catch (ex) {
+            console.info(ex)
+        }
+        tempElm.val('');
+    }, 300);
+}
+
+function scrollFunction() {
+    if (document.getElementById("bTop") !== null) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("bTop").style.display = "block";
+        } else {
+            document.getElementById("bTop").style.display = "none";
+        }
+    }
+}
+function showStatusMsg(type, msg, miliseconds) {
+    var $statusAlert = $('#callBackStatusAlert');
+    $statusAlert.addClass(type.toLowerCase()).html(msg).fadeIn(function () {
+        setTimeout(function () {
+            $statusAlert.fadeOut(function () {
+                $statusAlert.html('').attr('class', 'callBackStatusAlert');
+            });
+        }, miliseconds);
+    });
+}
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+window.onscroll = function () { scrollFunction() };
+
+function showHelpSection(elm) {
+    $('#ShowHelp').modal('show');
+}
+
+function openMenu(elm) {
+    var $listGroupAccordian = $('#listGroupAccordian').closest('.menuContainer'),
+        $btn = $(elm),
+        $glyphicon = $btn.find('.glyphicon');
+
+    if ($btn.hasClass('active')) {
+        $btn.removeClass('active');
+        $listGroupAccordian.hide();
+        $glyphicon.removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+    } else {
+        $btn.addClass('active');
+        $listGroupAccordian.show();
+        $glyphicon.removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+    }
+}

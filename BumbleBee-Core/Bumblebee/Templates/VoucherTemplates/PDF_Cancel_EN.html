@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isango! - experience the world with us</title>
+    <style>
+        @media print, screen {
+            table {
+                border: 0 none;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #333;
+                line-height: 1.5;
+            }
+
+            .pdf-container {
+                border: 0px;
+                padding: 20pt 0;
+                position: relative;
+            }
+
+            .pdf-inner {
+                position: relative;
+                z-index: 1;
+            }
+
+            .box {
+                border: 5px solid #d8d59c;
+            }
+
+            .txt-blu {
+                color: #0075a7;
+            }
+
+            .h1 {
+                font-size: 30px;
+                text-align: center;
+                line-height: 2;
+                border-top: 5px dotted #5f9165;
+                border-bottom: 5px dotted #5f9165;
+                margin: 15px 0;
+                margin: 0;
+            }
+
+            .h2,
+            .h3,
+            .hh1 {
+                color: #7da231;
+                margin: 0;
+            }
+
+            .hh1 {
+                background: #f2f2d2;
+                padding: 5pt 10pt;
+                font-size: 25px;
+                position: relative;
+            }
+
+            .h2 {
+                background: #f2f2d2;
+                color: #7da231;
+                border-top: 5px solid #d8d59c;
+                border-bottom: 5px solid #d8d59c;
+                margin: 0;
+                font-size: 25px;
+                padding: 5pt 10pt;
+                position: relative;
+            }
+
+                .h2::before,
+                .hh1::before {
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    border-bottom: 48px solid #f2f2d2;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                .h2 b,
+                .hh1 b {
+                    position: relative;
+                    z-index: 2;
+                }
+
+            .bullet {
+                width: 0;
+                height: 0;
+                display: inline-block;
+                border-radius: 100%;
+                border: 14px solid #7da231;
+                color: #FFFFFF;
+                line-height: 0px;
+                text-align: center;
+                text-indent: -3px;
+                font-style: normal;
+                font-size: 23px;
+            }
+
+            .spcr {
+                width: 15px;
+            }
+
+            .col1 {
+                width: 45%;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            .hSpcr {
+                height: 20px;
+                font-size: 0px;
+            }
+
+            .hSpcr10 {
+                height: 10px;
+                font-size: 0px;
+            }
+
+            .cols {
+                text-align: right;
+                vertical-align: top;
+                width: 200px;
+            }
+
+            .brdrBtm {
+                border-bottom: 2px dashed #444;
+            }
+
+            .pdf-footer {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+
+            img {
+                border: 0 none;
+            }
+
+            .link {
+                text-decoration: underline;
+                color: #003d90;
+            }
+
+            .igo {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+                .igo img {
+                    display: block;
+                }
+
+            .bdr-rt {
+                border-right: 1px solid #999999;
+                width: 50%;
+            }
+
+            .vat {
+                vertical-align: top;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" border="0">
+        <tr>
+            <td class="pdf-container">
+                <table class="pdf-inner">
+
+                    <tr>
+                        <td>
+                            <h1 class="h1"><b class="txt-blu">Cancelled Booking Number:</b> ##BookingReferenceNumber##</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hSpcr">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="box">
+                            <h2 class="hh1"><b>Booking Information</b></h2>
+                            <table>
+                                <tr>
+                                    <td colspan="2" class="hSpcr">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="bdr-rt">
+                                        <table>
+                                            <tr>
+                                                <td class="col1"><b>Lead Traveller</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##UserName##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Tour Booked</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td><a href="##ProductWithProductPageLink##" style="text-decoration:none">##ProductPageName##</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Option Name</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##OptionName##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Total Tour Price</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##TotalTourPrice##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Cancellation Charges</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##CancellationCharges##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1" valign="top"><b>Net Amount to be refunded</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##NetAmountToBeRefund##</td>
+                                            </tr>
+                                            <!--<tr>
+                                                <td class="col1" valign="top"><b>Special Request</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##SpecialRequest##</td>
+                                            </tr>-->
+                                        </table>
+                                    </td>
+                                    <td class="vat">
+                                        <table>
+                                            <tr>
+                                                <td class="col1"><b>No of Adults</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##NumberOfAdults## Adult</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>No of Children</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##NumberOfChildren##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Date of Tour</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##DateOfTour##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Option Code</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##OptionCode##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Schedule</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##Schedule##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col1"><b>Duration</b></td>
+                                                <td class="spcr">&nbsp;</td>
+                                                <td>##Duration##</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="hSpcr">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hSpcr">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Contact Details</b></h2>
+                            <h3>For any further assistance or to book another tour please contact us on the below Contact Details:</h3>
+                            <p>
+                                <b class="txt-blu">isango! customer support</b><br>
+                                ##CustomerSupportNumbers##
+                            </p>
+                            <p>
+                                <b>Email</b>
+                                <a class="link" href="mailto:support@isango.com">##SupportEmail##</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="hSpcr10"></td>
+        </tr>
+    </table>
+</body>
+</html>

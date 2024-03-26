@@ -1,0 +1,49 @@
+﻿@using HangFireMVC.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+@section styles {
+    <link href="~/CmsResources/styles/igo/loginstyles.min.css" rel="stylesheet" />
+}
+
+<div class="fl fw loginPage">
+    <div class="fl fw loginForm">
+        <section id="loginForm">
+            <div class="loginTitle fl fw">
+                <img class="bee" src="~/CmsResources/images/blossomInt.png" />
+                <img class="lock" src="~/CmsResources/images/lock.png" />
+                <span class="txt">Login permission is strictly for authorised users of</span>
+                <img class="titleLogo" src="~/CmsResources/images/logo-header.png" />
+            </div>
+            <form asp-action="Login" asp-controller="Account" asp-route-returnUrl="@ViewBag.ReturnUrl" method="post" class="form-horizontal" role="form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <ul class="fl fw ulForm">
+                    <li>
+                        @Html.LabelFor(m => m.UserName, new { @class = "control-label" })
+                        <div class="formElm">
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control fl fw" })
+                            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger errMyIsango" })
+                        </div>
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                        <div class="formElm">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control fl fw" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger errMyIsango" })
+                        </div>
+                    </li>
+                    <li>
+                        <div class="formElm fr">
+                            <input type="submit" value="Log in" class="btn btn-primary btn-md fr" />
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </div>
+</div>

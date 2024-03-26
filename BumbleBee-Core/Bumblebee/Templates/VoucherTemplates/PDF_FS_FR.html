@@ -1,0 +1,265 @@
+﻿<table width="100%" border="0">
+    <tr>
+        <td class="pdf-container">
+            <table class="pdf-inner">
+
+                <tr>
+                    <td>
+                        <h1 class="h1">
+                            <b class="txt-blu">Num&#xE9;ro du bon de r&#xE9;servation / Booking Voucher Number -</b> <span>##BookingVoucherNumber##</span>
+                            <button style="display: ##displayPrintButton##" title="Impression" onclick="window.print();" class="printBtn">&#128438; </button>
+                        </h1>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td class="box">
+                        <h2 class="hh1"><b>Informations de r&#xE9;servation / Booking Information</b></h2>
+                        <table>
+                            <tr><td colspan="2" class="hSpcr">&nbsp;</td></tr>
+                            <tr>
+                                <td class="bdr-rt w50">
+                                    <table>
+                                        <tr>
+                                            <td class="col1"><b>Voyageur Principal</b> <br> <em>Lead Traveller</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##UserName##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Tour r&#xE9;serv&#xE9;</b> <br> <em>Tour Booked</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##ProductPageName##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Nom de l'option</b> <br> <em>Option Name</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##OptionName##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Prix total de la visite</b> <br> <em>Total Tour Price</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##TotalTourPrice##</td>
+                                        </tr>
+                                        <!--<tr>
+                                            <td class="col1"><b>Demande sp&#xE9;ciale</b><br> <em>Special Request</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##SpecialRequest##</td>
+                                        </tr>-->
+                                        <tr style="display: ##displaySupplierBookingReference##">
+                                            <td class="col1"><b>R&#xE9;f&#xE9;rence de r&#xE9;servation des fournisseurs</b></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##SupplierBookingReference##</td>
+                                        </tr>
+
+                                        <tr style="display: ##displayQR##">
+                                            <td colspan="3">
+                                                ##QRCodeTable##
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="vat">
+                                    <table>
+                                        <tr style="display: ##displayNoofAdults##">
+                                            <td class="col1"><b>Nombre d'adultes</b> <br> <em>No of Adults</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##NumberOfAdults## Adult</td>
+                                        </tr>
+                                        <tr style="display: ##displayNoOfChilds##">
+                                            <td class="col1"><b>Nombre d'enfants</b> <br> <em>No of Children</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##NumberOfChildren##</td>
+                                        </tr>
+                                        ##DynamicAgeGroup##
+                                        <tr>
+                                            <td class="col1"><b>Date du tour</b> <br> <em>Date of Tour</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##DateOfTour##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Code d'option</b> <br>  <em>Option Code</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##OptionCode##</td>
+                                        </tr>
+                                        ##SupplierName1##
+                                        <tr style="display: ##displayVATNumber##">
+                                            <td class="col1"><b>Num&#xE9;ro de TVA</b> <br> <em>VAT Number</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##VATNumber##</td>
+                                        </tr>
+                                        ##ProviderInformation##
+                                        <tr>
+                                            <td class="col1"><b>Isango local! Partenaire</b> <br> <a><em>Local isango! Partner</em></a></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##IsangoPartner##</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" class="hSpcr">&nbsp;</td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <h2 class="h2"><b>Horaire de la tourn&#xE9;e / Tour Schedule</b></h2>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <table>
+
+                            <tr style="display: ##displayPickPoint##;">
+                                <td class="cols"><b>Point de ramassage</b> <br> <em>Pickup Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##PickupPoint##</td>
+                            </tr>
+                            <tr style="display: ##displayMeetingPoint##;">
+                                <td class="cols"><b>Point de rencontre</b> <br> <em>Meeting Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##PickupPoint##</td>
+                            </tr>
+                            <tr style="display: ##displayContractComment##;">
+                                <td class="cols"><b>Commentaire du contrat</b><br> <em>Contract Comment</em></td>
+                                <td class="spcr"></td>
+                                <td>##ContractComment##</td>
+                            </tr>
+                            <tr style="display: ##displayDropPoint##;">
+                                <td class="cols"><b>Point de d&#xE9;pose</b> <br> <em>Drop off Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##DropOffPoint##</td>
+                            </tr>
+                            <tr style="display: ##displayEndPoint##;">
+                                <td class="cols"><b>Point final</b> <br> <em>Ending Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##DropOffPoint##</td>
+                            </tr>
+                            <tr style="display: ##displaySchedule##;">
+                                <td class="cols"><b>Horaire</b> <br> <em>Schedule</em></td>
+                                <td class="spcr"></td>
+                                <td>##Schedule##</td>
+                            </tr>
+                            <tr style="display: ##displayStartTime##;">
+                                <td class="cols"><b>Heure de d&#xE9;but</b> <br> <em>Start Time</em></td>
+                                <td class="spcr"></td>
+                                <td>##Schedule##</td>
+                            </tr>
+                            <tr>
+                                <td class="cols"><b>Dur&#xE9;e</b> <br> <em>Duration</em></td>
+                                <td class="spcr"></td>
+                                <td>##Duration##</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <h2 class="h2"><b>Instructions importantes / Important Instructions</b></h2>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <table>
+                            ##ImportantInstructions##
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td class="vat">
+                        <h2 class="h2"><b>D&#xE9;tails de contact / Contact Details</b></h2>
+                        <table>
+                            <tr><td class="hSpcr">&nbsp;</td></tr>
+                            <tr>
+                                <td class="vat
+contactWrap">
+
+                                    <div class="contact1">
+
+                                        <h3>Logistiques pr&#xE9;-d&#xE9;part <br> <em style="font-weight: normal">Pre-departure logistics</em></h3>
+                                        <p>
+                                            <b class="txt-blu">Isango local! Partenaire <br></b> <a class="txt-blu"><em>Local isango! Partner</em></a><br />
+                                            ##IsangoPartnerAddress##
+                                        </p>
+                                        <p>
+                                            <b>Num&#xE9;ro de t&#xE9;l&#xE9;phone</b><br>
+                                            ##TelephoneNumber##
+                                        </p>
+                                        <p>
+                                            <b>Num&#xE9;ro d'urgence</b><br>
+                                            ##EmergencyNumber##
+                                        </p>
+                                        <p>
+                                            <b>Fax</b><br>
+                                            ##Fax##
+                                        </p>
+                                        <p>
+                                            <b>Email</b><br />
+                                            <span class="txt-blu">  ##Email## </span>
+                                        </p>
+                                    </div>
+                                    ##DestinationAssistance##
+                                    <div class="contact3">
+                                        <h3>Besoin d'aide suppl&#xE9;mentaire ou de r&#xE9;servations? <br> <em style="font-weight: normal">Need further assistance or bookings?</em></h3>
+                                        <p>
+                                            <b>isango! service client</b><br> <a class="txt-blu"><em>isango! customer support</em></a> <br>
+                                            ##CustomerSupportNumbers##
+                                        </p>
+                                        <p>
+                                            <b>Email</b><br />
+                                            <span class="txt-blu">   ##SupportEmail## </span>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td class="hSpcr">&nbsp;</td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="display: ##displayTermsC##;">
+                    <td>
+                        <h2 class="h2"><b>Termes et conditions / Terms and Conditions</b></h2>
+                        <table>
+                            <tr><td class="hSpcr"></td></tr>
+                            <tr>
+                                <td>
+                                    Il est de votre responsabilit&#xE9; de vous assurer que tous les d&#xE9;tails fournis lors de la r&#xE9;servation sont corrects. Vous avez confirm&#xE9; votre accord avec l'isango! <a target="_blank" class="link" href="##TermsAndConditionLink##">conditions de r&#xE9;servation</a>  <br>
+                                    <em>It is your responsibility to ensure all the details provided while booking are correct. You have confirmed that you agree to the isango! <a target="_blank" class="link" href="##TermsAndConditionLink##">booking terms and conditions</a></em>
+                                </td>
+                            </tr>
+                            <tr><td class="hSpcr"></td></tr>
+                            <tr><td class="brdrBtm"></td></tr>
+                            <tr><td class="hSpcr">&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    <h3>Pour usage officiel seulement / For official use only</h3>
+                                    <p>Remarque pour ##SupplierName##: Veuillez facturer le partenaire isango local pour cela. Merci d'envoyer la facture &agrave; finance@isango.com <br><em>Note for ##SupplierName##: Please bill local isango Partner for this. Please send the invoice to finance@isango.com</em></p>
+                                    <p>isango! Limited agit en tant qu'agent de vente au d&#xE9;tail pour  ##SupplierName## avec lequel votre visite est r&#xE9;serv&#xE9;e.  ##SupplierName## est le donneur d'ordre et, conform&#xE9;ment &agrave; nos conditions de r&#xE9;servation, votre contrat est pass&#xE9; avec ##SupplierName## <br><em>isango! Limited act as a retail agent for ##SupplierName## with whom your tour is booked. ##SupplierName## is the principal and in accordance with our booking conditions your contract is ##SupplierName##</em> </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <h2 class="h2"><b>Politique d'annulation flexible / Flexible Cancellation Policy</b></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hSpcr">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        ##CancellationPolicy##
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td class="hSpcr10"></td></tr>
+</table>

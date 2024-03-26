@@ -1,0 +1,66 @@
+<HotelValuedAvailRQ echoToken="isango!HB" sessionId="isango!12-19-13@14:00" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2013/04" showDiscountsList="Y">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>ISANGOUK1013</User>
+		<Password>ISANGOUK1013</Password>
+	</Credentials>
+	<PaginationData pageNumber="1" itemsPerPage="999" />
+	<CheckInDate date="20131120" />
+	<CheckOutDate date="20131125" />
+	<Destination code="PAR" type="SIMPLE" />
+	<HotelCodeList withinResults="Y">
+	  <ProductCode>218356</ProductCode>
+		<ProductCode>7198</ProductCode>
+		<ProductCode>27940</ProductCode>
+		<ProductCode>29646</ProductCode>
+		<ProductCode>33981</ProductCode>
+		<ProductCode>41106</ProductCode>
+		<ProductCode>47535</ProductCode>
+		<ProductCode>49462</ProductCode>
+		<ProductCode>53561</ProductCode>
+		<ProductCode>54814</ProductCode>
+		<ProductCode>54977</ProductCode>
+		<ProductCode>75803</ProductCode>
+		<ProductCode>87596</ProductCode>
+		<ProductCode>90399</ProductCode>
+		<ProductCode>98834</ProductCode>
+		<ProductCode>98835</ProductCode>
+		<ProductCode>122388</ProductCode>
+		<ProductCode>133801</ProductCode>
+		<ProductCode>134287</ProductCode>
+		<ProductCode>136686</ProductCode>
+		<ProductCode>142181</ProductCode>
+		<ProductCode>142346</ProductCode>
+		<ProductCode>142365</ProductCode>
+		<ProductCode>142731</ProductCode>
+    <ProductCode>143225</ProductCode>
+		<ProductCode>143253</ProductCode>
+		<ProductCode>162875</ProductCode>
+		<ProductCode>218354</ProductCode>
+		<ProductCode>218353</ProductCode>
+		<ProductCode>218337</ProductCode>
+		<ProductCode>218460</ProductCode>
+		<ProductCode>218355</ProductCode>
+		<ProductCode>218356</ProductCode>
+		<ProductCode>218357</ProductCode>
+	</HotelCodeList>
+	<ExtraParamList>
+		<ExtendedData type="EXT_ORDER">
+			<Name>ORDER_CONTRACT_PRICE</Name>
+			<Value>ASC</Value>
+		</ExtendedData>
+		<ExtendedData type="EXT_DISPLAYER">
+			<Name>DISPLAYER_DEFAULT</Name>
+			<Value>PROMOTION:Y</Value>
+		</ExtendedData>
+	</ExtraParamList>
+	<OccupancyList>
+		<HotelOccupancy>
+			<RoomCount>1</RoomCount>
+			<Occupancy>
+				<AdultCount>2</AdultCount>
+				<ChildCount>0</ChildCount>
+			</Occupancy>
+		</HotelOccupancy>
+	</OccupancyList>
+</HotelValuedAvailRQ>

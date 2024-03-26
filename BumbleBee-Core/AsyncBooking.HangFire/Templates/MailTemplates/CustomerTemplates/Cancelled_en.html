@@ -1,0 +1,319 @@
+<head>
+    <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        .confirmation .panel {
+            width: 695px !important;
+            background-image: none;
+            padding: 0;
+            margin: 0 0 18px;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+            .confirmation .panel .panel-content {
+                border-bottom: 1px solid #d8d8d8;
+                padding: 12px 17px;
+            }
+
+            .confirmation .panel .panel-title {
+                background: #7da500 url(/_ui/images/bg/panel_title_left_green.png) no-repeat top left;
+                color: #fff;
+                position: relative;
+            }
+
+                .confirmation .panel .panel-title h1 {
+                    background: url(/_ui/images/bg/panel_title_right_green.png) no-repeat top right;
+                    padding-top: 12px;
+                    padding-bottom: 13px;
+                }
+
+                    .confirmation .panel .panel-title h1 strong {
+                        font-size: 1.6em;
+                        padding-left: 18px;
+                        display: block;
+                    }
+
+        .panel-title .tools {
+            background: url(/_ui/images/bg/panel-title_print-email.png) no-repeat;
+            width: 57px;
+            height: 21px;
+            overflow: hidden;
+            position: absolute;
+            top: 7px;
+            right: 8px;
+            padding: 3px 0 0 4px;
+        }
+
+            .panel-title .tools li {
+                float: left;
+                margin-left: 17px;
+            }
+
+            .panel-title .tools a {
+                display: block;
+                text-indent: -999em;
+                width: 16px;
+                height: 16px;
+            }
+
+            .panel-title .tools .print a {
+                background: url(/_ui/images/ico/utilities_print.gif) no-repeat;
+            }
+
+            .panel-title .tools .email a {
+                background: url(/_ui/images/ico/utilities_email.gif) no-repeat;
+            }
+
+            .panel-title .tools .email {
+                margin-top: 1px;
+            }
+
+        .primary-content .inner-right .panel-content {
+            width: 658px;
+        }
+
+        .please-note li strong {
+            color: #df4a0f;
+            font-size: 1.1em;
+        }
+
+        .please-note h2 {
+            color: #1899b4;
+            font-size: 1.4em;
+            padding: 0 0 15px;
+            font-weight: normal;
+        }
+
+        .confirmation .details-last {
+            margin: 0 0 5px;
+        }
+
+        .confirmation .details .section dt {
+            font-weight: bold;
+            float: left;
+            clear: left;
+            padding-right: 5px;
+        }
+
+            .confirmation .details .section dt.start-time {
+                font-weight: normal;
+            }
+
+        .confirmation .details .section dd {
+            float: left;
+        }
+
+        .confirmation .details .section dl.block dt, .confirmation .details .section dl.block dd {
+            display: block;
+            float: none;
+        }
+
+        .confirmation .details .section dd.inline {
+            float: none;
+            display: block;
+            clear: both;
+        }
+
+            .confirmation .details .section dd.inline dl dt, .confirmation .details .section dd.inline dl dd {
+                float: none;
+                display: inline;
+            }
+
+            .confirmation .details .section dd.inline dl.block dt, .confirmation .details .section dd.inline dl.block dd {
+                display: block;
+            }
+
+        .confirmation .details .section dl.inline {
+            padding-bottom: 0;
+        }
+
+            .confirmation .details .section dl.inline dt, .confirmation .details .section dl.inline dd {
+                display: inline;
+                float: none;
+            }
+
+        .confirmation .details .section dl, .confirmation .details .section p, .confirmation .details .section h3, .confirmation .details .section dl.product-list .title {
+        }
+
+            .confirmation .details .section h3, .confirmation .details .section dl.product-list .title {
+            }
+
+        .confirmation .details .section .reference-no {
+            color: #1899b4;
+        }
+
+        .confirmation .details .section .local-numbers {
+            font-size: .9em;
+        }
+
+        .confirmation .details .section dl.product-list {
+            line-height: 1.8;
+        }
+
+            .confirmation .details .section dl.product-list dt {
+                clear: left;
+                font-weight: normal;
+                width: 365px;
+                display: block;
+                float: left;
+            }
+
+            .confirmation .details .section dl.product-list dd {
+                display: block;
+                float: left;
+                width: 150px;
+            }
+
+            .confirmation .details .section dl.product-list .title {
+                font-weight: bold;
+                padding: 0 5px 5px 0;
+            }
+
+            .confirmation .details .section dl.product-list .total {
+                padding: 0 5px 0 0;
+            }
+
+        .titleleft {
+            float: left;
+            font-size: 1.09em;
+            font-weight: bold;
+            line-height: 1.5em;
+            margin: 0 0 4px;
+        }
+
+        .priceright {
+            color: #DE460A;
+            float: right;
+            font-size: 1.09em;
+            font-weight: bold;
+            line-height: 1.5em;
+        }
+
+        .totalamt li {
+            clear: both;
+        }
+
+        .confirmation .details .section dl.inline {
+            padding-bottom: 5px;
+        }
+
+        .confirmation .details .booking-details2 {
+            width: 100%;
+        }
+
+        .confirmation .details .section dl.block2 dd {
+            display: block;
+            float: left;
+        }
+
+        .confirmation .details .section dl.block2 {
+            line-height: 1em;
+        }
+
+        .confirmation .details .section dl.block {
+            line-height: 1em;
+        }
+
+        .newchkinout {
+            clear: left;
+            margin-top: 5px;
+        }
+
+        .sub-title2 {
+            background: none;
+            background-color: #fff;
+            border-bottom: 1px solid #D2D2D2;
+            margin: 0 -10px 20px;
+            padding: 6px 19px 5px;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" style="border-right: solid 1px #a8a8a8;">
+        <tr>
+            <td width="651" style="font-family: Verdana,Geneva,sans-serif;">
+                <div class="confirmation" style="font-family: Verdana,Geneva,sans-serif; font-size: 11px;">
+                    <div class="panel-content" style="font-family: Verdana,Geneva,sans-serif; font-size: 11px;">
+                        <div style="border: 1px solid #A8A8A8; font-family: Verdana,Geneva,sans-serif; font-size: 11px;
+                            width: 650px;">
+                            <table width="650" style="width: 650px;">
+                                <tr>
+                                    <td width="120" style="padding: 12px; padding-left: 6px;">
+                                        <img height="42" width="99" alt="isango!" src="#AffiliateNameLogo#" />
+                                    </td>
+                                    <td width="421">
+                                        <p style="font-size: 16px; font-weight: bold; display: none;">
+                                            <div style="font: bold 16px Arial, Helvetica, sans-serif;">
+                                                Cancelled Booking Number <span style="color: #139ab8">#RefNo#</span>
+                                            </div>
+                                        </p>
+                                    </td>
+                                    <td width="120" style="padding: 12px; padding-right: 6px;">
+                                        <img height="42" width="99" alt="isango!" style="display:#showlogo#" src="https://hohobassets.isango.com/phoenix/images/isango-cs.png" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div style="border-top: 1px solid #d5d9d8; padding: 12px 12px 0; font-size: 11px;">
+                                <table width="100%" border="0" cellpadding="5" cellspacing="2" style="margin: 0 auto;
+                                    font: normal 13px Arial, Helvetica, sans-serif;">
+                                    <tr>
+                                        <td>
+                                            <span style="padding: 0 0 10px; margin-left: 6px; line-height: 1.5; font-size: 13px !important;
+                                                color: #139ab8; font-weight: bold; font-size: 11px;">Dear<span>#Name#</span></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Thank you for choosing isango!
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            We regret that we were not able to be of service to you on this occasion,
+                                            however we do look forward to serve you in future.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#Link#" style="color: #489b25; font: bold 18px Arial, Helvetica, sans-serif; display: block; padding-left: 5px;">Click here to print PDF voucher &raquo;</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span style="padding-bottom: 10px; margin-left: 6px; font-size: 12px; line-height: 18px;">
+                                                <strong>
+                                                    In case of any further assistance please do not hesitate to contact us on the
+                                                    below:
+                                                </strong>
+                                                <br>
+                                                #SupportNumbers#
+                                                <br>
+                                                Email: <a href="mailto:#FromEmail#" style="color: #489b25;">
+                                                    #FromEmail#
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Regards,<br>
+                                            isango! support
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>

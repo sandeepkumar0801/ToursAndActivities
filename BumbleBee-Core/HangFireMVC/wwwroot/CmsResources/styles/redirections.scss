@@ -1,0 +1,34 @@
+﻿.alignMiddle {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.w100px {
+    width: 100px;
+}
+.w70px {
+    width: 70px;
+}
+
+.AffiliateSuggestinModal {
+    .magicsearch-wrapper,
+    .AffiliateSuggest {
+        width: 100% !important;
+    }
+}
+
+.hiddenIP {
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+.urlLabels span{
+    padding: 0em 0.4em !important;
+}
+
+.magicsearch-box.all, .magicsearch-box {
+    max-height: 400px !important;
+    overflow:auto !important;
+}

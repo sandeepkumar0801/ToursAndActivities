@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Hosting
+@inject IWebHostEnvironment env
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/CmsResources/styles/fontawesome.css" rel="stylesheet" />
+    <link href="~/CmsResources/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="~/CmsResources/styles/igo/pagestyles.min.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+</head>
+<body data-islocal="@Convert.ToBoolean(env.IsDevelopment())">
+
+    <div class="wrapper fh">
+        <header class="fl fw">
+            <div class="container-fluid p0">
+                <partial name="_LoginPartial" />
+
+            </div>
+        </header>
+        <div class="allPages container-fluid">
+            @RenderBody()
+        </div>
+        <footer class="fl fw">
+            <div class="container-fluid">
+            </div>
+        </footer>
+    </div>
+
+    <input type="hidden" id="checkChangeId" value="" />
+    <input type="hidden" id="changeCountId" value="0" />
+    <input type="text" class="CopyTextFromTempElm" id="CopyTextFromTempElm" />
+    @RenderSection("popups", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="~/Scripts/common.js"></script>
+    @RenderSection("scripts", required: false)
+    <div id="loaderLayout" class="loaderLayout" style="display:none;">
+        <i class="fas fa-redo"></i>
+    </div>
+    <span id="callBackStatusAlert" class="callBackStatusAlert success">Error message...</span>
+
+</body>
+</html>

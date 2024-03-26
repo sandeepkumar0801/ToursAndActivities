@@ -1,0 +1,42 @@
+<ServiceAddRQ xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hotelbeds.com/schemas/2005/06/messages ServiceAddRQ.xsd" version="ARD_BETA" echoToken="isango!HB" purchaseToken="">
+  <Language>ENG</Language>
+  <Credentials>
+    <User>ISANGOUK1013</User>
+    <Password>ISANGOUK1013</Password>
+  </Credentials>
+  <Service xsi:type="ServiceTicket" availToken="oAlj4kQNL5o11pLPaE1NeA==">
+    <ContractList>
+      <Contract>
+        <Name>TEST BCN PF M2</Name>
+        <IncomingOffice code="102" />
+      </Contract>
+    </ContractList>
+    <DateFrom date="20140517" />
+    <DateTo date="20140517" />
+    <TicketInfo xsi:type="ProductTicket">
+      <Code>MONTARTCRE</Code>
+      <Destination type="SIMPLE" code="PAR" />
+    </TicketInfo>
+    <AvailableModality code="0#GENERAL">
+      <Name>Ingl&#233;s / Castellano - 09:30h</Name>
+      <Contract>
+        <Name>TEST BCN PF M2</Name>
+        <IncomingOffice code="102" />
+      </Contract>
+    </AvailableModality>
+    <Paxes>
+      <AdultCount>1</AdultCount>
+      <ChildCount>0</ChildCount>
+      <InfantCount>0</InfantCount>
+      <GuestList>
+        <Customer type="AD">
+          <Age>30</Age>
+        </Customer>
+		<Customer type="AD">
+          <Age>30</Age>
+        </Customer>
+      </GuestList>
+    </Paxes>
+    <ServiceLanguage>ENG</ServiceLanguage>
+  </Service>
+</ServiceAddRQ>

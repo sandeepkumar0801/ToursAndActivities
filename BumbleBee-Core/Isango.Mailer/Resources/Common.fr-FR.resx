@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Evoucher7DaysMessage" xml:space="preserve">
+    <value>Vos bons électroniques seront envoyés sur votre e-mail 7 jours avant la date de votre voyage. Présentez ces bons à l’entrée du Park pour recevoir vos tickets.</value>
+  </data>
+  <data name="FindVoucher" xml:space="preserve">
+    <value>Veillez trouver ci-joint votre bon en format pdf</value>
+  </data>
+  <data name="immediately" xml:space="preserve">
+    <value>Bon(s) de réservation à imprimer</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>Vous aurez besoin d’Adobe Reader pour visualiser / imprimer ces pièces justificatives. Si vous n’avez pas Adobe Reader, vous pouvez le télécharger en cliquant ici. (http://get.adobe.com/reader/)(http://get.adobe.com/reader/)</value>
+  </data>
+  <data name="lp" xml:space="preserve">
+    <value>Nom du voyageur principal</value>
+  </data>
+  <data name="lpe" xml:space="preserve">
+    <value>E-mail du voyageur principal</value>
+  </data>
+  <data name="noAdult" xml:space="preserve">
+    <value>Nombre d'adultes</value>
+  </data>
+  <data name="nochild" xml:space="preserve">
+    <value>Nombre d'enfants</value>
+  </data>
+  <data name="pleaseNote" xml:space="preserve">
+    <value>Merci de bien vouloir noter qu'il s'agit ici d'un accusé de réception de votre réservation et qu'il ne peut en aucun cas faire office d'échange contre tout type de service.</value>
+  </data>
+  <data name="PrintText" xml:space="preserve">
+    <value>Merci de bien vouloir imprimer toutes les pages des bons de réservation et de vous en munir au point de rencontre/ramassage</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Nom du produit</value>
+  </data>
+  <data name="redemption" xml:space="preserve">
+    <value>Votre/vos bon(s) de réservation vous seront envoyés à votre adresse e-mail sous 24h. Tous les détails y seront indiqués</value>
+  </data>
+  <data name="SevenDaysMessage" xml:space="preserve">
+    <value>Bon(s) de Réservation que nous enverrons 7 jours avant la date du voyage</value>
+  </data>
+  <data name="traveldate" xml:space="preserve">
+    <value>Date de voyage</value>
+  </data>
+  <data name="VoucherLink" xml:space="preserve">
+    <value>Cliquez ici pour imprimer vos bons (format PDF)</value>
+  </data>
+  <data name="withinin48" xml:space="preserve">
+    <value>Bon(s) de réservation que vous recevrez sous 24h.</value>
+  </data>
+  <data name="yourorder" xml:space="preserve">
+    <value>Votre réservation</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Confirmé</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Annulé</value>
+  </data>
+  <data name="PendingConfirmation" xml:space="preserve">
+    <value>En attente de confirmation</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Email_fr</value>
+  </data>
+  <data name="BookingAmountLabel" xml:space="preserve">
+    <value>Montant total</value>
+  </data>
+  <data name="MultisaveDiscountLabel" xml:space="preserve">
+    <value>MultisaveDiscountLabel</value>
+  </data>
+  <data name="DiscountCodeLabel" xml:space="preserve">
+    <value>Bon de réduction / Bon cadeau</value>
+  </data>
+  <data name="AfterDiscountLabel" xml:space="preserve">
+    <value>Montant après réduction</value>
+  </data>
+  <data name="ChargedAmountLabel" xml:space="preserve">
+    <value>Montant total payé</value>
+  </data>
+  <data name="OrAmountLabel" xml:space="preserve">
+    <value>Montant restant à  payer au moment de la confirmation par l’opérateur</value>
+  </data>
+  <data name="CancelTemplateName" xml:space="preserve">
+    <value>Cancelled_fr</value>
+  </data>
+  <data name="CancelSubject" xml:space="preserve">
+    <value>Annulation de la réservation </value>
+  </data>
+  <data name="HeadingConditionalNoAlternate" xml:space="preserve">
+    <value>Nous sommes heureux de reconnaître votre réservation.</value>
+  </data>
+  <data name="IgnoreIfAlready" xml:space="preserve">
+    <value>Veuillez ignorer cet e-mail si vous avez déjà reçu une confirmation.</value>
+  </data>
+  <data name="PleaseNoteAlternative" xml:space="preserve">
+    <value>Une copie de ce reçu a été envoyé sur votre boite e-mail</value>
+  </data>
+  <data name="PrintTextSmartPhone" xml:space="preserve">
+    <value>Vous devez imprimer votre bon. Malheureusement, nos fournisseurs locaux ne sont pas en mesure d’accepter les bons figurant sur les smartphones ou autres appareils.</value>
+  </data>
+  <data name="RefNoText" xml:space="preserve">
+    <value>Utilisez la réf. N ° pour correspondance ultérieure.</value>
+  </data>
+  <data name="YourVoucherAlternative" xml:space="preserve">
+    <value>Vous recevrez une confirmation de réservation dans les 30 prochaines minutes après vérification de la transaction par votre banque.</value>
+  </data>
+  <data name="ReceiptMessage" xml:space="preserve">
+    <value>Nous vous enverrons un bon séparé pour ce billet.</value>
+  </data>
+  <data name="HeadingConditionalAlternative" xml:space="preserve">
+    <value>C'est la reconnaissance. La confirmation de réservation vous parviendra dans 15-30 min. Si votre banque vérifie votre transaction.</value>
+  </data>
+  <data name="AdditionalDetails" xml:space="preserve">
+    <value>
+Les détails supplémentaires des voyageurs </value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="AmexWithGBP" xml:space="preserve">
+    <value>Oops! Veuillez sélectionner la devise en GBP/EURO/USD pour effectuer le paiement via les cartes AMEX</value>
+  </data>
+  <data name="AmountAfterDiscount" xml:space="preserve">
+    <value>Total après réduction</value>
+  </data>
+  <data name="amountPayable" xml:space="preserve">
+    <value>Montant total à payer</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="BillingAddress" xml:space="preserve">
+    <value>Adresse de facturation</value>
+  </data>
+  <data name="BookingAmount" xml:space="preserve">
+    <value>Le prix de la réservation est</value>
+  </data>
+  <data name="BookingAmountIs" xml:space="preserve">
+    <value>Le prix de la réservation est</value>
+  </data>
+  <data name="BookingRefNo" xml:space="preserve">
+    <value>numéro de référence de la réservation</value>
+  </data>
+  <data name="BookingVoucher" xml:space="preserve">
+    <value>Le(s) bon(s) de la réservation vous seront envoyés dans les 72 heures.</value>
+  </data>
+  <data name="cancellationpolPay" xml:space="preserve">
+    <value>Politique d'annulation</value>
+  </data>
+  <data name="CardHolder" xml:space="preserve">
+    <value>Nom du titulaire de la carte</value>
+  </data>
+  <data name="CardNumber" xml:space="preserve">
+    <value>Numéro de la carte</value>
+  </data>
+  <data name="ChargedAmount" xml:space="preserve">
+    <value>Montant prélevé</value>
+  </data>
+  <data name="ChoosePaymentOption" xml:space="preserve">
+    <value>Choisissez votre option de paiement préférée</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="ConfirmBooking" xml:space="preserve">
+    <value>Confirmer la réservation</value>
+  </data>
+  <data name="ContactInformation" xml:space="preserve">
+    <value>Information de contact</value>
+  </data>
+  <data name="ContractErr" xml:space="preserve">
+    <value>S'il vous plaît entrer les informations requises</value>
+  </data>
+  <data name="ContractQuestion" xml:space="preserve">
+    <value>question du contrat</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="DetailsPyment" xml:space="preserve">
+    <value>Informations de paiement</value>
+  </data>
+  <data name="DiscountVoucher" xml:space="preserve">
+    <value>Bon de réduction / Valeur du cadeau</value>
+  </data>
+  <data name="EnterAddress" xml:space="preserve">
+    <value>Indiquez votre adresse</value>
+  </data>
+  <data name="EnterCardHolder" xml:space="preserve">
+    <value>Entrez le nom du titulaire de la carte</value>
+  </data>
+  <data name="EnterCardNumber" xml:space="preserve">
+    <value>Entrez le numéro de la carte</value>
+  </data>
+  <data name="EnterCity" xml:space="preserve">
+    <value>Indiquez votre ville</value>
+  </data>
+  <data name="EnterEmail" xml:space="preserve">
+    <value>Entrez votre e-mail</value>
+  </data>
+  <data name="EnterLead" xml:space="preserve">
+    <value>Indiquez le nom complet du voyageur principale</value>
+  </data>
+  <data name="EnterMobile" xml:space="preserve">
+    <value>Entrez un numéro de téléphone portable</value>
+  </data>
+  <data name="EnterSecurityCode" xml:space="preserve">
+    <value>Entrez le code de sécurité</value>
+  </data>
+  <data name="EnterZip" xml:space="preserve">
+    <value>Entrez le code postale</value>
+  </data>
+  <data name="Except" xml:space="preserve">
+    <value>sauf</value>
+  </data>
+  <data name="ExpiryDate" xml:space="preserve">
+    <value>Date d'expiration</value>
+  </data>
+  <data name="FailureMsg1" xml:space="preserve">
+    <value>Malheureusement, nous avons été incapables de traiter votre paiement . Veuillez examiner les détails de votre carte de crédit et essayez à nouveau . Ou entrer en contact avec notre service à la clientèle pour compléter la réservation.</value>
+  </data>
+  <data name="FailureMsg2" xml:space="preserve">
+    <value>Vous pouvez contacter notre service clientèle sur  24/7 sur </value>
+  </data>
+  <data name="Forproducts" xml:space="preserve">
+    <value>Pour les offres</value>
+  </data>
+  <data name="LeadPassenger" xml:space="preserve">
+    <value>Nom du principal passager</value>
+  </data>
+  <data name="LeadPassengerEmail" xml:space="preserve">
+    <value>Email du principale passager</value>
+  </data>
+  <data name="LeadTravellersFullName" xml:space="preserve">
+    <value>Nom complet du voyageur principal</value>
+  </data>
+  <data name="LeadTravellersName" xml:space="preserve">
+    <value>Le prénom et nom du voyageur principal</value>
+  </data>
+  <data name="LetUsKnow" xml:space="preserve">
+    <value>Faites-nous savoir si vous voulez faire une demande spéciale pour ce produit</value>
+  </data>
+  <data name="MeetingDetails" xml:space="preserve">
+    <value>Veuillez indiquer le nom et l'adresse de votre hôtel ou du point de prise en charge sélectionné</value>
+  </data>
+  <data name="MeetingPoint" xml:space="preserve">
+    <value>Point de rencontre</value>
+  </data>
+  <data name="MultisaveDiscount" xml:space="preserve">
+    <value>Réduction multiéconomies</value>
+  </data>
+  <data name="NumberOfAdults" xml:space="preserve">
+    <value>Nombre d'adultes</value>
+  </data>
+  <data name="NumberOfChildren" xml:space="preserve">
+    <value>Nombre d'enfants</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="OnRequestDetails" xml:space="preserve">
+    <value>&lt;p&gt; Le plus souvent, nous confirmons votre réservation immédiatement, et nous savons que cela vous arrange! Cependant, pour certains produits nous devons confirmer la disponibilité avec nos partenaires. Pour ces produits" "sur demande" "Il faut un maximum de trois jours ouvrables pour confirmer la disponibilité. &lt;/ p&gt;
+&lt;p&gt; Lorsque vous effectuez une réservation ""sur demande "" vous confirmez votre intention d'achat, sous réserve de disponibilité. Vous autorisez le paiement du produit, mais le montant ne sera débité que si la réservation est confirmée. Nous ne facturons aucun montant si le produit n'est pas disponibles. &lt;/ p&gt;
+&lt;P&gt; Nous vous informerons par e-mail dans les trois jours ouvrables si votre activité a été confirmée ou non. &lt;/ p&gt;</value>
+  </data>
+  <data name="OptionBooked" xml:space="preserve">
+    <value>Option Réservée</value>
+  </data>
+  <data name="OptionName" xml:space="preserve">
+    <value>Nom de l'option :</value>
+  </data>
+  <data name="OptionNameIs" xml:space="preserve">
+    <value>Le nom de l'option est</value>
+  </data>
+  <data name="OriginalPrice" xml:space="preserve">
+    <value>Prix ​​d'origine:</value>
+  </data>
+  <data name="PendingConfirmation1" xml:space="preserve">
+    <value>En cours de confirmation</value>
+  </data>
+  <data name="PleaseAccept" xml:space="preserve">
+    <value>Veuillez accepter les termes et conditions</value>
+  </data>
+  <data name="PleaseNote1" xml:space="preserve">
+    <value>Veuillez noter qu'il s'agit de votre reçu de réservation et ne peut être échangé contre un autre service.</value>
+  </data>
+  <data name="Pleasenotes" xml:space="preserve">
+    <value>Observations</value>
+  </data>
+  <data name="PleaseProvide" xml:space="preserve">
+    <value>Veuillez fournir les informations correctes concernant votre transfert</value>
+  </data>
+  <data name="PostCode" xml:space="preserve">
+    <value>Code postale</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="ProcessBooking1" xml:space="preserve">
+    <value>S'il vous plaît patienter pendant que nous traitons votre réservation...</value>
+  </data>
+  <data name="ProcessBooking2" xml:space="preserve">
+    <value>Cela peut prendre jusqu'à 1 minute. S'il vous plaît ne pas cliquer jusqu'à ce la page suivante apparaît .</value>
+  </data>
+  <data name="ProductName1" xml:space="preserve">
+    <value>Nom du produit</value>
+  </data>
+  <data name="ProductOnRequest" xml:space="preserve">
+    <value>Produit sur demande</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="reqText" xml:space="preserve">
+    <value>Faites-nous savoir si vous voulez faire une demande spéciale pour ce produit</value>
+  </data>
+  <data name="SaleDiscount" xml:space="preserve">
+    <value>VENTE Remise:</value>
+  </data>
+  <data name="SecureCard" xml:space="preserve">
+    <value>Paiement sécurisé par carte</value>
+  </data>
+  <data name="SecurityCode" xml:space="preserve">
+    <value>Code de sécurité</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>Sélectionnez votre pays</value>
+  </data>
+  <data name="SpecialRequest" xml:space="preserve">
+    <value>Demande spéciale (optionnel)</value>
+  </data>
+  <data name="SplReqPlaceHolder" xml:space="preserve">
+    <value>Informez-nous de toutes les demandes spéciales que vous pourriez avoir concernant ce produit.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>MULTISAVE  réduction</value>
+  </data>
+  <data name="TnC" xml:space="preserve">
+    <value>Les termes et les conditions</value>
+  </data>
+  <data name="TnC1" xml:space="preserve">
+    <value>Je comprends et accepte les</value>
+  </data>
+  <data name="TnCcontent" xml:space="preserve">
+    <value>J'ai compris et accepte la &lt;a target="_blank" class="aLink" href="/corporate?page=privacypolicy"&gt;política de privacidad&lt;/a&gt; y los &lt;a target="_blank" class="aLink" href="/corporate"&gt;términos y condiciones&lt;/a&gt; de isango.</value>
+  </data>
+  <data name="TobeCharged" xml:space="preserve">
+    <value>Sera chargé au moment de la confirmation de la réservation</value>
+  </data>
+  <data name="toBeConfirmed" xml:space="preserve">
+    <value>A confirmer dans les 72 heures</value>
+  </data>
+  <data name="TotalBookingAmount" xml:space="preserve">
+    <value>Monant Total de la Réservation</value>
+  </data>
+  <data name="TotalCartValue" xml:space="preserve">
+    <value>Valeur totale du panier</value>
+  </data>
+  <data name="TotalChargedAmount" xml:space="preserve">
+    <value>Montant total prélevé</value>
+  </data>
+  <data name="TravelDate1" xml:space="preserve">
+    <value>Date de voyage</value>
+  </data>
+  <data name="understanandagree" xml:space="preserve">
+    <value>I understand and agree to the</value>
+  </data>
+  <data name="UniversalBooking" xml:space="preserve">
+    <value>Notification de la réservation. Le numéro de référence de la réservation est</value>
+  </data>
+  <data name="UniversalBookingAmount" xml:space="preserve">
+    <value>Notification de la réservation. Le numéro de référence de la réservation est</value>
+  </data>
+  <data name="validCartNumber" xml:space="preserve">
+    <value>Entrez un numéro de carte valide</value>
+  </data>
+  <data name="WeWillSend" xml:space="preserve">
+    <value>Nous vous enverrons un bon différent pour ce produit</value>
+  </data>
+  <data name="WhatIsThis" xml:space="preserve">
+    <value>Qu'est ce que c'est?</value>
+  </data>
+  <data name="WhatIsThis1" xml:space="preserve">
+    <value>Quel est le code de sécurité? Le code de sécurité de la carte est le numéro à trois ou quatre chiffres imprimé sur votre carte de débit / crédit. Ce numéro n'est pas en relief et n'est donc pas imprimé sur les reçus, ce qui limite sa transmission à une personne que le titulaire de la carte. Certaines cartes de crédit se réfèrent à ce numéro comme "code de sécurité de la carte", d'autres comme "code de sécurité personnelle» et d'autres comme «valeur de vérification de la carte".</value>
+  </data>
+  <data name="WhatIsThis2" xml:space="preserve">
+    <value>Visa, Mastercard et carte Maestro:</value>
+  </data>
+  <data name="WhatIsThis3" xml:space="preserve">
+    <value>La plupart des cartes ont un ensemble de chiffres imprimés sur la partie supérieure de la bande de signature au dos de la carte. Le dernier numéro est le code de sécurité à trois chiffres.</value>
+  </data>
+  <data name="WhatIsThis4" xml:space="preserve">
+    <value>Code de vérification de carte pour American Express:</value>
+  </data>
+  <data name="WhatIsThis5" xml:space="preserve">
+    <value>Le numéro à quatre chiffres sur la partie frontale de la carte est le code CVV des cartes American Express.</value>
+  </data>
+  <data name="WhenActivityOperates" xml:space="preserve">
+    <value>Disponibilité</value>
+  </data>
+  <data name="WhenTheActivityOperates" xml:space="preserve">
+    <value>Disponibilité</value>
+  </data>
+  <data name="YourBookingDetail" xml:space="preserve">
+    <value>Détails de votre réservation</value>
+  </data>
+  <data name="YourContactInfo" xml:space="preserve">
+    <value>Vos informations de contact</value>
+  </data>
+  <data name="YourOrder1" xml:space="preserve">
+    <value>Votre demande</value>
+  </data>
+  <data name="YourVoucher" xml:space="preserve">
+    <value>Votre bon électronique sera envoyé à votre adresse e-mail dans les prochaines &lt;span&gt; 72 &lt;/ span&gt; heures. Les instructions détaillées pour participer à votre activité sont mentionnées dans le bon électroniques.</value>
+  </data>
+  <data name="YourVoucherAlternative1" xml:space="preserve">
+    <value>You will recieve a booking confirmation in the next 30 minutes on successful transaction  verification by your bank</value>
+  </data>
+  <data name="YouWillRecieve" xml:space="preserve">
+    <value>Vous recevrez des bons séparés une fois qu'ils sont confirmés par nos partenairs locaux. Vous devez imprimer une copie et la présenter à notre partenaire local pour participer à l'activité.</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="AcceptsTnC" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ZipNotFound" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="FailureMsgDuplicateBooking" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="TnCcontentIsango" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="NumberOfYouths" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="SelectExpiryMonth" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="PleaseNoteAlternative1" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ToBeChargedAmount" xml:space="preserve">
+    <value>À facturer lors de la confirmation des demandes de réservation en attente</value>
+  </data>
+  <data name="ActivityOperator" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="TelephoneNumber" xml:space="preserve">
+    <value>Num&amp;#xE9;ro de T&amp;#xE9;l&amp;#xE9;phone</value>
+  </data>
+  <data name="AtDestinationAssistance" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="FooterText" xml:space="preserve">
+    <value>Propulsé par isango</value>
+  </data>
+  <data name="Numberof" xml:space="preserve">
+    <value>Nombre d'</value>
+  </data>
+  <data name="adults" xml:space="preserve">
+    <value>adultes</value>
+  </data>
+  <data name="childs" xml:space="preserve">
+    <value>enfants</value>
+  </data>
+  <data name="family" xml:space="preserve">
+    <value>famille</value>
+  </data>
+  <data name="infants" xml:space="preserve">
+    <value>les nourrissons</value>
+  </data>
+  <data name="seniors" xml:space="preserve">
+    <value>les seniors</value>
+  </data>
+  <data name="youths" xml:space="preserve">
+    <value>les jeunes</value>
+  </data>
+  <data name="SupplierVoucher" xml:space="preserve">
+    <value>Bon fournisseur</value>
+  </data>
+  <data name="noOf" xml:space="preserve">
+    <value>Nombre d'</value>
+  </data>
+  <data name="yrs" xml:space="preserve">
+    <value>ans</value>
+  </data>
+  <data name="adult" xml:space="preserve">
+    <value>Adulte</value>
+  </data>
+  <data name="child" xml:space="preserve">
+    <value>Enfant</value>
+  </data>
+  <data name="infant" xml:space="preserve">
+    <value>Bébé</value>
+  </data>
+  <data name="senior" xml:space="preserve">
+    <value>Sénior</value>
+  </data>
+  <data name="youth" xml:space="preserve">
+    <value>Jeunesse</value>
+  </data>
+  <data name="DownLoadQR" xml:space="preserve">
+    <value>Télécharger le code QR</value>
+  </data>
+  <data name="DateOfTour" xml:space="preserve">
+    <value>Date de la tournée :</value>
+  </data>
+  <data name="DropOffPoint" xml:space="preserve">
+    <value>Point de chute :</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Durée:</value>
+  </data>
+  <data name="Guests" xml:space="preserve">
+    <value>Passagers</value>
+  </data>
+  <data name="LeadTraveller" xml:space="preserve">
+    <value>Voyageur principal :</value>
+  </data>
+  <data name="OptionCode" xml:space="preserve">
+    <value>Code d'option :</value>
+  </data>
+  <data name="PickupPoint" xml:space="preserve">
+    <value>Point de ramassage :</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Heure de début:</value>
+  </data>
+  <data name="AmendedProduct" xml:space="preserve">
+    <value>Comme vous l'avez demandé, l'activité a été modifiée. Veuillez vous référer au tableau ci-dessous pour vérifier le statut mis à jour.</value>
+  </data>
+  <data name="ConfirmLine1" xml:space="preserve">
+    <value>Félicitations ! pour votre réservation</value>
+  </data>
+  <data name="ConfirmLine2" xml:space="preserve">
+    <value>Votre numéro de référence de réservation est ##RefNo##</value>
+  </data>
+  <data name="ConfirmLine3" xml:space="preserve">
+    <value>Veuillez trouver les détails de votre réservation et vérifier si tout est en ordre. Vous pouvez télécharger le bon de confirmation/facture ou vérifier le statut de chaque activité réservée dans le tableau ci-dessous.</value>
+  </data>
+  <data name="ConfirmLine4" xml:space="preserve">
+    <value>Vous pouvez vous attendre à une expérience de voyage délicieuse ! Bon voyage !</value>
+  </data>
+  <data name="Dear" xml:space="preserve">
+    <value>Cher</value>
+  </data>
+  <data name="DownloadVoucher" xml:space="preserve">
+    <value>Télécharger le bon d'achat</value>
+  </data>
+  <data name="EVoucherAccepted" xml:space="preserve">
+    <value>E-voucher accepté</value>
+  </data>
+  <data name="FS2Step" xml:space="preserve">
+    <value>Vous recevrez le bon de réservation en partenariat avec notre fournisseur de circuits, dans un courriel séparé.</value>
+  </data>
+  <data name="ORProduct" xml:space="preserve">
+    <value>- Il s'agit de la confirmation de la réservation que vous avez effectuée. Vous recevrez un e-mail de confirmation avec un lien vers un bon téléchargeable dans les 24-48 heures.</value>
+  </data>
+  <data name="ORtoConfirm" xml:space="preserve">
+    <value>Votre activité est en attente de confirmation. Veuillez vous référer au dernier email. Le statut de cette activité a maintenant changé. Vous pouvez vous référer au tableau ci-dessous et télécharger le bon de confirmation/facture en conséquence.</value>
+  </data>
+  <data name="PrintedVoucher" xml:space="preserve">
+    <value>Pièce justificative imprimée requise</value>
+  </data>
+  <data name="EmergencyNumber" xml:space="preserve">
+    <value>Num&amp;#xE9;ro D&amp;#x27;Urgence</value>
+  </data>
+  <data name="ForOfficialUseContent2" xml:space="preserve">
+    <value>isango! Limited agit en tant qu'agent de vente au d&amp;#xE9;tail pour  ##SupplierName## avec lequel votre visite est r&amp;#xE9;serv&amp;#xE9;e.  ##SupplierName## est le donneur d'ordre et, conform&amp;#xE9;ment &amp;agrave; nos conditions de r&amp;#xE9;servation, votre contrat est pass&amp;#xE9; avec ##SupplierName##</value>
+  </data>
+  <data name="ForOfficialUseOnly" xml:space="preserve">
+    <value>Pour usage officiel seulement</value>
+  </data>
+  <data name="ForOfficialUseOnlyContent" xml:space="preserve">
+    <value>Note pour le ##SupplierName##: Remarque pour ##SupplierName##: Veuillez facturer le partenaire isango local pour cela. Merci d'envoyer la facture &amp;agrave; &lt;a mailto:finance@isango.com&gt;finance@isango.com&lt;/a&gt;</value>
+  </data>
+  <data name="ImportantInstructionsHeading" xml:space="preserve">
+    <value>Noter</value>
+  </data>
+  <data name="IsangoCustomerSupport" xml:space="preserve">
+    <value>isango! service client:</value>
+  </data>
+  <data name="NeedAssistanceHeading" xml:space="preserve">
+    <value>Besoin d&amp;#x27;aide</value>
+  </data>
+  <data name="NeedFurtherAssistance" xml:space="preserve">
+    <value>Besoin d&amp;#x27;aide suppl&amp;#xE9;mentaire ou de r&amp;#xE9;servations?</value>
+  </data>
+  <data name="SupportAtDestination" xml:space="preserve">
+    <value>Assistance &amp;#xE0; destination</value>
+  </data>
+  <data name="TermsAndConditions" xml:space="preserve">
+    <value>Termes et Conditions</value>
+  </data>
+  <data name="TermsAndConditionsContent" xml:space="preserve">
+    <value>Il est de votre responsabilit&amp;#xE9; de vous assurer que tous les d&amp;#xE9;tails fournis lors de la r&amp;#xE9;servation sont corrects. Vous avez confirm&amp;#xE9; votre accord avec l'isango! &lt;a target="_blank" class="link" href="##TermsAndConditionLink##"&gt;conditions de r&amp;#xE9;servation&lt;/a&gt;</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>FACTURE</value>
+  </data>
+  <data name="CancelledProduct" xml:space="preserve">
+    <value>Comme vous l'avez demandé, l'activité a été annulée. Veuillez vous référer au tableau ci-dessous pour vérifier le statut mis à jour.</value>
+  </data>
+  <data name="ForOfficialUseOnlyContent2" xml:space="preserve">
+    <value>Note for ##EndSupplierName##: Please bill ##SupplierName## on behalf of isango. Please send the invoice to finance@isango.com</value>
+  </data>
+  <data name="SupplierReferenceNo" xml:space="preserve">
+    <value>Numéro de référence du fournisseur</value>
+  </data>
+  <data name="BookableAndPayableBy" xml:space="preserve">
+    <value>RÉSERVABLE ET PAYABLE PAR</value>
+  </data>
+  <data name="ProviderInformation" xml:space="preserve">
+    <value>Informations sur le fournisseur</value>
+  </data>
+  <data name="VatNumber" xml:space="preserve">
+    <value>Numéro de TVA</value>
+  </data>
+  <data name="BookingConfirmationSubject" xml:space="preserve">
+    <value>Confirmation de réservation - </value>
+  </data>
+  <data name="BookingOnRequestSubject" xml:space="preserve">
+    <value>Demande de réservation - </value>
+  </data>
+  <data name="CancelBookingMailSubject" xml:space="preserve">
+    <value>Détails de la réservation annulée - </value>
+  </data>
+  <data name="AmendBookingSubject" xml:space="preserve">
+    <value>Numéro de référence de la réservation modifiée </value>
+  </data>
+  <data name="CancelledProductHtmlMsg" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;Votre réservation a été annulée avec succès - ##BookingRefNo##&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Veuillez vous référer au tableau ci-dessous pour vérifier le statut mis à jour.&lt;/p&gt;</value>
+  </data>
+  <data name="CancelledProductHtmlMsgGreetings" xml:space="preserve">
+    <value>Salutations !</value>
+  </data>
+  <data name="BtnDownload" xml:space="preserve">
+    <value>https://marketing.isango.com/newsletters/emailers/booking/btn-download-fr.png</value>
+  </data>
+  <data name="BtnMy" xml:space="preserve">
+    <value>https://marketing.isango.com/newsletters/emailers/booking/btn-my-fr.png</value>
+  </data>
+  <data name="ImgCancelled" xml:space="preserve">
+    <value>https://marketing.isango.com/newsletters/emailers/booking/cancelled-fr.png</value>
+  </data>
+  <data name="ImgConfirmed" xml:space="preserve">
+    <value>https://marketing.isango.com/newsletters/emailers/booking/confirmed-fr.png</value>
+  </data>
+  <data name="ImgPending" xml:space="preserve">
+    <value>https://marketing.isango.com/newsletters/emailers/booking/pending-fr.png</value>
+  </data>
+  <data name="BtnInvoice" xml:space="preserve">
+    <value>https://marketing.isango.com/newsletters/emailers/booking/btn-invoice-fr.png</value>
+  </data>
+  <data name="ImportantInstructions" xml:space="preserve">
+    <value>Consignes importantes</value>
+  </data>
+  <data name="UsefulDownload" xml:space="preserve">
+    <value>Téléchargement&lt;br/&gt;utile</value>
+  </data>
+  <data name="UsefulDownloads" xml:space="preserve">
+    <value>Téléchargements&lt;br/&gt;utiles</value>
+  </data>
+  <data name="Barcode_Title" xml:space="preserve">
+    <value>BAR CODE</value>
+  </data>
+  <data name="ConfirmationTopMsg2" xml:space="preserve">
+    <value>Ceci est l'accusé de réception de la réservation que vous avez effectuée.</value>
+  </data>
+  <data name="ConfirmationTopMsg3" xml:space="preserve">
+    <value>Veuillez consulter le tableau ci-dessous pour vérifier l'état de votre réservation.</value>
+  </data>
+  <data name="ConfirmationTopMsg4" xml:space="preserve">
+    <value>Vérifiez également votre dossier de spam/promotion si vous ne voyez pas l'e-mail de statut de réservation dans les 15 minutes.</value>
+  </data>
+  <data name="ConfirmationTopMsg5" xml:space="preserve">
+    <value>Bon voyage et nous espérons que vous apprécierez de découvrir le monde avec nous.</value>
+  </data>
+  <data name="TwoStepConfirmed" xml:space="preserve">
+    <value>Félicitations ! Votre réservation a été confirmée. ##BookingRefNo## Vous recevrez sous peu un autre courriel avec un bon d'échange confirmé.Bon voyage et nous espérons que vous apprécierez de découvrir le monde avec nous.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Montant</value>
+  </data>
+  <data name="Tour" xml:space="preserve">
+    <value>Tour</value>
+  </data>
+  <data name="OrConfirmed" xml:space="preserve">
+    <value>Il s'agit de l'accusé de réception de la réservation que vous avez effectuée. Vous pouvez télécharger le bon de réservation dans un lien dans l'email ci-dessous - veuillez le lire.</value>
+  </data>
+  <data name="ThanksForYourBooking" xml:space="preserve">
+    <value>Félicitations ! pour votre réservation </value>
+  </data>
+</root>

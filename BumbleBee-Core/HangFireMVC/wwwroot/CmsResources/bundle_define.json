@@ -1,0 +1,62 @@
+﻿{
+  "cssBundles": {
+    "cssPath": "/styles/",
+    "bundle": {
+      "igo": {
+        "type": "scss",
+        "ext": ".min.css",
+        "outputStyle": "uncompressed",
+        "files": [
+          {
+            "name": "loginstyles",
+            "files": "go.scss, mixins.scss, login.scss"
+          },
+          {
+            "name": "pagestyles",
+            "files": "go.scss, mixins.scss, grid.scss, common.scss, layout.scss"
+          },
+          {
+            "name": "productstyles",
+            "files": "go.scss, mixins.scss, product.scss"
+          },
+          {
+            "name": "taggingstyles",
+            "files": "go.scss, mixins.scss, tagging.scss"
+          },
+          {
+            "name": "masterattrstyles",
+            "files": "go.scss, mixins.scss, masterattr.scss"
+          },
+          {
+            "name": "discountstyles",
+            "files": "go.scss, mixins.scss, summernote.css, jquery-ui.css, jquery.multiselect.css, pickmeup.scss, discount.scss"
+          },
+          {
+            "name": "imagesstyles",
+            "files": "go.scss, mixins.scss, jquery.magicsearch.css, images.scss"
+          },
+          {
+            "name": "redirectionsstyles",
+            "files": "go.scss, mixins.scss, jquery.magicsearch.css, redirections.scss"
+          },
+          {
+            "name": "restrictproductstyles",
+            "files": "go.scss, mixins.scss, jquery.multiselect.css, restrict.scss"
+          },
+          {
+            "name": "apistyles",
+            "files": "go.scss, mixins.scss, jquery.multiselect.css, api.scss"
+          },
+          {
+            "name": "producttsstyles",
+            "files": "go.scss, mixins.scss, jquery.multiselect.css, pickmeup.scss, productTS.scss"
+          }
+        ]
+      }
+    }
+  },
+  "JsBundles": {
+    "jsPath": "/scripts/",
+    "bundle": []
+  }
+}

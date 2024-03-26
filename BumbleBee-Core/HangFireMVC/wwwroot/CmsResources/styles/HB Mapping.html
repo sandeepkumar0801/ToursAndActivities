@@ -1,0 +1,3178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:58352/HBMapping/Index -->
+<html class="fa-events-icons-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Mapping</title>
+    <script src="./HB Mapping_files/676c692f31.js.download"></script><link href="./HB Mapping_files/676c692f31.css" media="all" rel="stylesheet">
+    <link href="./HB Mapping_files/pagestyles.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="./HB Mapping_files/jquery.dataTables.css">
+
+</head>
+<body data-islocal="True" class="" style="">
+    <div class="wrapper">
+        <header class="fl fw">
+            <div class="container">
+                
+<div class="fl fw headerInner">
+    <div class="dib">
+        <a href="http://localhost:58352/dashboard" class="aLogo">
+            <img src="./HB Mapping_files/isango-sm.png" alt="isango" id="isangoLagOutId">
+        </a>
+    </div>
+    <div class="dib rightPart">
+    </div>
+</div>
+            </div>
+        </header>
+        <div class="fl fw allPages">
+            <div class="container" style="min-height: 639px;">
+                
+
+
+<style>
+    div.form-group {
+        color: black;
+        border: 1px solid #31B0D5;
+        background-color: #DAF1F8;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    input {
+        margin-top: 5px;
+        margin: 2px
+    }
+
+    select {
+        margin-top: 5px;
+    }
+
+    .ddcard {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+        .ddcard:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+        }
+
+    input:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    }
+
+    select:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    }
+
+    /* Add some padding inside the card container */
+    .ddcard {
+        padding: 2px 16px;
+    }
+</style>
+
+<h2>HB Mapping</h2>
+<button class="btn btn-primary pull-right" type="button" data-toggle="modal" id="#AddProductButton" data-target="#AddProduct">Add New Product</button>
+<div class="col-md-12">
+    <div id="HBMappingTable_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="HBMappingTable_length"><label>Show <select name="HBMappingTable_length" aria-controls="HBMappingTable" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="HBMappingTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="HBMappingTable"></label></div><table id="HBMappingTable" class="ddcard dataTable no-footer" role="grid" aria-describedby="HBMappingTable_info">
+        <thead>
+            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+                    FactSheetID
+                : activate to sort column descending" style="width: 0px;">
+                    FactSheetID
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    ServiceCode
+                : activate to sort column ascending" style="width: 0px;">
+                    ServiceCode
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    DestinationCode
+                : activate to sort column ascending" style="width: 0px;">
+                    DestinationCode
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    IsContentUpdate
+                : activate to sort column ascending" style="width: 0px;">
+                    IsContentUpdate
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    MinAdult
+                : activate to sort column ascending" style="width: 0px;">
+                    MinAdult
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    RegionID
+                : activate to sort column ascending" style="width: 0px;">
+                    RegionID
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    ServiceID
+                : activate to sort column ascending" style="width: 0px;">
+                    ServiceID
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    LanguageCode
+                : activate to sort column ascending" style="width: 0px;">
+                    LanguageCode
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    Sync Content
+                : activate to sort column ascending" style="width: 0px;">
+                    Sync Content
+                </th><th class="sorting" tabindex="0" aria-controls="HBMappingTable" rowspan="1" colspan="1" aria-label="
+                    Modify
+                : activate to sort column ascending" style="width: 0px;">
+                    Modify
+                </th></tr>
+        </thead>
+        <tbody>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        <tr class="ddhover ddcard odd" role="row">
+                <td class="sorting_1">
+                    1234
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[2535].factsheetid" type="hidden" value="1234">
+                </td>
+                <td>
+                    12345
+                    <input class="hiddenservicecode" name="[2535].servicecode" type="hidden" value="12345">
+                </td>
+                <td>
+                    SJO
+                    <input class="hiddendestinationcode" name="[2535].destinationcode" type="hidden" value="SJO">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[2535].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[2535].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    8435
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[2535].RegionID" type="hidden" value="8435">
+                </td>
+                <td>
+                    2903
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[2535].ServiceID" type="hidden" value="2903">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[2535].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[2535].Manualcontentupdate" type="checkbox" value="true"><input name="[2535].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[2535].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard even" role="row">
+                <td class="sorting_1">
+                    10884
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[194].factsheetid" type="hidden" value="10884">
+                </td>
+                <td>
+                    E-CR1-TORTUGUERO
+                    <input class="hiddenservicecode" name="[194].servicecode" type="hidden" value="E-CR1-TORTUGUERO">
+                </td>
+                <td>
+                    SJO
+                    <input class="hiddendestinationcode" name="[194].destinationcode" type="hidden" value="SJO">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[194].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[194].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    8435
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[194].RegionID" type="hidden" value="8435">
+                </td>
+                <td>
+                    35942
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[194].ServiceID" type="hidden" value="35942">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[194].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[194].Manualcontentupdate" type="checkbox" value="true"><input name="[194].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[194].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" onclick="ModifyProduct(this)" id="Modify" value="Modify">
+                </td>
+            </tr><tr class="ddhover ddcard odd" role="row">
+                <td class="sorting_1">
+                    10895
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[987].factsheetid" type="hidden" value="10895">
+                </td>
+                <td>
+                    E-E10-PATIOSEVIL
+                    <input class="hiddenservicecode" name="[987].servicecode" type="hidden" value="E-E10-PATIOSEVIL">
+                </td>
+                <td>
+                    SVQ
+                    <input class="hiddendestinationcode" name="[987].destinationcode" type="hidden" value="SVQ">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[987].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[987].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    7214
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[987].RegionID" type="hidden" value="7214">
+                </td>
+                <td>
+                    35303
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[987].ServiceID" type="hidden" value="35303">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[987].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[987].Manualcontentupdate" type="checkbox" value="true"><input name="[987].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[987].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard even" role="row">
+                <td class="sorting_1">
+                    10902
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[1112].factsheetid" type="hidden" value="10902">
+                </td>
+                <td>
+                    E-E10-SIAMBUSPOO
+                    <input class="hiddenservicecode" name="[1112].servicecode" type="hidden" value="E-E10-SIAMBUSPOO">
+                </td>
+                <td>
+                    TFS
+                    <input class="hiddendestinationcode" name="[1112].destinationcode" type="hidden" value="TFS">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[1112].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[1112].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    7210
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[1112].RegionID" type="hidden" value="7210">
+                </td>
+                <td>
+                    35304
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[1112].ServiceID" type="hidden" value="35304">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[1112].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[1112].Manualcontentupdate" type="checkbox" value="true"><input name="[1112].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[1112].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard odd" role="row">
+                <td class="sorting_1">
+                    10941
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[199].factsheetid" type="hidden" value="10941">
+                </td>
+                <td>
+                    E-CR1-VOLCANARE
+                    <input class="hiddenservicecode" name="[199].servicecode" type="hidden" value="E-CR1-VOLCANARE">
+                </td>
+                <td>
+                    ARE
+                    <input class="hiddendestinationcode" name="[199].destinationcode" type="hidden" value="ARE">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[199].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[199].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    8487
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[199].RegionID" type="hidden" value="8487">
+                </td>
+                <td>
+                    35943
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[199].ServiceID" type="hidden" value="35943">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[199].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[199].Manualcontentupdate" type="checkbox" value="true"><input name="[199].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[199].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard even" role="row">
+                <td class="sorting_1">
+                    10966
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[300].factsheetid" type="hidden" value="10966">
+                </td>
+                <td>
+                    E-E10-001600082
+                    <input class="hiddenservicecode" name="[300].servicecode" type="hidden" value="E-E10-001600082">
+                </td>
+                <td>
+                    AGP
+                    <input class="hiddendestinationcode" name="[300].destinationcode" type="hidden" value="AGP">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[300].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[300].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    8252
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[300].RegionID" type="hidden" value="8252">
+                </td>
+                <td>
+                    35944
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[300].ServiceID" type="hidden" value="35944">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[300].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[300].Manualcontentupdate" type="checkbox" value="true"><input name="[300].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[300].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard odd" role="row">
+                <td class="sorting_1">
+                    10998
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[1863].factsheetid" type="hidden" value="10998">
+                </td>
+                <td>
+                    E-MX1-PTARUSEATR
+                    <input class="hiddenservicecode" name="[1863].servicecode" type="hidden" value="E-MX1-PTARUSEATR">
+                </td>
+                <td>
+                    AUA
+                    <input class="hiddendestinationcode" name="[1863].destinationcode" type="hidden" value="AUA">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[1863].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[1863].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    8429
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[1863].RegionID" type="hidden" value="8429">
+                </td>
+                <td>
+                    34818
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[1863].ServiceID" type="hidden" value="34818">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[1863].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[1863].Manualcontentupdate" type="checkbox" value="true"><input name="[1863].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[1863].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard even" role="row">
+                <td class="sorting_1">
+                    10999
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[1864].factsheetid" type="hidden" value="10999">
+                </td>
+                <td>
+                    E-MX1-PTARUSNUBA
+                    <input class="hiddenservicecode" name="[1864].servicecode" type="hidden" value="E-MX1-PTARUSNUBA">
+                </td>
+                <td>
+                    AUA
+                    <input class="hiddendestinationcode" name="[1864].destinationcode" type="hidden" value="AUA">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[1864].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[1864].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    8429
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[1864].RegionID" type="hidden" value="8429">
+                </td>
+                <td>
+                    34819
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[1864].ServiceID" type="hidden" value="34819">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[1864].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[1864].Manualcontentupdate" type="checkbox" value="true"><input name="[1864].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[1864].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard odd" role="row">
+                <td class="sorting_1">
+                    11010
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[326].factsheetid" type="hidden" value="11010">
+                </td>
+                <td>
+                    E-E10-002000043
+                    <input class="hiddenservicecode" name="[326].servicecode" type="hidden" value="E-E10-002000043">
+                </td>
+                <td>
+                    BEN
+                    <input class="hiddendestinationcode" name="[326].destinationcode" type="hidden" value="BEN">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[326].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[326].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    7883
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[326].RegionID" type="hidden" value="7883">
+                </td>
+                <td>
+                    37015
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[326].ServiceID" type="hidden" value="37015">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[326].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[326].Manualcontentupdate" type="checkbox" value="true"><input name="[326].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[326].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr><tr class="ddhover ddcard even" role="row">
+                <td class="sorting_1">
+                    11018
+                    <input class="hiddenfactsheetid" data-val="true" data-val-number="The field factsheetid must be a number." name="[498].factsheetid" type="hidden" value="11018">
+                </td>
+                <td>
+                    E-E10-CAMELDUNAS
+                    <input class="hiddenservicecode" name="[498].servicecode" type="hidden" value="E-E10-CAMELDUNAS">
+                </td>
+                <td>
+                    LPA
+                    <input class="hiddendestinationcode" name="[498].destinationcode" type="hidden" value="LPA">
+                </td>
+                <td>
+                    <input checked="checked" disabled="disabled" id="IsContentUpdateRaw" name="IsContentUpdateRaw" type="checkbox" value="true"><input name="IsContentUpdateRaw" type="hidden" value="false">
+                    <input class="hiddenIsContentUpdate" data-val="true" data-val-required="The IsContentUpdate field is required." name="[498].IsContentUpdate" type="hidden" value="True">
+                </td>
+                <td>
+                    1
+                    <input class="hiddenMinAdult" data-val="true" data-val-number="The field MinAdult must be a number." name="[498].MinAdult" type="hidden" value="1">
+                </td>
+                <td>
+                    7209
+                    <input class="hiddenRegionID" data-val="true" data-val-number="The field RegionID must be a number." name="[498].RegionID" type="hidden" value="7209">
+                </td>
+                <td>
+                    35305
+                    <input class="hiddenServiceID" data-val="true" data-val-number="The field ServiceID must be a number." name="[498].ServiceID" type="hidden" value="35305">
+                </td>
+                <td>
+                    en 
+                    <input class="hiddenlanguagecode" name="[498].languagecode" type="hidden" value="en ">
+                </td>
+                <td>
+                    <input data-val="true" data-val-required="The Manualcontentupdate field is required." name="[498].Manualcontentupdate" type="checkbox" value="true"><input name="[498].Manualcontentupdate" type="hidden" value="false">
+                    <input class="hiddenManualcontentupdate" name="[498].Manualcontentupdate" type="hidden" value="False">
+                </td>
+                <td>
+                    <input type="button" value="Modify" onclick="ModifyProduct(this)">
+                </td>
+            </tr></tbody>
+    </table><div class="dataTables_info" id="HBMappingTable_info" role="status" aria-live="polite">Showing 1 to 10 of 2,536 entries</div><div class="dataTables_paginate paging_simple_numbers" id="HBMappingTable_paginate"><a class="paginate_button previous disabled" aria-controls="HBMappingTable" data-dt-idx="0" tabindex="-1" id="HBMappingTable_previous">Previous</a><span><a class="paginate_button current" aria-controls="HBMappingTable" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="HBMappingTable" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="HBMappingTable" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="HBMappingTable" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="HBMappingTable" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="HBMappingTable" data-dt-idx="6" tabindex="0">254</a></span><a class="paginate_button next" aria-controls="HBMappingTable" data-dt-idx="7" tabindex="0" id="HBMappingTable_next">Next</a></div></div>
+</div>
+
+
+            </div>
+        </div>
+        <footer class="fl fw">
+            <div class="container">
+            </div>
+        </footer>
+    </div>
+    <input type="hidden" id="checkChangeId" value="">
+    <input type="hidden" id="changeCountId" value="0">
+    <input type="text" class="CopyTextFromTempElm" id="CopyTextFromTempElm">
+    
+    <script src="./HB Mapping_files/jquery-1.10.2.js.download"></script>
+
+    <script src="./HB Mapping_files/common.js.download"></script>
+    
+    <div class="modal fade" id="AddProduct" tabindex="-1" role="dialog" aria-labelledby="AddProductLabel" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="AddProductLabel">Add New Product</h4>
+                </div>
+                <div class="modal-body p0">
+<form action="http://localhost:58352/HBMapping/SaveProduct?Length=9" class="form-horizontal" data-ajax="true" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ResMsg" id="form0" method="post">                    <div class="p15">
+                        <div class="form-group">
+                            <label for="FactSheetID" class="col-sm-4 control-label">FactSheetID</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="factsheetIDAdd" class="form-control" required="" name="FactSheetID" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ServiceCode" class="col-sm-4 control-label">ServiceCode</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="ServiceCodeAdd" class="form-control" required="" name="ServiceCode" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="DestinationCode" class="col-sm-4 control-label">DestinationCode</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="DestinationCodeAdd" class="form-control" oninput="$(&#39;#GetRegionBtn&#39;).removeClass(&#39;hidden&#39;).val(&#39;Get Regions&#39;)" required="" name="DestinationCode" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="IsContentUpdate" class="col-sm-4 control-label">IsContentUpdate</label>
+                            <div class="col-sm-8">
+                                <input checked="checked" id="IsContentUpdateAdd" name="IsContentUpdate" type="checkbox" value="true"><input name="IsContentUpdate" type="hidden" value="false">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="MinAdult" class="col-sm-4 control-label">MinAdult</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="MinAdultAdd" name="MinAdult" required="" value="1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="RegionID" class="col-sm-4 control-label">RegionID</label>
+                            <div class="col-sm-8" id="regionidadd">
+                                <input type="button" id="GetRegionBtn" class="btn btn-primary" onclick="GetRegionIDList()" value="Please Enter Destination Code">
+                                <select class="hidden" id="RegionIDSelect" name="RegionID" disabled="">
+                                    <option>Select RegionID</option>
+                                </select>
+                                <input type="text" class="form-control hidden" id="RegionIDAdd" name="RegionID" disabled="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ServiceID" class="col-sm-4 control-label">ServiceID</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="ServiceIDAdd" name="ServiceID" disabled="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="LanguageCode" class="col-sm-4 control-label">LanguageCode</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="LanguageCodeAdd" name="LanguageCode" required="" value="en">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="LanguageCode" class="col-sm-4 control-label">Sync Content</label>
+                            <div class="col-sm-8">
+                                <input checked="checked" id="ManualContentUpdateAdd" name="ManualContentUpdate" type="checkbox" value="true"><input name="ManualContentUpdate" type="hidden" value="false">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <div id="ResMsg" class="pull-left"></div>
+                        </div>
+</form>                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./HB Mapping_files/jquery.validate.js.download"></script>
+<script src="./HB Mapping_files/jquery.validate.unobtrusive.js.download"></script>
+
+    <script src="./HB Mapping_files/bootstrap.js.download"></script>
+
+    <script src="./HB Mapping_files/jquery-ui.js.download"></script>
+
+    <script src="./HB Mapping_files/jquery.unobtrusive-ajax.min.js.download"></script>
+<script src="./HB Mapping_files/jquery.validate.js.download"></script>
+<script src="./HB Mapping_files/jquery.validate.unobtrusive.js.download"></script>
+
+    <script src="./HB Mapping_files/HBMapping.js.download"></script>
+    <script type="text/javascript" charset="utf8" src="./HB Mapping_files/jquery.dataTables.js.download"></script>
+
+    <div id="loaderLayout" class="loaderLayout" style="display:none;">
+        <span class="glyphicon glyphicon-repeat"></span>
+    </div>
+    <span id="callBackStatusAlert" class="callBackStatusAlert success">Error message...</span>
+
+</body></html>

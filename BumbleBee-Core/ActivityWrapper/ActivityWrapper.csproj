@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Isango.Entities\Isango.Entities.csproj" />
+    <ProjectReference Include="..\Isango.Service.Contract\Isango.Service.Contract.csproj" />
+    <ProjectReference Include="..\Isango.Service\Isango.Service.csproj" />
+    <ProjectReference Include="..\PriceRuleEngine\PriceRuleEngine.csproj" />
+    <ProjectReference Include="..\Util\Util.csproj" />
+  </ItemGroup>
+
+</Project>

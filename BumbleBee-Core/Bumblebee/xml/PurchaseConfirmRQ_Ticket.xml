@@ -1,0 +1,16 @@
+<PurchaseConfirmRQ echoToken="DummyEchoToken" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hotelbeds.com/schemas/2005/06/messages PurchaseConfirmRQ.xsd" version="ARD_BETA">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>ISANGOUK1013</User>
+		<Password>ISANGOUK1013</Password>
+	</Credentials>
+	<ConfirmationData purchaseToken="LO034528007">
+		<Holder type="AD">
+			<Name>Clare</Name>
+			<LastName>Unsworth</LastName>
+		</Holder>
+		<AgencyReference>isango</AgencyReference>
+		<ConfirmationServiceDataList>
+		</ConfirmationServiceDataList>
+	</ConfirmationData>
+</PurchaseConfirmRQ>

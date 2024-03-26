@@ -1,0 +1,74 @@
+$white: #FFF !default;
+$offwhite: darken($white,5%) !default; // #f2f2f2
+$black: #000 !default;
+$gray-darker: #111111 !default;
+$gray-dark: #333333 !default;
+$gray: #555555 !default;
+$gray-light: #777777 !default;
+$gray-light70: #999999 !default;
+$gray-lighter: #CCCCCC !default;
+
+$success: #5cb85c !default;
+$info: #5bc0de !default;
+$warning: #f0ad4e !default;
+$danger: #ff0000 !default;
+
+//isango main colors
+$bodyBG: #f4f4f4 !default;
+$text-color: #323c3e !default;
+
+$isango-i: #85b100 !default;
+$isango-s: #f94008 !default;
+$isango-a: #1e9cb5 !default;
+$isango-n: #cf1069 !default;
+$isango-g: #ACCF2D !default;
+
+$font-arial: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-brand: 'Roboto', sans-serif;
+$font-icon: "glyphicons-halflings-regular" !default;
+
+$font-base: 15px;
+$font-lg: ceil(($font-base * 1.5)) !default; // ~24px
+$font-md: ceil(($font-base * 1.25)) !default; // ~18px
+$font-sm: ceil(($font-base * 1.1)) !default; // ~18px
+$font-xs: ceil(($font-base * 0.85)) !default; // ~12px
+
+$btn-bg: $isango-s;
+$bTxt: #003D90;
+$brdr: lighten($gray-light, 15%);
+$brdr-default: #86A3CD;
+$btn_prime: $isango-s;
+$btn-cta: $isango-s;
+
+$twit: #25ABDE;
+
+$link-color: #0c4594;
+
+$limit-screen: 100%;
+
+$grid: 12;
+$xxs-screen: 320px;
+$iphone6: 375px;
+$iphone6s: 414px;
+$xs-screen: 480px;
+$sm-screen: 603px;
+$md-screen: 768px;
+$lg-screen: 990px;
+$xlg-screen: 1200px;
+$xxs-screen-max: $xs-screen - 1;
+$xs-screen-max: $sm-screen - 1;
+$sm-screen-max: $md-screen - 1;
+$md-screen-max: $lg-screen - 1;
+$lg-screen-max: $xlg-screen - 1;
+$iphone6-max: $iphone6s - 1;
+
+$font: 14px;
+
+// icons
+$icons: url(/CmsResources/images/isango-ico_v5.png);
+
+
+
+// Product
+
+$sectionBG: #fafafa;

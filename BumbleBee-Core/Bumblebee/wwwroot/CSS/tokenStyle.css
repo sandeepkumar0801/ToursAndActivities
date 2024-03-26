@@ -1,0 +1,7 @@
+﻿.swagger-ui .topbar {
+    background: #000000; /* Black color */
+}
+
+hgroup.main {
+    display: none;
+}

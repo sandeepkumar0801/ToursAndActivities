@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="191" height="41" viewBox="0 0 191 41">
+  <g id="Group_5332" data-name="Group 5332" transform="translate(-5996 -587)">
+    <g id="Rounded_Rectangle_1_copy_3" data-name="Rounded Rectangle 1 copy 3" transform="translate(5996 587)" fill="#174db3" stroke="#174db3" stroke-width="1">
+      <rect width="191" height="41" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="190" height="40" rx="7.5" fill="none"/>
+    </g>
+    <text id="Meine_Buchungen" data-name="Meine Buchungen" transform="translate(6092 614)" fill="#fff" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-64" y="0">Meine Buchungen</tspan></text>
+  </g>
+</svg>

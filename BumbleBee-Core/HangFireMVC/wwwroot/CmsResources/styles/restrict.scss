@@ -1,0 +1,37 @@
+﻿.showMultilst {
+    display: none;
+}
+
+.incXclude {
+    input {
+        &:checked {
+            + span {
+                .in {
+                    display: inline;
+                }
+
+                .out {
+                    display: none;
+                }
+            }
+        }
+
+        + span {
+            font-weight: normal;
+
+            .in {
+                display: none;
+            }
+
+            .out {
+                display: inline;
+            }
+        }
+    }
+}
+
+.multiListDd {
+    .ms-options-wrap > button{
+        position:relative;
+    }
+}

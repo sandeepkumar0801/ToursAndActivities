@@ -1,0 +1,17 @@
+<TicketAvailRQ echoToken="isango!HB" sessionId="i!@2015-03-27" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="ARD_BETA">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>ISANGOUK1013</User>
+		<Password>ISANGOUK1013</Password>
+	</Credentials>
+	<PaginationData pageNumber="1" itemsPerPage="999" />
+	<ServiceOccupancy>
+		<AdultCount>1</AdultCount>
+		<ChildCount>0</ChildCount>
+	</ServiceOccupancy>
+	<Destination code="LON" type="SIMPLE" />
+	<FactsheetFilter maxResults="100"></FactsheetFilter>
+	<DateFrom date="20150511" />
+	<DateTo date="20150512" />
+	<ContentSpecifications pickups="Y" factsheets="Y" />
+</TicketAvailRQ>

@@ -1,0 +1,392 @@
+.pageHeading,
+.predictiveSearch {
+    margin: 15px 0;
+}
+
+div.predictiveSearch {
+    max-width: 320px;
+    margin: auto;
+}
+
+.pageHeading {
+    em {
+        font-style: normal;
+        font-size: 0.6em;
+        color: gray;
+    }
+}
+
+.ulAttractionList {
+    & > li {
+        float: left;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+}
+
+.row.attr-all-list {
+    padding: 0 20px;
+
+    .afterFixed {
+        background-color: #fff;
+        padding: 10px 0;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        position: absolute;
+
+        .pageHeading {
+            margin: 0;
+        }
+    }
+
+    .tbody .name {
+        line-height: normal;
+        text-align: left;
+
+        small {
+            font-style: italic;
+        }
+    }
+}
+
+.col-xs-12.thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.col-xs-12.tfoot {
+    position: sticky;
+    bottom: 0;
+    background-color: $gray-lighter;
+}
+
+.attr-list-item {
+    border: 1px solid $isango-a;
+    cursor: move;
+
+    & > .row {
+        padding: 10px 0;
+    }
+}
+
+.header {
+    .attr-list-item {
+        line-height: 28px;
+        font-size: 0.7em;
+        background-color: $isango-a;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    strong {
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.content {
+    .attr-list-item {
+        margin: 10px 0 0 0;
+
+        &:nth-child(-n+9) {
+            background-color: lighten($isango-a, 50%);
+        }
+    }
+
+    .is-Search,
+    .name,
+    .is-Attr {
+        margin-top: 5px;
+    }
+    // .thumb{
+    //     margin: -50% 0;
+    // }
+}
+
+.text-truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.thumb {
+
+    img {
+        border: 3px solid #fff;
+        @include shadow();
+        width: 70px;
+    }
+
+    .fa-image {
+        background-color: rgba(30, 156, 181, 0.6); //position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        vertical-align: middle;
+        color: $white;
+        font-size: 1.3em;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    &.active {
+        .imageIDToolTip {
+            transform: scale(1);
+        }
+    }
+}
+
+.thumbControl {
+    & > img {
+    }
+
+    & > .fa-image {
+        position: absolute;
+        transform: scale(0);
+    }
+
+    &:hover > .fa-image {
+        transform: scale(1);
+    }
+}
+
+.imageIDToolTip {
+    position: absolute;
+    left: 100%;
+    width: 320px;
+    z-index: 1;
+    transform: scale(0);
+    transition-duration: .3s;
+    transform-origin: left top;
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
+    @include shadow(0 5px 15px rgba(0,0,0,.5));
+    border: 1px solid rgba(0,0,0,.2);
+
+    .input-group,
+    input[type="text"] {
+        height: 100%;
+    }
+
+    ul {
+        padding: 15px 15px 0 15px;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        padding-bottom: 15px;
+    }
+
+    img {
+        max-height: 50px;
+        max-width: 100%;
+    }
+}
+
+.thumb-col {
+    width: 85px !important;
+}
+
+.service-id-col {
+    width: 24% !important
+}
+
+.service-id {
+    .text-truncate {
+        @include cal(width, 40px);
+    }
+}
+
+.upperForm {
+    max-width: 570px;
+}
+
+.divAllServiceID {
+    text-align: left;
+
+    span {
+        margin: 3px;
+        display: inline-block;
+        line-height: normal;
+        padding: 4px;
+    }
+}
+
+.labelInfo {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+
+    .badge {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        vertical-align: text-bottom;
+
+        &:nth-child(n+2) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.modal {
+    table th {
+        text-align: center;
+    }
+
+    .Reorder {
+        cursor: move;
+    }
+}
+
+.manageAttractions {
+    .addNew {
+        display: none;
+    }
+
+    &.AddNewType {
+        .manage {
+            display: none;
+        }
+
+        .addNew {
+            display: inline;
+        }
+    }
+}
+
+tr.ui-sortable-helper {
+    width: 100% !important;
+    display: table;
+    max-width: 100%;
+}
+
+.manageSubFilters {
+    table {
+        tbody,
+        thead {
+            tr {
+                td,
+                th {
+                    &:nth-child(5) {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ui-widget.ui-widget-content {
+    text-align: left; //display: block !important;
+    max-height: 300px;
+    overflow-y: scroll;
+    max-width: 220px;
+    overflow-x: hidden;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.copyFromHere {
+    max-width: 220px;
+}
+
+.sub-filters button {
+    font-size: 0.8em;
+    width: 70px;
+}
+
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    vertical-align: inherit;
+}
+
+.afterFixedHeader {
+    transform: scale(0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 1200px;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    padding: 0 17px;
+
+    .container {
+        border-bottom: 1px solid #ddd;
+    }
+
+    &.active {
+        transform: scale(1);
+    }
+}
+
+.RegionSort.table {
+    thead {
+        background-color: $isango-a;
+        color: $white;
+    }
+}
+
+.table.RegionSort {
+    td {
+        vertical-align: middle;
+    }
+
+    input[type='text'] {
+        width: 40px;
+        text-align: center;
+    }
+}
+
+.imagePreviewList {
+    img {
+        max-height: 100px;
+        margin-bottom: 20px;
+        border: 3px solid #fff;
+        @include shadow();
+    }
+
+    p {
+        margin: 20px 0 10px 0;
+    }
+}
+
+div#divAttractionData {
+    border-top: 1px solid $gray-lighter;
+    padding: 15px 10px;
+}
+
+.regTable {
+    .col1, .col2 {
+        width: 72px;
+    }
+
+    .col4 {
+        width: 80px;
+    }
+
+    .col5 {
+        width: 95px;
+    }
+
+    .col6 {
+        width: 130px;
+    }
+
+    .col7 {
+        width: 115px;
+    }
+}

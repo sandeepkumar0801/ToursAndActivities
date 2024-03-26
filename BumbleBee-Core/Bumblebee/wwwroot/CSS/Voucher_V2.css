@@ -1,0 +1,307 @@
+﻿html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+big,
+em,
+img,
+ins,
+kbd,
+small,
+strike,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+center,
+ol,
+ul,
+li,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    line-height: 1;
+    font-size: 10.5pt;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@media print, screen {
+    html {
+        height: 100%;
+    }
+
+    table {
+        border: 0 none;
+        border-collapse: collapse;
+        width: 100%;
+        position: relative;
+        z-index: 999;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .pdf-container {
+        border: 0pt;
+        position: relative;
+        padding: 0;
+        width: 100%;
+    }
+
+    .pdf-inner {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .hspcr {
+        width: 11.25pt;
+    }
+
+    .vspcr {
+        height: 15pt;
+        font-size: .001pt;
+    }
+
+    .txt-primary {
+        color: #62b017;
+    }
+
+    .txt-secondary, a {
+        color: #d90064;
+    }
+
+    .hSpcr10 {
+        height: 7.5pt;
+        font-size: .001pt;
+    }
+
+    .col1 {
+        width: 45%;
+        text-align: right;
+        vertical-align: top;
+    }
+
+    img {
+        border: 0 none;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #333;
+    }
+
+    .igo img {
+        display: block;
+    }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fl {
+    float: left;
+    position: relative;
+}
+
+.fr {
+    float: right;
+    position: relative;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tar {
+    text-align: right;
+}
+
+.tac {
+    text-align: center;
+}
+
+.m0 {
+    margin: 0 !important;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.fw {
+    width: 100%;
+}
+
+.uc {
+    text-transform: uppercase;
+}
+
+.lc {
+    text-transform: lowercase;
+}
+
+.cc {
+    text-transform: capitalize;
+}
+
+.ma {
+    margin: auto;
+}
+
+.border-bot-dashed {
+    border-bottom: 0.75pt dashed #aaa;
+}
+
+.border-bot-solid {
+    border-bottom: 0.75pt solid #aaa;
+}
+
+.border-top-solid {
+    border-top: 0.75pt solid #aaa;
+}
+
+.pinfo td {
+    padding: 3pt 0;
+    line-height: 175%;
+}
+
+.qrTd {
+    vertical-align: top;
+    text-align: center;
+}
+
+    .qrTd span {
+        font-size: 10pt;
+    }
+
+    .qrTd p {
+        margin: 7.5pt 0 15pt;
+        font-size: 12pt;
+        line-height: 1.25;
+    }
+
+.font12 {
+    font-size: 6pt !important;
+    line-height: 1.25;
+}
+
+.font14 {
+    font-size: 7pt !important;
+    line-height: 1.25;
+}
+
+.font10 {
+    font-size: 8pt !important;
+    line-height: 1.25;
+}
+.font10 * {
+    line-height: 1.25;
+}
+
+.font16 {
+    font-size: 8pt !important;
+    line-height: 1.25;
+}
+
+.font20 {
+    font-size: 10pt !important;
+    line-height: 1.25;
+}
+
+.font24 {
+    font-size: 12pt !important;
+    line-height: 1.25;
+}
+
+.vat {
+    vertical-align: top;
+}
+
+.needWrap {
+    padding: 15pt;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+.pr25 {
+    padding-right: 18pt;
+}
+
+.pinfo p > b, .pinfo p > strong {
+    display: block;
+    margin: 10.5pt 0 7.5pt;
+}
+
+.qrCodeValueTxt b {
+    display: block;
+    padding: 0 15pt;
+    word-break: break-all;
+    text-align: center;
+}
+
+.qrCodeTxt {
+    padding: 0 15pt;
+    word-break: break-all;
+    text-align: center;
+}
+
+.pickupColor a {
+         color: #19A4C2 !important;
+ }
+
+

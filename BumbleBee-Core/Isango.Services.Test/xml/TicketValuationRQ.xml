@@ -1,0 +1,18 @@
+<TicketValuationRQ  xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hotelbeds.com/schemas/2005/06/messages ServiceAddRQ.xsd" version="ARD_BETA" echoToken="isango!HB">
+  <Language>ENG</Language>
+  <Credentials>
+    <User>ISANGOUK1013</User>
+    <Password>ISANGOUK1013</Password>
+  </Credentials>
+  <AvailToken></AvailToken>
+  <ServiceOccupancy>
+    <AdultCount>1</AdultCount>
+    <ChildCount>0</ChildCount>
+    <GuestList>
+    </GuestList>
+  </ServiceOccupancy>
+  <DateFrom date="20150905" />
+  <DateTo date="20150905" />
+  <ModalityCode>0#ADULT</ModalityCode>
+  <TicketCode>FCBCAMPEXP</TicketCode>
+</TicketValuationRQ >

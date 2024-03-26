@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "isango-reserve-254109",
+  "private_key_id": "4753d06c9dbe381f0061a45a7df79075d656f11c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkNzfsvW38HfD4\nXGr5bxQQiB19l55VHo6CMnMomE75/cKgFmdb+Zc7TQ18aD5EM1kiyjDiocArU7aa\nEYpr+zEmHz89TfTp2CuqIJbcGTuyFbKp/TPjRk46NdFU6xx7atNiPhQcjMtJSa7I\nGxzf9j8nlsYUX7FebfiG2BB7bhHfMAcFyIxYqCfeqWviEcOmrKdhwURU0DKhohFt\n7Vi5GWZEukpNDuNCok88Ssw9ra5DsCcxPywaO+msWynqP1c76gCRNqY3t4tkbWq/\njUDFWPfgusyT4W704EVtZrpGlq5l3Tamz4Exc1clsPTKilsmCEbM3shFjLs/IZQ8\nsrBOcadBAgMBAAECggEAA+ADs1PzBPiF565ynck3vX4gyAZsZ5DNhxf+rK4PawnI\nbnOo47w7i9wxHcbt9TkK+O2xgp+Tg9I5ZGBWll66la42FVHCHkSKHz0eojn8NSMa\n8LT3ZP0TOn9rnafgp67pJw/U9KmD4IpbFADDySsr6Vi++tsZOeO5ciEmHmuGA3C6\ne/Ot0Z4mnkn49wP1ALbbBhvyw3zdzTY48wwVmExjU4rTPIlyzB+hcv8CyzJANHgp\nWiJhvdJmljX9WJ6hAmebJ3etcD+csUavtOL3rjJSLhO7tDUeMnQdhHKx0AR8pOqF\n0n1ihFAXcStK2OGV1ila3vfLG1kKyoXaWsBER4sRswKBgQDevxWmXTH9ZpUxQD6W\n7iVG7JMKrr0O3l5rP4selh/qSMySJzPne/ZtRNutqyjnW1OJjm2QRPavCvSJdKe+\ngQYYjfXr/fxfp/KSyw60dSF84zLHyfZXJmdlY12+wDPwwvW+EKgwocJAttbppnX6\n/qFW6u4O6thSVcsd7tIhayaBKwKBgQC8uzVgwpr1V55912NvfGFY2VV6Yi8RNbpP\npPvnI+NILuNo9lD0ZdhmSnTde5Wti1ppHMeIGcdFnr1blCM0PqMW7gJrRwxgJYgs\nCOi6ThCEcVZk+XTVf3XRS8zZo04FqQBYOOxM4wVNg1basXUtdZXxkTb7NsJKsMie\nbeNeAPMLQwKBgC78H5T4E5NgEBhTdOBhW3uaa2nVcguw3DnDLZVGFXVV5dDudARg\nIZrq62u2ruoeWYCqinHkGiTSKsLT2I5WqPKE/1rIOHP0+TX9nxxxmJ6/TfbWox++\n+hBo5V1XLZ2bgjqVSOT5OgBskOi4NCq9i0rKQ2ziHL9BWZb2yVxDPdwBAoGAffbB\nGJSqUgep27nPPxCX9HIR7/3qBiWC9TdbfZjhUEMjOuHzhDsZZKRbPZwHeW3h6Pfx\nYLA75QaewamsmWkY9uviJ3GjG+TQ7vr/QaFqusrea8RnKzvICen6jmPFZle2yCst\n4989oc+AP7RjTfUGH9XZCXAx2yIEtGEJeKtPi/sCgYEAovIiiuNjf9/3KQMPrUoa\namkVmbSGGeGXmh48nl9G2toHJtFIIhmp2g1sDMdC73UTMRRNCwTd6C0v6CjIGPvB\nBny6F9TXsajnh4T+UrI1hQYurHooKQeWBQvnwu6iUWlKAmrnpCOiDB6WMSTPvtKQ\ndUqS1C+E7RNu5FYW3NrLvA4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "isangogmapservice@isango-reserve-254109.iam.gserviceaccount.com",
+  "client_id": "104055985152269256219",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/isangogmapservice%40isango-reserve-254109.iam.gserviceaccount.com"
+}

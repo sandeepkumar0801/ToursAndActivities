@@ -1,0 +1,38 @@
+<style>
+html,body{
+	padding:0;
+	margin:0;
+}
+	#discounttable{
+		width:50%;
+		border-collapse: collapse;
+		position:absolute;
+		transform:translate(50%);
+		
+	}
+	#discounttable tr td {
+		width:25%;
+	}
+	
+	#discounttable td, #discounttable th {
+		border: 1px solid black;
+		padding	: 8px 0 8px 0; 
+	}
+	#discounttable tr#header {
+		font-weight:bold;	
+		background-color:#ADCCD6;
+	}
+	
+	#discounttable tr{
+		text-align:center;
+	}
+</style>
+<table id="discounttable">
+	<tr id="header">
+		<td>Service ID</td>
+		<td>Discount Code</td>
+		<td>Discount Price</td>
+		<td>Currency</td>
+	</tr>
+	##RemainingRows##
+</table>

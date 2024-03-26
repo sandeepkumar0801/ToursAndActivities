@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isango! - experience the world with us</title>
+    <style>
+        @media print, screen {
+            table {
+                border: 0 none;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-size: 15px;
+                color: #333;
+                line-height: 1.5;
+            }
+
+            .pdf-container {
+                border: 3px solid #949599;
+                padding: 20pt;
+                position: relative;
+            }
+
+            .pdf-inner {
+                position: relative;
+                z-index: 1;
+            }
+
+            .box {
+                border: 5px solid #d8d59c;
+            }
+
+            .txt-blu {
+                color: #0075a7;
+            }
+
+            .h1 {
+                font-size: 30px;
+                text-align: center;
+                line-height: 2;
+                border-top: 5px dotted #5f9165;
+                border-bottom: 5px dotted #5f9165;
+                margin: 15px 0;
+                margin: 0;
+            }
+
+            .h2,
+            .h3,
+            .hh1 {
+                color: #7da231;
+                margin: 0;
+            }
+
+            .hh1 {
+                background-color: #f2f2d2;
+                padding: 5pt 10pt;
+                font-size: 25px;
+                position: relative;
+            }
+
+            .h2 {
+                background-color: #f2f2d2;
+                color: #7da231;
+                border-top: 5px solid #d8d59c;
+                border-bottom: 5px solid #d8d59c;
+                margin: 0;
+                font-size: 25px;
+                padding: 5pt 10pt;
+                position: relative;
+            }
+
+                .h2::before,
+                .hh1::before {
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    border-bottom: 48px solid #f2f2d2;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                .h2 b,
+                .hh1 b {
+                    position: relative;
+                    z-index: 2;
+                }
+
+            .bullet {
+                width: 0;
+                height: 0;
+                display: inline-block;
+                border-radius: 100%;
+                border: 14px solid #7da231;
+                color: #FFFFFF;
+                line-height: 0px;
+                text-align: center;
+                text-indent: -3px;
+                font-style: normal;
+                font-size: 23px;
+            }
+
+            .spcr {
+                width: 15px;
+            }
+
+            .col1 {
+                width: 45%;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            .hSpcr {
+                height: 20px;
+                font-size: 0px;
+            }
+
+            .hSpcr10 {
+                height: 10px;
+                font-size: 0px;
+            }
+
+            .cols {
+                text-align: right;
+                vertical-align: top;
+                width: 200px;
+            }
+
+            .brdrBtm {
+                border-bottom: 2px dashed #444;
+            }
+
+            .pdf-footer {
+                text-align: center;
+                padding-bottom: 50px;
+            }
+
+            img {
+                border: 0 none;
+            }
+
+            .link {
+                text-decoration: underline;
+                color: #003d90;
+            }
+
+            .igo {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+                .igo img {
+                    display: block;
+                }
+
+            .bdr-rt {
+                border-right: 1px solid #999999;
+            }
+
+            .bdr-rt {
+                border-right: 1px solid #999999;
+            }
+
+            .warn {
+                text-align: center;
+                color: #ee1d25;
+                font-size: 20px;
+            }
+
+            .mSave {
+                background-color: #f2f2d2;
+            }
+
+            .priceTable td {
+                padding: 2px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" border="0">
+        <tr>
+            <td class="pdf-container">
+                <table class="pdf-inner">
+                    <tr>
+                        <td><a target="_blank" href="https://www.isango.com/"><img width="150" alt="" src="##IsangoLogo##"></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Resumen del pago / Payment Summary</b></h2>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table class="priceTable">
+                                            <tr>
+                                                <td><b>Nombre del producto / <em>Product Name</em></b></td>
+                                                <td class="tar"><b>Price</b></td>
+                                            </tr>
+                                            <tr>
+                                                ##ProductDetails##
+                                            </tr>
+                                            <tr>
+                                                <td><b>Precio total de la reserva</b> / <em>Total Booking Amount</em></td>
+                                                <td class="tar"><b>##TotalBookingAmount##</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Vale de descuento</b> / <em>Discount Voucher</em></td>
+                                                <td class="tar">##DiscountVoucher##</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Descuento Multisave</b> / <em>Multisave Discount</em></td>
+                                                <td class="tar">##MultisaveDiscount##</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mSave">
+                                                    <b>Importe despu&#xE9;s del descuento</b> / <em>
+                                                        Amount
+                                                        after Discount
+                                                    </em>
+                                                </td>
+                                                <td class="tar mSave">##AmountAfterDiscount##</td>
+                                            </tr>
+                                            ##ToBeChargedAmount##
+                                            <tr>
+                                                <td><b>Precio total cargado</b> / <em>Total Charged Amount</em></td>
+                                                <td class="tar"><b>##TotalChargedAmount##</b></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td class="hSpcr">&nbsp;</td></tr>
+                                <tr><td class="brdrBtm"></td></tr>
+                                <tr><td class="hSpcr">&nbsp;</td></tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Gracias por reservar con isango! La cantidad indicada arriba se ha cargado en su cuenta a nombre de &#x201C;isango! Limited, UK&#x201D;. <br>
+                                            <em>Thank you for booking with isango! The above amount has been charged in favour of "isango! Limited, UK".</em>
+                                        </p>
+                                        <p>
+                                            Es su responsabilidad que todos los detalles que nos ha indicado sean correctos. Usted ha confirmado que est&#xE1; de acuerdo con los t&#xE9;rminos y condiciones de la reserva de isango <a class="link" target="_blank" href="##TermsAndConditionLink##">t&#xE9;rminos y condiciones de la reserva</a> <br>
+                                            <em>It is your responsibility to ensure all the details provided while booking are correct. You have confirmed that you agree to the isango! <a class="link" target="_blank" href="##TermsAndConditionLink##">booking terms and conditions</a></em>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr><td class="hSpcr">&nbsp;</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center">
+                            <a target="_blank" href="#"><img src="##LetSettle##" width="1000" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <h2 class="h2"><b>Pol&#xED;tica de cancelaci&#xF3;n flexible / Flexible Cancellation Policy</b></h2>
+                        </td>
+                    </tr>
+                    <tr><td class="hSpcr">&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            ##CancellationPolicy##
+                        </td>
+                    </tr>
+                </table>
+                <div class="igo"><img src="##GoGif##" width="255" height="442" alt=""> </div>
+            </td>
+        </tr>
+        <tr><td class="hSpcr10"></td></tr>
+    </table>
+</body>
+</html>

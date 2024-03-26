@@ -1,0 +1,34 @@
+<HotelValuedAvailRQ echoToken="isango!HB" sessionId="isango!12-19-13@14:00" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2013/04" showDiscountsList="Y">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>ISANGOUK1013</User>
+		<Password>ISANGOUK1013</Password>
+	</Credentials>
+	<ShowDirectPayment>Y</ShowDirectPayment>
+	<PaginationData pageNumber="1" itemsPerPage="999"/>
+	<CheckInDate date="20131120"/>
+	<CheckOutDate date="20131125"/>
+	<Destination code="PAR" type="SIMPLE"/>
+	<HotelCodeList withinResults="Y">
+	  
+	</HotelCodeList>
+	<ExtraParamList>
+		<ExtendedData type="EXT_ORDER">
+			<Name>ORDER_CONTRACT_PRICE</Name>
+			<Value>ASC</Value>
+		</ExtendedData>
+		<ExtendedData type="EXT_DISPLAYER">
+			<Name>DISPLAYER_DEFAULT</Name>
+			<Value>PROMOTION:Y</Value>
+		</ExtendedData>
+	</ExtraParamList>
+	<OccupancyList>
+		<HotelOccupancy>
+			<RoomCount>1</RoomCount>
+			<Occupancy>
+				<AdultCount>2</AdultCount>
+				<ChildCount>0</ChildCount>
+			</Occupancy>
+		</HotelOccupancy>
+	</OccupancyList>
+</HotelValuedAvailRQ>

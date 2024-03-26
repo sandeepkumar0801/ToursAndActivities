@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Las mejores cosas que hacer en todo el mundo | isango!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700'); */
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            background: #FFF;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+            font-size: 14px;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+            width: 100%;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, .8);
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        body {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+            table td {
+                border-collapse: collapse;
+            }
+
+        
+        a {
+            text-decoration: none;
+        }
+
+            a hover,
+            a:focus,
+            a active {
+                text-decoration: none;
+            }
+
+        html,
+        body {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+        }
+
+        ::-ms-clear {
+            display: none;
+        }
+
+        [onclick] {
+            cursor: pointer;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body style="margin: 0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <table width="100%" style="max-width: 1000px; margin:0" cellpadding="0" cellspacing="0" border="0" class="container">
+        <tr>
+            <td>
+                <table>
+                    ##InvoiceHeader##
+                    <!--<tr>
+                        <td style="color: #333;font-size: 36px;text-align: left;">INVOICE</td>
+                        <td style="text-align: right;">
+                            <img height="42" width="99" alt="isango!" src="https://hohobassets.isango.com/phoenix/images/isango-cs.png" />
+                        </td>
+                    </tr>-->
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 50px;text-align: left;font-size: 30px;color:#BBB;font-weight: bold;" align="left">FACTURA</td>
+        </tr>
+        <tr>
+            <td style="height: 10px;font-size: 1px;line-height: 1px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="font-size: 24px;color: #333;text-align: left;font-weight:500;">##UserName##</td>
+        </tr>
+        <tr>
+            <td style="font-size: 16px;color: #333;text-align: left;height: 30px;">
+                Recibo del N&#xFA;mero de Referencia de la Reserva <a href="#" style="text-decoration: none;color: #19A4C2;">##BookingVoucherNumber##</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="border-collapse: separate !important;box-shadow: 0px 0px 10px #0000001F;overflow:hidden;border-radius: 8px;" cellpadding="10" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <td style="background-color: #F5F5F5;font-size: 16px;font-weight:bold;text-align:left;color: #212121;width: 60px;border-radius: 8px 0 0 0;" width="60">S.No</td>
+                            <td style="background-color: #F5F5F5;font-size: 16px;font-weight:bold;text-align:left;color: #212121;">Producto</td>
+                            <td style="background-color: #F5F5F5;font-size: 16px;font-weight:bold;text-align:left;color: #212121;width: 20%;" width="20%">Pasajero</td>
+                            <td style="background-color: #F5F5F5;font-size: 16px;font-weight:bold;text-align:left;color: #212121;width: 20%;" width="20%">Precio real</td>
+                            <td style="background-color: #F5F5F5;font-size: 16px;font-weight:bold;text-align:left;color: #212121;display:##displayDiscount##;">Descuento ofrecido</td>
+                            <td style="background-color: #F5F5F5;font-size: 16px;font-weight:bold;text-align:left;color: #212121;display:##displayCancel##;border-radius: 0 8px 0 0;width: 15%;" width="15%">Cantidad devuelta</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ##ProductData##
+                        <!--<tr>
+                            <td style="font-size: 16px;color: #333;text-align: left;vertical-align: top;">1</td>
+                            <td style="font-size: 16px;color: #333;font-weight: bold;text-align: left;vertical-align: top;">
+                                Night Safari Tour with Transfers, Priority Tram and Optional 
+                                Dinner (Confirmed) 
+                                <br> <small style="font-weight: normal;">With dinner</small>
+                            </td>
+                            <td style="font-size: 16px;color: #333;text-align: left;vertical-align: top;">2 Adult, 1 Child</td>
+                            <td style="font-size: 16px;color: #333;text-align: left;vertical-align: top;">
+                                Rs 8000 (2 xAdult) <br>
+                                Rs 4000 (1xChild)
+                            </td>
+                            <td style="font-size: 16px;color: #333;text-align: left;text-align: right;vertical-align: top;">Rs 900.10</td>
+                        </tr>-->
+                        
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 30px;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;padding-top: 20px;" align="right">
+                <table style="width: 470px;background:#F5F5F5; text-align: left;border-collapse: separate !important;box-shadow: 0px 0px 10px #0000001F;overflow:hidden;border-radius: 8px;" cellpadding="10" align="right">
+                    <tr>
+                        <td style="font-size: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: left;font-weight:bold;">Importe total cobrado:</td>
+                        <td style="font-size: 18px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: right;font-weight:bold;">##AmountAfterDiscount##</td>
+                    </tr>
+                    <tr style="display:##displayToBeChargedAmount##;">
+                        <td style="font-size: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: left;font-weight:bold;">Cantidad a cobrar:</td>
+                        <td style="font-size: 18px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: right;font-weight:bold;">##ToBeChargedAmount##</td>
+                    </tr>
+                    <tr style="display:##displaySavingsAmount##;">
+                        <td style="font-size: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: left;font-weight:bold;">Ahorro Total:</td>
+                        <td style="font-size: 18px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: right;font-weight:bold;">##SavingsAmount##</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-top: 15px;" align="right">
+                <table style="margin-top:20px;width: 470px;text-align: left;border-collapse: separate !important;box-shadow: 0px 0px 10px #0000001F;overflow:hidden;border-radius: 8px;" cellpadding="10" align="right">
+                    <tr style="display:##displayMultisaveDiscount##;">
+                        <td style="width: 300px;font-size: 15px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: left;">Descuento de ahorro m&#xFA;ltiple ofrecido:</td>
+                        <td style="font-size: 15px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: right;">##MultisaveDiscount##</td>
+                    </tr>
+                    <tr style="display:##displayDiscountVoucher##;">
+                        <td style="font-size: 15px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: left;">Cupón de descuento:</td>
+                        <td style="font-size: 15px;color: #333;font-family: Arial, Helvetica, sans-serif;text-align: right;">##DiscountVoucher##</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

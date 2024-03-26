@@ -1,0 +1,19 @@
+#thisitem {
+    color: black;
+    border: 1px solid #31B0D5;
+    background-color: #DAF1F8;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.pickmeup {
+    display: none;
+    z-index: 999999;
+}
+
+.badge.bg-secondary {
+    white-space: initial;
+    text-align: left;
+    line-height: 1.25;
+    padding: 0.25em 0.45em;
+}

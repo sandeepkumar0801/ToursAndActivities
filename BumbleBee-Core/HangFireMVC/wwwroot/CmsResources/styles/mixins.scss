@@ -1,0 +1,463 @@
+@mixin fl() {
+    float: left;
+    position: relative;
+}
+
+@mixin fr() {
+    float: right;
+    position: relative;
+}
+
+@mixin dn() {
+    display: none;
+}
+
+@mixin db() {
+    display: block;
+}
+
+@mixin dib {
+    display: inline-block;
+}
+
+@mixin pr {
+    position: relative;
+}
+
+@mixin pa {
+    position: absolute;
+}
+
+@mixin pf {
+    position: fixed;
+}
+
+@mixin ps {
+    position: static;
+}
+
+@mixin cl {
+    clear: left;
+}
+
+@mixin cr {
+    clear: right;
+}
+
+@mixin cb {
+    clear: both;
+}
+
+@mixin tal {
+    text-align: left;
+}
+
+@mixin tar {
+    text-align: right;
+}
+
+@mixin tac {
+    text-align: center;
+}
+
+@mixin m0 {
+    margin: 0 !important;
+}
+
+@mixin p0 {
+    padding: 0 !important;
+}
+
+@mixin fw {
+    width: 100%;
+}
+
+@mixin fh {
+    height: 100%;
+}
+
+@mixin uc {
+    text-transform: uppercase;
+}
+
+@mixin lc {
+    text-transform: lowercase;
+}
+
+@mixin cc {
+    text-transform: capitalize;
+}
+
+@mixin au {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin disabled {
+    opacity: .6;
+}
+
+@mixin noBg {
+    background: none !important;
+}
+
+@mixin text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin transition-duration($td) {
+    -webkit-transition-duration: $td;
+    transition-duration: $td;
+}
+
+@mixin p5 {
+    padding: 5px;
+}
+
+@mixin p10 {
+    padding: 10px;
+}
+
+@mixin p15 {
+    padding: 15px;
+}
+
+@mixin m5 {
+    margin: 5px;
+}
+
+@mixin m10 {
+    margin: 10px;
+}
+
+@mixin m15 {
+    margin: 15px;
+}
+
+@mixin ml0 {
+    margin-left: 0;
+}
+
+@mixin mt0 {
+    margin-top: 0;
+}
+
+@mixin mr0 {
+    margin-right: 0;
+}
+
+@mixin mb0 {
+    margin-bottom: 0;
+}
+
+@mixin ml5 {
+    margin-left: 5px;
+}
+
+@mixin mt5 {
+    margin-top: 5px;
+}
+
+@mixin mr5 {
+    margin-right: 5px;
+}
+
+@mixin mb5 {
+    margin-bottom: 5px;
+}
+
+@mixin ml10 {
+    margin-left: 10px;
+}
+
+@mixin mt10 {
+    margin-top: 10px;
+}
+
+@mixin mr10 {
+    margin-right: 10px;
+}
+
+@mixin mb10 {
+    margin-bottom: 10px;
+}
+
+@mixin ml15 {
+    margin-left: 15px;
+}
+
+@mixin mt15 {
+    margin-top: 15px;
+}
+
+@mixin mr15 {
+    margin-right: 15px;
+}
+
+@mixin mb15 {
+    margin-bottom: 15px;
+}
+
+@mixin pl0 {
+    padding-left: 0;
+}
+
+@mixin pt0 {
+    padding-top: 0;
+}
+
+@mixin pr0 {
+    padding-right: 0;
+}
+
+@mixin pb0 {
+    padding-bottom: 0;
+}
+
+@mixin pl5 {
+    padding-left: 5px;
+}
+
+@mixin pt5 {
+    padding-top: 5px;
+}
+
+@mixin pr5 {
+    padding-right: 5px;
+}
+
+@mixin pb5 {
+    padding-bottom: 5px;
+}
+
+@mixin pl10 {
+    padding-left: 10px;
+}
+
+@mixin pt10 {
+    padding-top: 10px;
+}
+
+@mixin pr10 {
+    padding-right: 10px;
+}
+
+@mixin pb10 {
+    padding-bottom: 10px;
+}
+
+@mixin pl15 {
+    padding-left: 15px;
+}
+
+@mixin pt15 {
+    padding-top: 15px;
+}
+
+@mixin pr15 {
+    padding-right: 15px;
+}
+
+@mixin pb15 {
+    padding-bottom: 15px;
+}
+
+@mixin transition($duration: 250ms) {
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -ms-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
+}
+
+@mixin transform($t) {
+    -moz-transform: rotate($t);
+    -ms-transform: rotate($t);
+    -o-transform: rotate($t);
+    -webkit-transform: rotate($t);
+    transform: rotate($t);
+}
+
+@mixin radius($r: 5px) {
+    -ms-order-radius: $r;
+    -o-order-radius: $r;
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    border-radius: $r;
+}
+
+@mixin shadow($shadow: 0 0 2px 2px rgba(0,0,0,.2)) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin shadows($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin box($s) {
+    width: $s;
+    height: $s;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin hideElm ($elm) {
+    #{$elm} {
+        display: none;
+    }
+}
+
+@mixin showElm ($elm) {
+    #{$elm} {
+        display: block;
+    }
+}
+
+@mixin showInline ($elm) {
+    #{$elm} {
+        display: inline-block;
+    }
+}
+
+@mixin cal($prop,$val) {
+    #{$prop}: -webkit-calc(100% - #{$val});
+    #{$prop}: -moz-calc(100% - #{$val});
+    #{$prop}: -ms-calc(100% - #{$val});
+    #{$prop}: -o-calc(100% - #{$val});
+    #{$prop}: calc(100% - #{$val});
+}
+
+@mixin column($c...) {
+    -webkit-columns: $c;
+    -moz-columns: $c;
+    -ms-columns: $c;
+    -o-columns: $c;
+    columns: $c;
+}
+
+@mixin make-column($columns) {
+    width: percentage(($columns / $grid)) !important;
+}
+
+// For selecting text on the page
+@mixin user-select($select) {
+    -webkit-user-select: $select;
+    -moz-user-select: $select;
+    -ms-user-select: $select;
+    user-select: $select;
+}
+// WebKit-style focus
+@mixin tab-focus() {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+@mixin iBtn() {
+    background-color: $btn_prime;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    @include shadows(0 3px 4px -2px rgba(255, 255, 255, 1.0) inset, 0 0 4px 1px rgba(0, 0, 0, 0.1) inset);
+    border: 1px solid #fe5013;
+    @include radius();
+    cursor: pointer;
+    color: $white;
+}
+
+@mixin iBtn-default() {
+    background-color: $white;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid $brdr-default;
+    cursor: pointer;
+}
+
+@mixin noHover() {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin aLink {
+    color: $bTxt;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin aLink-tdn {
+    color: $bTxt;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin linkList() {
+    background-color: $white;
+    padding: 5px 15px 0 15px;
+
+    li {
+        border-bottom: 1px dotted $gray-dark;
+        margin: 0;
+        padding: 0;
+        @include fw;
+        @include fl;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    a {
+        padding: 10px 0;
+        border: 0;
+        color: $bTxt;
+        @include fw;
+        @include fl;
+
+        &:hover {
+            background-color: $white;
+            border: 0;
+        }
+
+        &:after {
+            content: $i-next;
+            @include ml5;
+            @include fr;
+            font-family: isango;
+            vertical-align: bottom;
+        }
+    }
+}
+
+@mixin brdrshadow() {
+    @include shadow(0 10px 15px -6px rgba(0, 0, 0, 0.2));
+    margin-bottom: 40px;
+    height: 20px;
+}
+
+@mixin circle($x) {
+    width: $x;
+    height: $x;
+    @include radius(100%);
+}

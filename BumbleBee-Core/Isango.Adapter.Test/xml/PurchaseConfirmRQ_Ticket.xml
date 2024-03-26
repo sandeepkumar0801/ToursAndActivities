@@ -1,0 +1,21 @@
+<PurchaseConfirmRQ xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2013/04" echoToken="String">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>TEST</User>
+		<Password>TEST</Password>
+	</Credentials>
+	<ConfirmationData purchaseToken="LO034528007">
+		<Holder type="AD">
+			<Name>test</Name>
+			<LastName>test</LastName>
+		</Holder>
+		<AgencyReference>isango</AgencyReference>
+		<ConfirmationServiceDataList>
+			<ServiceData xsi:type="ConfirmationServiceDataHotel" SPUI="44#H#1">
+				<CustomerList>
+				
+				</CustomerList>
+			</ServiceData>
+		</ConfirmationServiceDataList>
+	</ConfirmationData>
+</PurchaseConfirmRQ>

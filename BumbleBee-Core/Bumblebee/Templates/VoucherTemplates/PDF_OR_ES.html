@@ -1,0 +1,235 @@
+﻿<table width="100%" border="0">
+    <tr>
+        <td class="pdf-container">
+            <table class="pdf-inner">
+
+                <tr>
+                    <td>
+                        <h1 class="h1">
+                            <b class="txt-blu">Solicitud de reserva - Pendiente / Booking Request - Pending Request Number:</b> <span> ##BookingVoucherNumber##</span>
+                            <button style="display: ##displayPrintButton##" title="Impresi&oacute;n" onclick="window.print();" class="printBtn">&#128438; </button>
+                        </h1>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td class="warn">
+                        <p><b>ESTE DOCUMENTO NO PUEDE SER CANJEADO POR UN TOUR. <br> THIS DOCUMENT CANNOT BE REDEEMED FOR A TOUR</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>Este documento es tan solo un e-mail de confirmaci&#xF3;n de la reserva. Usted recibir&#xE1; otro email con el voucher de reserva una vez que el tour este confirmado. Usted recibir&#xE1; dicho voucher en un plazo aproximado de 3 d&#xED;as </b> <br>
+                            <em>This is only an acknowledgement of the requested booking. You will be sent a booking voucher upon confirmation of the tour. This will be done within the next 3 working days.</em>
+                        </p>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td class="box">
+                        <h2 class="hh1"><b>Informaci&#xF3;n de la reserva / Booking Information</b></h2>
+                        <table>
+                            <tr><td colspan="2" class="hSpcr">&nbsp;</td></tr>
+                            <tr>
+                                <td class="bdr-rt w50">
+                                    <table>
+                                        <tr>
+                                            <td class="col1"><b>Pasajero principal</b> <br> <em>Lead Traveller</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##UserName##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Tour reservado</b> <br> <em>Tour Booked</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##ProductPageName##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Nombre secundario</b> <br> <em>Option Name</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##OptionName##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>Precio total del tour</b> <br> <em>Total Tour Price</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##TotalTourPrice##</td>
+                                        </tr>
+                                        <!--<tr>
+                                            <td class="col1"><b>Requerimientos especiales</b><br> <em>Special Request</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##SpecialRequest##</td>
+                                        </tr>-->
+
+                                        <tr style="display: ##displaySupplierBookingReference##">
+                                            <td class="col1"><b>Proveedor de reserva de referencia</b></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##SupplierBookingReference##</td>
+                                        </tr>
+
+                                        <tr style="display: ##displayQR##">
+                                            <td colspan="3">
+                                                ##QRCodeTable##
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="vat">
+                                    <table>
+                                        <tr style="display: ##displayNoofAdults##">
+                                            <td class="col1"><b>N&#xFA;mero de adultos</b> <br> <em>No of Adults</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##NumberOfAdults## Adult</td>
+                                        </tr>
+                                        <tr style="display: ##displayNoOfChilds##">
+                                            <td class="col1"><b>N&#xFA;mero de ni&#xF1;os</b> <br> <em>No of Children</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##NumberOfChildren##</td>
+                                        </tr>
+                                        ##DynamicAgeGroup##
+                                        <tr>
+                                            <td class="col1"><b>Fecha del tour</b> <br> <em>Date of Tour</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##DateOfTour##</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col1"><b>C&#xF3;digo de opci&#xF3;n</b> <br> <em>Option Code</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##OptionCode##</td>
+                                        </tr>
+                                        ##SupplierName1##
+
+                                        <tr style="display: ##displayVATNumber##">
+                                            <td class="col1"><b>N&#xFA;mero de valor agregado</b> <br> <em>VAT Number</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##VATNumber##</td>
+                                        </tr>
+                                        ##ProviderInformation##
+                                        <tr>
+                                            <td class="col1"><b>isango! Compa&#xF1;ero local</b> <br> <em>Local isango! Partner</em></td>
+                                            <td class="spcr">&nbsp;</td>
+                                            <td>##IsangoPartner##</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" class="hSpcr">&nbsp;</td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <h2 class="h2"><b>Programa del tour / Tour Schedule</b></h2>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr style="display: ##displayMeetingPoint##;">
+                                <td class="cols"><b>Punto de encuentro</b> <br> <em>Meeting Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##PickupPoint##</td>
+                            </tr>
+                            <tr style="display: ##displayPickPoint##;">
+                                <td class="cols"><b>Punto de recogida</b> <br> <em>Pickup Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##PickupPoint##</td>
+                            </tr>
+
+                            <tr style="display: ##displayContractComment##;">
+                                <td class="col1"><b>Comentario del contrato</b><br> <em>Contract Comment</em></td>
+                                <td class="spcr">&nbsp;</td>
+                                <td>##ContractComment##</td>
+                            </tr>
+
+                            <tr style="display: ##displayDropPoint##;">
+                                <td class="cols"><b>Lugar de finalizaci&#xF3;</b> <br> <em>Drop off Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##DropOffPoint##</td>
+                            </tr>
+
+                            <tr style="display: ##displayEndPoint##;">
+                                <td class="cols"><b>Lugar de finalizaci&#xF3;</b> <br> <em>Ending Point</em></td>
+                                <td class="spcr"></td>
+                                <td>##DropOffPoint##</td>
+                            </tr>
+
+                            <tr style="display: ##displayStartTime##;">
+                                <td class="cols"><b>Hora de comienz</b> <br> <em>Start Time</em></td>
+                                <td class="spcr"></td>
+                                <td>##Schedule##</td>
+                            </tr>
+                            <tr style="display: ##displaySchedule##;">
+                                <td class="cols"><b>Horario</b> <br> <em>Schedule</em></td>
+                                <td class="spcr"></td>
+                                <td>##Schedule##</td>
+                            </tr>
+                            <tr>
+                                <td class="cols"><b>Duraci&#xF3;n</b> <br> <em>Duration</em></td>
+                                <td class="spcr"></td>
+                                <td>##Duration##</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <h2 class="h2"><b>Notes importantes / Important Instructions</b></h2>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <table>
+                            ##ImportantInstructions##
+                        </table>
+                    </td>
+                </tr>
+                <tr><td class="hSpcr">&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <h2 class="h2"><b>Detalles de contacto / Contact Details</b></h2>
+                        <table>
+                            <tr><td class="hSpcr">&nbsp;</td></tr>
+                            <tr>
+                                <td class="vat">
+
+                                    <h3>
+                                        &#xBF;Necesita asistencia o realizar alguna nueva reserva? <br>
+                                        <em style="font-weight: normal">Need further assistance or bookings?</em>
+                                    </h3>
+                                    <p>
+                                        <b class="txt-blu">Atenci&#xF3;n al cliente de isango!</b><br>
+                                        <em class="txt-blu">isango! customer support</em>
+                                        ##CustomerSupportNumbers##
+                                    </p>
+                                    <p>
+                                        <b>Email</b>
+                                        ##SupportEmail##
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr><td class="hSpcr">&nbsp;</td></tr>
+                            <tr>
+                                <td>
+                                    <h2 class="h2"><b>Pol&#xED;tica de cancelaci&#xF3;n flexible / Flexible Cancellation Policy</b></h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hSpcr">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ##CancellationPolicy##
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td class="hSpcr10">&nbsp;</td></tr>
+</table>

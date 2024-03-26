@@ -1,0 +1,462 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>6a1584fd-84d8-4967-866f-9c98733e8222</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Templates\MailTemplates\CustomerSupportTemplates\CancelBookingMail.html" />
+    <None Remove="Templates\MailTemplates\CustomerSupportTemplates\FailureEmail.html" />
+    <None Remove="Templates\MailTemplates\CustomerSupportTemplates\ReminingDiscountEmail.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\AmendEmail_en.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Cancelled_de.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Cancelled_en.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Cancelled_es.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Cancelled_fr.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Email_de.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Email_en.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Email_es.html" />
+    <None Remove="Templates\MailTemplates\CustomerTemplates\Email_fr.html" />
+    <None Remove="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_de.html" />
+    <None Remove="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_en.html" />
+    <None Remove="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_es.html" />
+    <None Remove="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_fr.html" />
+    <None Remove="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_de.html" />
+    <None Remove="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_en.html" />
+    <None Remove="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_es.html" />
+    <None Remove="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_fr.html" />
+    <None Remove="Templates\MailTemplates\SupplierTemplates\MailToSupplierForCancellation.html" />
+    <None Remove="Templates\MailTemplates\SupplierTemplates\MailToSupplierForConfirmation.html" />
+    <None Remove="Templates\MailTemplates\SupplierTemplates\MailToSupplierForOnRequest.html" />
+    <None Remove="Templates\VoucherTemplates\BigBusVoucher_de.html" />
+    <None Remove="Templates\VoucherTemplates\BigBusVoucher_en.html" />
+    <None Remove="Templates\VoucherTemplates\BigBusVoucher_es.html" />
+    <None Remove="Templates\VoucherTemplates\BigBusVoucher_fr.html" />
+    <None Remove="Templates\VoucherTemplates\Invoice.html" />
+    <None Remove="Templates\VoucherTemplates\Invoice_DE.html" />
+    <None Remove="Templates\VoucherTemplates\Invoice_EN.html" />
+    <None Remove="Templates\VoucherTemplates\Invoice_ES.html" />
+    <None Remove="Templates\VoucherTemplates\Invoice_FR.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Cancel_DE.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Cancel_EN.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Cancel_ES.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_DE_V2.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_EN_V2.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_ES_V2.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_FR_V2.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_FS_DE.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_FS_EN.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_FS_ES.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_FS_FR.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_OR_DE.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_OR_EN.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_OR_ES.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_OR_FR.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Payment_DE.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Payment_EN.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Payment_ES.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_Payment_FR.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_DE.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_EN.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_ES.html" />
+    <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_FR.html" />
+    <None Remove="TiqetsCertificate\TiqetsProd.pfx" />
+    <None Remove="TiqetsCertificate\TiqetsTest.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\MailTemplates\CustomerSupportTemplates\CancelBookingMail.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerSupportTemplates\FailureEmail.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerSupportTemplates\ReminingDiscountEmail.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\AmendEmail_en.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Cancelled_de.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Cancelled_en.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Cancelled_es.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Cancelled_fr.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Email_de.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Email_en.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Email_es.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\CustomerTemplates\Email_fr.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_de.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_en.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_es.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\GeneratePaymentLink\PaymentLink_fr.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_de.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_en.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_es.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\ReceivedPaymentLink\ReceivedPayment_fr.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\SupplierTemplates\MailToSupplierForCancellation.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\SupplierTemplates\MailToSupplierForConfirmation.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\MailTemplates\SupplierTemplates\MailToSupplierForOnRequest.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\BigBusVoucher_de.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\BigBusVoucher_en.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\BigBusVoucher_es.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\BigBusVoucher_fr.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\Invoice.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\Invoice_DE.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\Invoice_EN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\Invoice_ES.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\Invoice_FR.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Cancel_DE.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Cancel_EN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Cancel_ES.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_DE_V2.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_EN_V2.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_ES_V2.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_FR_V2.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_FS_DE.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_FS_EN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_FS_ES.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_FS_FR.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_OR_DE.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_OR_EN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_OR_ES.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_OR_FR.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Payment_DE.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Payment_EN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Payment_ES.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_Payment_FR.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_WholeBookingCancel_DE.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_WholeBookingCancel_EN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_WholeBookingCancel_ES.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\VoucherTemplates\PDF_WholeBookingCancel_FR.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TiqetsCertificate\TiqetsProd.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TiqetsCertificate\TiqetsTest.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.0.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="EPPlus" Version="7.0.3" />
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.21.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ActivityWrapper\ActivityWrapper.csproj" />
+    <ProjectReference Include="..\ApplicationCacheManager.Contract\ApplicationCacheManager.Contract.csproj" />
+    <ProjectReference Include="..\ApplicationCacheManager\ApplicationCacheManager.csproj" />
+    <ProjectReference Include="..\CacheManager.Contract\CacheManager.Contract.csproj" />
+    <ProjectReference Include="..\CacheManager\CacheManager.csproj" />
+    <ProjectReference Include="..\DiscountRuleEngine\DiscountRuleEngine.csproj" />
+    <ProjectReference Include="..\Factories\Factories.csproj" />
+    <ProjectReference Include="..\Isango.Entities\Isango.Entities.csproj" />
+    <ProjectReference Include="..\Isango.Mailer\Isango.Mailer.csproj" />
+    <ProjectReference Include="..\Isango.Persistence.Contract\Isango.Persistence.Contract.csproj" />
+    <ProjectReference Include="..\Isango.Persistence\Isango.Persistence.csproj" />
+    <ProjectReference Include="..\Isango.Register\Isango.Register.csproj" />
+    <ProjectReference Include="..\Isango.Service.Contract\Isango.Service.Contract.csproj" />
+    <ProjectReference Include="..\Isango.Service\Isango.Service.csproj" />
+    <ProjectReference Include="..\Logger.Contract\Logger.Contract.csproj" />
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+    <ProjectReference Include="..\PriceRuleEngine\PriceRuleEngine.csproj" />
+    <ProjectReference Include="..\ServiceAdapters\ServiceAdapters.csproj" />
+    <ProjectReference Include="..\TableStorageOperations\TableStorageOperations.csproj" />
+    <ProjectReference Include="..\Util\Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>Package\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFreactor">
+      <HintPath>Package\PDFreactor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\QRCodes\" />
+    <Folder Include="xml\tourcms\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="wwwroot\CSS\Voucher.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\CSS\Voucher_V2.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\Images\logos\011D8C0B-4AD2-4F01-B998-0412B8058B2B.png" />
+    <None Include="wwwroot\Images\logos\023BC1A8-2A4A-4107-8765-E0AD33BFEEC9.png" />
+    <None Include="wwwroot\Images\logos\04B4F1B1-38D7-44B2-8565-683681D657AD.png" />
+    <None Include="wwwroot\Images\logos\06053439-1CE7-47F2-AA66-0C39DB8E7EAC.png" />
+    <None Include="wwwroot\Images\logos\078F0066-4ABC-479D-8C36-54DDF8FDDAF1.png" />
+    <None Include="wwwroot\Images\logos\0969FEF8-12E5-4175-B46E-1E6C288BF996.png" />
+    <None Include="wwwroot\Images\logos\0C56F3F2-EDB2-4B51-B5D1-D27D959570A6.png" />
+    <None Include="wwwroot\Images\logos\11D52802-5C69-4B8D-B30C-31B2BD32735B.png" />
+    <None Include="wwwroot\Images\logos\128B31DE-E2C9-433C-9E8E-16E046A690A8.png" />
+    <None Include="wwwroot\Images\logos\13E8B9D8-D432-46FB-9BAB-2E43A5E50723.png" />
+    <None Include="wwwroot\Images\logos\14A02312-99AD-4B2E-83D1-F8487DED97AC.png" />
+    <None Include="wwwroot\Images\logos\15B0E747-B21A-4D62-8FA3-1D45947955B4.png" />
+    <None Include="wwwroot\Images\logos\1A23137F-81B9-4E93-8391-19C2662848DB.png" />
+    <None Include="wwwroot\Images\logos\208480F8-6BD9-467B-8C34-F19F2848C76A.png" />
+    <None Include="wwwroot\Images\logos\24467ECE-1A2E-42FF-8913-23683AC149EA.png" />
+    <None Include="wwwroot\Images\logos\278A54EE-3B4D-4434-80AF-A9A2145B7F28.png" />
+    <None Include="wwwroot\Images\logos\2aeacc1c-3f84-4f8e-b4c0-a24dd48959e8.png" />
+    <None Include="wwwroot\Images\logos\371FC358-CE82-4B5B-B383-FE9930ACCF31.png" />
+    <None Include="wwwroot\Images\logos\3CE273C1-863D-4711-A81A-5434697414E2.png" />
+    <None Include="wwwroot\Images\logos\405F5611-1387-4E19-9840-03A4671BB6A5.png" />
+    <None Include="wwwroot\Images\logos\413DE577-1630-42C0-82E8-F298187CB984.png" />
+    <None Include="wwwroot\Images\logos\4226CE78-A353-4510-95F1-0D0051940387.png" />
+    <None Include="wwwroot\Images\logos\43A5C00F-81D7-42E4-B177-C032E0BB0FB2.png" />
+    <None Include="wwwroot\Images\logos\456A4AF5-8476-4210-AD10-9D331D1EB076.png" />
+    <None Include="wwwroot\Images\logos\49273553-71b0-43a0-9c25-052a3658df52.png" />
+    <None Include="wwwroot\Images\logos\4A1B7E59-8FEA-442A-AF56-D5C1C16D0826.png" />
+    <None Include="wwwroot\Images\logos\4D22F371-139C-4C37-B605-69696D1C9C93.png" />
+    <None Include="wwwroot\Images\logos\4F52ED49-3032-4F87-B461-FF2CCFD8EEA2.png" />
+    <None Include="wwwroot\Images\logos\50CBCD5C-7470-4E3D-8482-D4DE5B78DD62.png" />
+    <None Include="wwwroot\Images\logos\51752A99-575D-4DB5-A24F-85492D098E25.png" />
+    <None Include="wwwroot\Images\logos\537DF391-92C5-4ADF-B189-6635945746F9.png" />
+    <None Include="wwwroot\Images\logos\58C11104-34E6-47BA-926D-E89E4242B962.png" />
+    <None Include="wwwroot\Images\logos\5BEEF089-3E4E-4F0F-9FBF-99BF1F350183.png" />
+    <None Include="wwwroot\Images\logos\5C2F6A6E-0F96-488D-8BE7-C8EBAA042B52.png" />
+    <None Include="wwwroot\Images\logos\5FEA7289-1A1A-459A-869F-F6CCD4514254.png" />
+    <None Include="wwwroot\Images\logos\60E58482-D901-4E10-83B6-ADEF52B8746E.png" />
+    <None Include="wwwroot\Images\logos\62976229-5AA8-4B39-AD1C-B34D2C7F0E0E.png" />
+    <None Include="wwwroot\Images\logos\6C35BC18-DDEF-482A-A5D0-70CF855A3CC6.png" />
+    <None Include="wwwroot\Images\logos\7111575D-9A90-440F-AD1E-5CD32EBECBFB.png" />
+    <None Include="wwwroot\Images\logos\75E6AE66-C70B-480A-885B-34B9E6673AC4.png" />
+    <None Include="wwwroot\Images\logos\764CAA8C-DD71-4F20-B05A-FB1CC8D4CBAF.png" />
+    <None Include="wwwroot\Images\logos\7A4C3332-4D50-4230-B278-DF04576099C8.png" />
+    <None Include="wwwroot\Images\logos\7E8277D2-EF03-492A-A882-8199272828F9.png" />
+    <None Include="wwwroot\Images\logos\81FE9470-62DB-4F49-A93B-28334F4D3042.png" />
+    <None Include="wwwroot\Images\logos\85B44357-066A-40CE-891E-C631E828749C.png" />
+    <None Include="wwwroot\Images\logos\85bb0cd2-7cf2-4674-82a7-ae645aa3e974.png" />
+    <None Include="wwwroot\Images\logos\886A7CAD-414A-4E3D-A339-88301D7E1C17.png" />
+    <None Include="wwwroot\Images\logos\886C102B-BB26-486B-A7E3-056206199931.png" />
+    <None Include="wwwroot\Images\logos\88BFDE28-A558-4901-B422-3464C945F726.png" />
+    <None Include="wwwroot\Images\logos\8C229A65-03EF-439E-8F84-E0417F5361B2.png" />
+    <None Include="wwwroot\Images\logos\8D537583-67FD-449C-B3D1-BE3E92177327.png" />
+    <None Include="wwwroot\Images\logos\9A082700-E9D1-449C-99A4-F62A561DA929.png" />
+    <None Include="wwwroot\Images\logos\9F9AE0DB-D4A1-43E3-AAA2-C821916F47E2.png" />
+    <None Include="wwwroot\Images\logos\A3300403-CE50-4193-8AB0-70562B424ABE.png" />
+    <None Include="wwwroot\Images\logos\A7498901-7932-4E1C-B275-7B7F8653AAE1.png" />
+    <None Include="wwwroot\Images\logos\A80BEC17-148B-46C3-B157-01AA0ECAD983.png" />
+    <None Include="wwwroot\Images\logos\A89C4BCE-C385-42BA-B5A0-9FD729B0336F.png" />
+    <None Include="wwwroot\Images\logos\ABCFFDC3-8861-417D-A826-BE28360E2EEF.png" />
+    <None Include="wwwroot\Images\logos\B0A13720-6D9B-4383-9D11-3A1C3D12038A.png" />
+    <None Include="wwwroot\Images\logos\B74ABC1B-0F42-4AAB-A89F-148E817B9E6C.png" />
+    <None Include="wwwroot\Images\logos\BA3471FB-462F-4F93-BA70-5DC6B4FF1A1F.png" />
+    <None Include="wwwroot\Images\logos\bb0f830a-ed01-4550-b60e-f20b14cb8407.png" />
+    <None Include="wwwroot\Images\logos\bb0f830a-ed01-4550-b60e-f20b14cb8407.svg" />
+    <None Include="wwwroot\Images\logos\BC4A8357-DAFC-4619-BE4B-816F0EF84B43.png" />
+    <None Include="wwwroot\Images\logos\BF24CBCE-2E87-409B-BDA8-F717D16A8261.png" />
+    <None Include="wwwroot\Images\logos\C06BC7DE-79E7-4E2D-8FAF-A9D97C2C1359.png" />
+    <None Include="wwwroot\Images\logos\C0E714F0-2864-40BC-BD82-63D2198384C1.png" />
+    <None Include="wwwroot\Images\logos\C2368A3A-C80B-4536-B76E-B6E020F9E87C.png" />
+    <None Include="wwwroot\Images\logos\C62D2CF7-1D0F-47F6-B65F-1FB8598E8936.png" />
+    <None Include="wwwroot\Images\logos\CA3D504B-A5EE-4AA9-A520-9C7ED827088B.png" />
+    <None Include="wwwroot\Images\logos\CA41DAB3-F837-45FF-AABF-286A067E3BA6.png" />
+    <None Include="wwwroot\Images\logos\ca8fcb2e-3a82-401b-aa27-a28eae4d65da.png" />
+    <None Include="wwwroot\Images\logos\CBF36DE2-E600-45A0-919F-1D7579AD8483.png" />
+    <None Include="wwwroot\Images\logos\CDABA4D0-88A7-44ED-953D-0E0DA13DF46F.png" />
+    <None Include="wwwroot\Images\logos\d37ff4d4-2cea-495b-a807-3164e7a2ad54.png" />
+    <None Include="wwwroot\Images\logos\D47FE754-6C79-4AC1-A2A2-41BF26EF4805.png" />
+    <None Include="wwwroot\Images\logos\d63175e8-0eee-4d86-a2e7-6a906765c310.png" />
+    <None Include="wwwroot\Images\logos\d63175e8-0eee-4d86-a2e7-6a906765c310.svg" />
+    <None Include="wwwroot\Images\logos\D76206A5-FF5F-4506-89D5-87C4498F5598.png" />
+    <None Include="wwwroot\Images\logos\D78748D4-70E3-487E-A6BA-3C5D4BD842BD.png" />
+    <None Include="wwwroot\Images\logos\D81F963C-2AF8-439D-A6F6-FD127838AA8D.png" />
+    <None Include="wwwroot\Images\logos\DACC7000-A95D-4851-ABE8-B90BCBD5E4F1.png" />
+    <None Include="wwwroot\Images\logos\DEFFDB0A-D210-4C20-81F5-EA303575C96D.png" />
+    <None Include="wwwroot\Images\logos\E1DFF808-13D0-4BEB-80EA-1247E38CFE9C.png" />
+    <None Include="wwwroot\Images\logos\E66C56A1-F5D1-4CDB-8C85-52275BB3534F.png" />
+    <None Include="wwwroot\Images\logos\e6cf7868-4144-4309-b6f0-f87e3dbd4591.png" />
+    <None Include="wwwroot\Images\logos\E9B092AD-F8F7-4B15-A478-CB3D444A6D8A.png" />
+    <None Include="wwwroot\Images\logos\E9B2C26D-BF5E-4F3B-BAAB-39B74FACF26C.png" />
+    <None Include="wwwroot\Images\logos\EC466FA3-1E4B-4EFE-92A8-1EE186FE32C9.png" />
+    <None Include="wwwroot\Images\logos\EFB17282-4D33-4407-A728-09D15892D870.png" />
+    <None Include="wwwroot\Images\logos\F0855BD8-1E98-44F2-92DD-BA32F329B74D.png" />
+    <None Include="wwwroot\Images\logos\F22C562D-2E39-479F-8D68-F743D4BDEAB2.png" />
+    <None Include="wwwroot\Images\logos\f50c9329-66ec-42c9-b426-d4895132a5fc.png" />
+    <None Include="wwwroot\Images\logos\F50DDEAB-143C-4622-8486-6A2403CBCD91.png" />
+    <None Include="wwwroot\Images\logos\f5db7aa4-2740-4284-83d8-7cc66dda6e33.png" />
+    <None Include="wwwroot\Images\logos\F5E8C91A-1F51-4F85-BA76-1723E2DE7D6C.png" />
+    <None Include="wwwroot\Images\logos\f7feee76-7b67-4886-90ab-07488cb7a167.png" />
+    <None Include="wwwroot\Images\logos\f7feee76-7b67-4886-90ab-07488cb7a167.webp" />
+    <None Include="wwwroot\Images\logos\F8AEFED5-A0DF-4A5B-8CEE-F85525FD8FA1.png" />
+    <None Include="wwwroot\Images\logos\F9AD9891-12DB-424A-BF78-609F86BBD70E.png" />
+    <None Include="wwwroot\Images\logos\FD226056-1391-46BB-A57E-BB0930859E59.png" />
+    <None Include="wwwroot\Images\logos\FFCCDD2D-6BD2-4CE1-9E25-728094028E1B.png" />
+    <None Include="wwwroot\Images\logos\premier-inn.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Startup.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\**\*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="AvailabilitiesEntity.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="log4net.Production.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Module.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="ModuleBuilder.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Certificate\BbUAT.cer">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Certificate\certificate.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <AllowUntrustedCertificate>true</AllowUntrustedCertificate>
+    <ApplicationInsightsResourceId>/subscriptions/a5743f28-20fe-4b8c-84e9-6acd691262c8/resourceGroups/isango-api-prod-rg/providers/microsoft.insights/components/isango-api-bumblebeecore-prod</ApplicationInsightsResourceId>
+  </PropertyGroup>
+
+</Project>

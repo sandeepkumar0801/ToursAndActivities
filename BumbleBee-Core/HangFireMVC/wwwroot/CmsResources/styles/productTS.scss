@@ -1,0 +1,295 @@
+.main {
+    padding: 0 0 20px;
+}
+
+.pTop, .accordion-body .row {
+
+    > div {
+        margin: 10px 0;
+    }
+
+    .form-label {
+        width: 115px;
+        padding-right: 10px;
+        text-align: right;
+        margin: 3px 0 0;
+        line-height: 1.1;
+
+        &:after {
+            content: ":";
+        }
+    }
+
+    .form-control, .form-select, .endSupp .input-group {
+        width: calc(100% - 120px);
+        display: inline-grid;
+    }
+}
+
+.recProducts {
+    width: auto !important;
+}
+
+fieldset {
+    margin: auto;
+    padding: 5px 15px;
+    border: 1px solid $gray-lighter;
+}
+
+legend {
+    width: auto;
+    float: none;
+    margin: 0 0 -10px;
+    font-size: 1.3em;
+    padding: 0 5px;
+}
+
+.endSupp .form-control {
+    width: 100%;
+}
+
+.choices__inner {
+    padding: 3.5px 7.5px;
+    min-height: 38px;
+    background-color: #FFF;
+}
+
+.choices__input {
+    background-color: #FFF;
+    margin-bottom: 0;
+}
+
+.choices__list--multiple .choices__item {
+    margin-bottom: 1.75px;
+    margin-top: 1.75px;
+}
+
+.tableWrap {
+    /*border: 1px solid $gray-lighter;*/
+    background-color: lighten($gray-lighter, 13%);
+    margin-top: 20px;
+
+    .txTable {
+        .col2 {
+            width: 60%;
+        }
+    }
+}
+
+.priceTable {
+    /*border: 1px solid $gray-lighter;*/
+    max-height: 182px;
+    background-color: $white;
+    overflow-y: auto;
+}
+
+.tblHead {
+    width: calc(100% - 8px);
+}
+
+thead {
+    background-color: lighten($gray-lighter, 13%);
+}
+
+.weekday, .chkBox {
+    label {
+        width: 30px;
+        height: 29px;
+        line-height: 29px;
+        border-right: 1px solid $gray-lighter;
+        float: left;
+        text-align: center;
+    }
+}
+
+.chkBox {
+    checkbox {
+        margin-top: 7px;
+    }
+}
+
+select {
+    border-radius: 0;
+}
+
+.selected {
+    background-color: lighten($gray-lighter, 15%);
+
+    .form-select-sm {
+        background-color: lighten($gray-lighter, 15%);
+    }
+}
+
+.col1 {
+    width: 35px;
+
+    a {
+        width: 100%;
+        height: 29px;
+        line-height: 32px;
+        float: left;
+        border: 0 none;
+        font-size: 1.2em;
+        background-color: lighten($gray-lighter, 15%);
+    }
+}
+
+td.col1 {
+    padding: 0;
+}
+
+.col2 {
+    width: 40%;
+
+    select {
+        width: 100%;
+        height: 29px;
+        border: 0 none;
+    }
+}
+
+.col3 {
+    width: 20%;
+}
+
+.col5 {
+    width: 270px;
+
+    input {
+        margin-top: 7px;
+    }
+}
+
+.accordion-button {
+    background-color: lighten($gray-lighter, 17%);
+}
+
+.pickmeup {
+    display: none;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.borderBot {
+    border-bottom: 1px solid lighten($gray-lighter, 15%);
+}
+
+.widAuto {
+    width: auto !important;
+}
+
+.selectableList {
+    list-style: none;
+    padding: 0;
+
+    li {
+        border-top: 1px solid lighten($gray-lighter, 10%);
+
+        &:last-child {
+            border-bottom: 1px solid lighten($gray-lighter, 10%);
+        }
+    }
+
+    label, label > span {
+        display: block;
+    }
+
+    label > span {
+        padding: 10px 10px 7px;
+        background: $white;
+        @include transition();
+
+        &:hover {
+            background-color: lighten($gray-lighter, 17%);
+        }
+    }
+
+    input {
+        position: absolute;
+        left: -1000px;
+
+        &:checked + span {
+            font-weight: bold;
+            background-color: lighten($gray-lighter, 15%);
+        }
+    }
+}
+
+.pl30{
+    padding-left: 30px;
+}
+
+.addOpt {
+    .form-label {
+        width: 165px;
+        padding-right: 10px;
+        text-align: right;
+        margin: 3px 0 0;
+        line-height: 1.1;
+
+        &:after {
+            content: ":";
+        }
+    }
+
+    .form-control, .form-select, .endSupp .input-group {
+        width: calc(100% - 180px);
+        display: inline-grid;
+    }
+}
+
+.coDays {
+    width: 100px !important;
+}
+
+.appliedRule {
+    .form-label {
+        width: 115px;
+        padding-right: 10px;
+        text-align: right;
+        margin: 3px 0 0;
+        line-height: 1.1;
+
+        &:after {
+            content: ":";
+        }
+    }
+
+    .form-control, .form-select, .endSupp .input-group {
+        width: calc(100% - 120px);
+        display: inline-grid;
+    }
+}
+
+
+.newRow {
+    input {
+        width: 100px !important;
+    }
+}
+
+.tdAct {
+    i {
+        font-size: 1.75em;
+        margin: 3px 0 0 10px;
+        cursor: pointer;
+    }
+
+    .fa-check-square {
+        color: #00779e;
+    }
+
+    .fa-window-close {
+        color: #555;
+    }
+}
+.SeasonListUl{
+    input{
+        width: 100% !important;
+    }
+    label{
+        padding: 5px;
+    }
+}

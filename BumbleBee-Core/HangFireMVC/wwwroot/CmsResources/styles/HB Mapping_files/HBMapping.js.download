@@ -1,0 +1,93 @@
+﻿$('.numeric').on('input', function (event) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+});
+$('.decimal').on('input', function (event) {
+    this.value = this.value.replace(/[^0-9.]/g, '');
+});
+
+$(document).ready(function () {
+    $('#HBMappingTable').DataTable();
+    $('#HBMappingTable').removeClass('hidden');
+});
+
+function GetRegionIDList() {
+    var DestCode = $('#DestinationCodeAdd').val();
+    if (DestCode != null && DestCode != "") {
+        $.ajax({
+            type: 'GET',
+            url: GetCurrentUrl() + '/HBMapping/GetRegionsForProduct/' + $('#DestinationCodeAdd').val(),
+            async: true,
+            success: function (result) {
+                if (result != null && result != "") {
+                    var ddData = RegionValues(result.split(','));
+                    $('#GetRegionBtn').addClass('hidden');
+                    $('#RegionIDSelect').html(ddData);
+                    $('#RegionIDSelect').removeClass('hidden').removeAttr('disabled');
+                    $('#RegionIDAdd').addClass('hidden').attr('disabled', true);
+                }
+                else {
+                    $('#GetRegionBtn').addClass('hidden');
+                    $('#RegionIDAdd').removeClass('hidden').removeAttr('disabled');
+                    $('#RegionIDSelect').addClass('hidden').attr('disabled', true);
+                }
+            }
+        });
+    }
+    else {
+        $('#GetRegionBtn').val("Please Enter Destination Code");
+    }
+}
+
+function RegionValues(RegionIDs) {
+    var ddData = '<option value="">Select RegionID</option>';
+    RegionIDs.forEach(function (val, index) {
+        if (val != "") {
+            ddData = ddData + "<option value='" + val + "'>" + val + "</option>";
+        }
+    });
+    return ddData;
+}
+
+function ModifyProduct(elm) {
+    var factsheetid = $(elm).closest('td').find('.hiddenfactsheetid').val(),
+        servicecode = $(elm).closest('td').find('.hiddenservicecode').val(),
+        destinationcode = $(elm).closest('td').find('.hiddendestinationcode').val(),
+        minadult = $(elm).closest('td').find('.hiddenMinAdult').val(),
+        regionid = $(elm).closest('td').find('.hiddenRegionID').val(),
+        serviceid = $(elm).closest('td').find('.hiddenServiceID').val(),
+        languagecode = $(elm).closest('td').find('.hiddenlanguagecode').val();
+
+    $('#AddProduct').modal();
+
+    $('#factsheetIDAdd').val(factsheetid);
+    $('#ServiceCodeAdd').val(servicecode).attr("disabled", false);
+    $('#DestinationCodeAdd').val(destinationcode);
+    $('#IsContentUpdateAdd').attr("checked", true);
+    $('#MinAdultAdd').val(factsheetid);
+    $('#RegionIDAdd').val(factsheetid);
+    $('#ServiceIDAdd').val(factsheetid);
+    $('#LanguageCode').val(factsheetid);
+    $('#ManualContentUpdateAdd').attr("checked", true);
+
+    GetRegionIDList();
+}
+
+function GetCurrentUrl() {
+    var prefix = "",
+        href = window.location.href;
+
+    if (href.indexOf("/cmsstg/") >= 0) {
+        prefix = "/cmsstg";
+    }
+    if (href.indexOf("/cms/") >= 0) {
+        prefix = "/cms";
+    }
+    if (href.indexOf("/echo/") >= 0) {
+        prefix = "/echo";
+    }
+    if (href.indexOf("/cmsqa/") >= 0) {
+        prefix = "/cmsqa";
+    }
+
+    return prefix;
+}

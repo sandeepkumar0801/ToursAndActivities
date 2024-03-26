@@ -1,0 +1,132 @@
+﻿using Autofac;
+using Isango.Entities;
+using Isango.Entities.Activities;
+using Isango.Entities.Enums;
+using Isango.Register;
+using Isango.Service.Constants;
+using Isango.Service.Contract;
+using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Util;
+
+namespace Isango.Services.Test
+{
+    public class TiqetsCriteriaServiceTest : BaseTest
+    {
+        private ITiqetsCriteriaService _tiqetsCriteriaService;
+        private IAsyncBookingService _asyncBookingService;
+
+        [OneTimeSetUp]
+        public void TestInitialise()
+        {
+            //var container = Startup._builder.Build();
+            using (var scope = _container.BeginLifetimeScope())
+            {
+                _tiqetsCriteriaService = scope.Resolve<ITiqetsCriteriaService>();
+                _asyncBookingService = scope.Resolve<IAsyncBookingService>();
+            }
+        }
+
+        [Test]
+        public void GetAvailabilityAndServiceDetailsTest()
+        {
+            var products = new List<IsangoHBProductMapping>
+            {
+                new IsangoHBProductMapping
+                {
+                    ApiType = APIType.Tiqets,
+                    CountryId = 0,
+                    MinAdultCount = 1,
+                    FactSheetId = 972859,
+                    HotelBedsActivityCode = "972859",
+                    IsangoHotelBedsActivityId = 29136,
+                    IsangoRegionId = 7377,
+                    ServiceOptionInServiceid = 143598
+                }
+            };
+            var criteria = CreateCriteria(products);
+            var availability = _tiqetsCriteriaService.GetAvailability(criteria);
+
+            var serviceDetails = _tiqetsCriteriaService.GetServiceDetails(availability, products);
+
+            Assert.NotNull(availability);
+            Assert.NotNull(serviceDetails);
+        }
+
+        [Test]
+        public void GetAvailabilityAndServiceDetails_NegativeTest()
+        {
+            var products = new List<IsangoHBProductMapping>
+            {
+                new IsangoHBProductMapping
+                {
+                    ApiType = APIType.Tiqets,
+                    CountryId = 0,
+                    MinAdultCount = 1,
+                    FactSheetId = 972859,
+                    HotelBedsActivityCode = "972859",
+                    IsangoHotelBedsActivityId = 29136,
+                    IsangoRegionId = 7377,
+                    ServiceOptionInServiceid = 143598
+                }
+            };
+            var criteria = CreateCriteria(products);
+
+            var availability = _tiqetsCriteriaService.GetAvailability(criteria);
+            Assert.IsNotNull(availability);
+
+            //Null Check Scenario
+            var activities = new List<Activity> { null };
+            var serviceDetails = _tiqetsCriteriaService.GetServiceDetails(activities, products);
+            Assert.IsNotNull(serviceDetails);
+
+            //Null Check Scenario
+            products.First().IsangoHotelBedsActivityId = 1234;
+            serviceDetails = _tiqetsCriteriaService.GetServiceDetails(availability, products);
+            Assert.IsNotNull(serviceDetails);
+
+            //Null Check Scenario
+            criteria.Counter = 0;
+            availability = _tiqetsCriteriaService.GetAvailability(criteria);
+            Assert.IsNotNull(availability);
+        }
+
+        //Tiqets Async Pending Booking Testing
+        [Test]
+        [Ignore("Ignore this test case as it has database and insert in storage calls")]
+        public void TiqetsAsyncBooking()
+        {
+            _asyncBookingService.ProcessIncompleteBooking();
+        }
+
+        #region Private Method
+
+        /// <summary>
+        /// Create criteria
+        /// </summary>
+        /// <param name="products"></param>
+        /// <returns></returns>
+        private Entities.ConsoleApplication.ServiceAvailability.Criteria CreateCriteria(List<IsangoHBProductMapping> products)
+        {
+            var days = Convert.ToInt32(ConfigurationManagerHelper.GetValuefromAppSettings(Constant.Days2FetchForHeavyData));
+            var months = Convert.ToInt32(ConfigurationManagerHelper.GetValuefromAppSettings(Constant.Months2FetchForHeavyData));
+
+            //Set criteria
+            var criteria = new Entities.ConsoleApplication.ServiceAvailability.Criteria
+            {
+                MappedProducts = products,
+                Days2Fetch = days,
+                Months2Fetch = months,
+                Counter = (int)Math.Ceiling((double)(months * 30) / days),
+                SameDay = false,
+                Token = Guid.NewGuid().ToString()
+            };
+
+            return criteria;
+        }
+
+        #endregion Private Method
+    }
+}

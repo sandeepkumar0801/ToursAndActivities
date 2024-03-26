@@ -1,0 +1,28 @@
+﻿@inject Microsoft.AspNetCore.Identity.SignInManager<ApplicationUser> _signInManager
+
+<div class="fl fw headerInner df aic">
+    <div class="dib pt5 pb5 logoWrap">
+        <a href="~/dashboard" class="aLogo">
+            <img src="https://hohobassets.isango.com/phoenix/images/isango-cs.png" alt="isango" id="isangoLagOutId" />
+        </a>
+    </div>
+    <div class="dib rightPart mla pr15">
+        @if (_signInManager.IsSignedIn(User))
+        {
+            <form id="logoutForm" asp-controller="Account" asp-action="SignOut" method="post" class="navbar-right">
+
+                <ul class="ulMenuRight df aic">
+                    <li class="headerMenu">
+                        <a href="javascript:void(0)" onclick="openMenu(this)"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="mla"><a href="javascript:document.getElementById('logoutForm').submit()" id="logoutLinkId"><i class="fas fa-sign-out-alt mr5"></i> Log off</a></li>
+                    <li class="ml15">
+                        <i class="fas fa-user mr5"></i> <a href="@Url.Action("Index", "Home")" id="logoutProdMgrId" title="Manage">Hello @User.Identity.Name</a>
+                    </li>
+                </ul>
+            </form>
+        }
+    </div>
+</div>
+
+

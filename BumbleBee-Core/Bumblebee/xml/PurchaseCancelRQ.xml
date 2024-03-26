@@ -1,0 +1,11 @@
+﻿<PurchaseCancelRQ echoToken="DummyEchoToken" type="C" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hotelbeds.com/schemas/2005/06/messages PurchaseDetailRQ.xsd" version="ARD_BETA">
+  <Language>ENG</Language>
+  <Credentials>
+    <User>TEST</User>
+    <Password>TEST</Password>
+  </Credentials>
+  <PurchaseReference>
+    <FileNumber>368769</FileNumber>
+    <IncomingOffice code="1" />
+  </PurchaseReference>
+</PurchaseCancelRQ>

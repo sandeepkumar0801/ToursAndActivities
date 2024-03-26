@@ -1,0 +1,7 @@
+<ServiceRemoveRQ purchaseToken="TS092356022" SPUI="1#H#1" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2013/04">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>TEST</User>
+		<Password>TEST</Password>
+	</Credentials>
+</ServiceRemoveRQ>

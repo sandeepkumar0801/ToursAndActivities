@@ -1,0 +1,22 @@
+// Basic
+$white: #fff;
+
+// Grid
+$grid: 12;
+$xxs-screen: 320px;
+$iphone6: 375px;
+$iphone6s: 414px;
+$xs-screen: 480px;
+$sm-screen: 603px;
+$md-screen: 768px;
+$lg-screen: 990px;
+$xlg-screen: 1200px;
+$xxs-screen-max: $xs-screen - 1;
+$xs-screen-max: $sm-screen - 1;
+$sm-screen-max: $md-screen - 1;
+$md-screen-max: $lg-screen - 1;
+$lg-screen-max: $xlg-screen - 1;
+$iphone6-max: $iphone6s - 1;
+
+// Login
+$login-bg-img: "";

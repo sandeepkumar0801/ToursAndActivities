@@ -1,0 +1,235 @@
+[class*="col-"] {
+    float: left;
+    position: relative;
+    display: block;
+    min-height: 1px;
+    width: 100%;
+}
+
+@for $i from $grid through 1 {
+    .col-xxs-#{$i} {
+        width: percentage(100/($grid/$i))/100 !important;
+    }
+}
+
+.xxs-hidden {
+    display: none !important;
+}
+
+.xxs-visible {
+    display: block !important;
+}
+
+.xxs-visible-il {
+    display: inline-block !important;
+}
+
+.xxs-visible-ile {
+    display: inline !important;
+}
+
+.wrapper {
+    @include dib();
+    @include fw();
+    @include tac();
+
+    .container {
+        position: relative;
+        @include tal;
+        @include fw;
+        @include dib;
+        vertical-align: top;
+    }
+}
+
+@media screen and (min-width:$xxs-screen) {
+    @for $i from $grid through 1 {
+        .col-xs-#{$i} {
+            width: percentage(100/($grid/$i))/100 !important;
+        }
+    }
+
+    .xs-hidden {
+        display: none !important;
+    }
+
+    .xs-visible {
+        display: block !important;
+    }
+
+    .xs-visible-il {
+        display: inline-block !important;
+    }
+
+    .xs-visible-ile {
+        display: inline !important;
+    }
+}
+
+@media screen and (min-width:$xs-screen) {
+    @for $i from $grid through 1 {
+        .col-sm-#{$i} {
+            width: percentage(100/($grid/$i))/100 !important;
+        }
+    }
+
+    .sm-hidden {
+        display: none !important;
+    }
+
+    .sm-visible {
+        display: block !important;
+    }
+
+    .sm-visible-il {
+        display: inline-block !important;
+    }
+
+    .sm-visible-ile {
+        display: inline !important;
+    }
+}
+
+@media screen and (min-width:$sm-screen) {
+    @for $i from $grid through 1 {
+        .col-md-#{$i} {
+            width: percentage(100/($grid/$i))/100 !important;
+        }
+    }
+
+    .md-hidden {
+        display: none !important;
+    }
+
+    .md-visible {
+        display: block !important;
+    }
+
+    .md-visible-il {
+        display: inline-block !important;
+    }
+
+    .md-visible-ile {
+        display: inline !important;
+    }
+}
+
+@media screen and (min-width:$md-screen) {
+    @for $i from $grid through 1 {
+        .col-lg-#{$i} {
+            width: percentage(100/($grid/$i))/100 !important;
+        }
+    }
+
+    .lg-hidden {
+        display: none !important;
+    }
+
+    .lg-visible {
+        display: block !important;
+    }
+
+    .lg-visible-il {
+        display: inline-block !important;
+    }
+
+    .lg-visible-ile {
+        display: inline !important;
+    }
+
+    .container {
+        max-width: $md-screen;
+    }
+
+    .flex {
+        -ms-display: flex;
+        -moz-display: flex;
+        -webkit-display: flex;
+        -o-display: flex;
+        display: flex;
+    }
+
+    @mixin flex {
+        -ms-display: flex;
+        -moz-display: flex;
+        -webkit-display: flex;
+        -o-display: flex;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:$md-screen-max) {
+    .leftPannel {
+        display: none;
+    }
+}
+
+@media screen and (min-width:$lg-screen) {
+    @for $i from $grid through 1 {
+        .col-xlg-#{$i} {
+            width: percentage(100/($grid/$i))/100 !important;
+        }
+    }
+
+    .xlg-hidden {
+        display: none !important;
+    }
+
+    .xlg-visible {
+        display: block !important;
+    }
+
+    .xlg-visible-il {
+        display: inline-block !important;
+    }
+
+    .xlg-visible-ile {
+        display: inline !important;
+    }
+
+    .container {
+        max-width: $lg-screen;
+    }
+}
+
+@media screen and (min-width:$xlg-screen) {
+    @for $i from $grid through 1 {
+        .col-xxlg-#{$i} {
+            width: percentage(100/($grid/$i))/100 !important;
+        }
+    }
+
+    .container {
+        max-width: $xlg-screen;
+    }
+
+    .xxlg-hidden {
+        display: none !important;
+    }
+
+    .xxlg-visible {
+        display: block !important;
+    }
+
+    .xxlg-visible-il {
+        display: inline-block !important;
+    }
+
+    .xxlg-visible-ile {
+        display: inline !important;
+    }
+}
+
+.wrapper {
+    .hidden {
+        display: none !important;
+    }
+
+    .visible {
+        display: block !important;
+    }
+
+    .visible-il {
+        display: inline-block !important;
+    }
+}

@@ -1,0 +1,11 @@
+﻿<PurchaseDetailRQ echoToken="DummyEchoToken" xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hotelbeds.com/schemas/2005/06/messages PurchaseDetailRQ.xsd" version="ARD_BETA">
+  <Language>ENG</Language>
+  <Credentials>
+    <User>16776</User>
+    <Password>16776</Password>
+  </Credentials>
+  <PurchaseReference>
+    <FileNumber>"123"</FileNumber>
+    <IncomingOffice code="254"/>
+  </PurchaseReference>
+</PurchaseDetailRQ>

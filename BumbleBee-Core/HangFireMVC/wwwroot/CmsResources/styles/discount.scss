@@ -1,0 +1,142 @@
+.pickmeup {
+    display: none;
+    z-index: 9999;
+
+    .pmu-instance nav .pmu-prev,
+    .pmu-instance nav .pmu-next {
+        font: normal normal normal 14px/1 FontAwesome;
+    }
+}
+
+.ms-options-wrap {
+    position: relative;
+
+    li label {
+        text-align: left;
+    }
+}
+
+.showMultilst {
+    display: none;
+}
+
+.ddlCurrency {
+    width: auto;
+    margin: 0 10px;
+}
+
+.ms-options-wrap > .ms-options {
+    background-color: #e6e6e6;
+}
+
+.posSticky {
+    position: static;
+    top: 0;
+}
+
+.voucher {
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-head {
+        font-size: 1.2em;
+
+        small {
+            font-size: 0.6em;
+        }
+    }
+
+    &-body {
+        span {
+            vertical-align: middle;
+        }
+    }
+
+    &-right {
+        text-align: right;
+
+        span {
+            display: block;
+            font-weight: bold;
+        }
+    }
+
+    &-footer {
+        border-top: 1px solid #ddd;
+        margin: 10px 0 0 0;
+        padding: 5px 0 0 0;
+    }
+}
+
+.loadmore {
+    margin: 0 0 20px 0;
+
+    i {
+        vertical-align: middle;
+        font-size: 1.2em;
+    }
+}
+
+.voucher-wrap > div {
+    &:nth-child(n*20 + 1) {
+        background-color: #c0c0c0;
+    }
+}
+
+.incXclude {
+    input {
+        &:checked {
+            + span {
+                .in {
+                    display: inline;
+                }
+
+                .out {
+                    display: none;
+                }
+            }
+        }
+
+        + span {
+            font-weight: normal;
+
+            .in {
+                display: none;
+            }
+
+            .out {
+                display: inline;
+            }
+        }
+    }
+}
+
+.discount {
+    .productData {
+        padding: 0 15px;
+    }
+
+    .row {
+        .col-form-label {
+            text-align: right;
+        }
+
+        .col-sm-9 {
+            text-align: left;
+        }
+    }
+}
+
+.editAge {
+    .col-form-label {
+        text-align: right;
+
+        &:after {
+            content: ":";
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <title>The best things to do around the world | isango!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        body {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            background: #FFF;
+            margin: 0;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, .8);
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            font-family: 'Roboto', sans-serif;
+        }
+
+            table td {
+                border-collapse: collapse;
+            }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            border: 0 none;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+            color: black;
+            border: 0 none;
+        }
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            color: #000;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+            table td {
+                border-collapse: collapse;
+            }
+        tr[class=visible-lg] {
+            display: table-row !important;
+        }
+
+        tr[class=visible-sm] {
+            display: none !important;
+        }
+
+        /*Small tablet portrait (600x800)*/
+        @media screen and (max-width: 640px) {
+            table[class=email-container] {
+                width: 96%;
+            }
+
+            img[class=logo] {
+                margin: 0 auto 5px !important;
+            }
+
+            .force-col {
+                display: block;
+                clear: both;
+                padding-right: 0 !important;
+                width: 100% !important;
+                padding-bottom: 20px !important;
+                border: 0 !important;
+            }
+                .force-col.col2 {
+                    padding-right: 10px !important;
+                }
+
+                .force-col.noBrdr {
+                    border: 0 none;
+                    padding-bottom: 0 !important;
+                }
+
+            td[class=container-padding] {
+                padding-left: 2px !important;
+                padding-right: 2px !important;
+            }
+
+            table[class=hide],
+            tr[class=hide],
+            td[class=hide],
+            img[class=hide] {
+                display: none !important;
+            }
+
+            td[class=navSpcr] {
+                height: 5px !important;
+            }
+
+            .force-col.bkg-l {
+                border-bottom: 1px solid #EEE !important;
+            }
+            tr[class=visible-lg] {
+                display: none !important;
+            }
+
+            tr[class=visible-sm] {
+                display: table-row !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            table[class=email-container] {
+                width: 96%;
+            }
+
+            img[class=logo] {
+                margin: 0 auto 5px !important;
+            }
+
+            .force-col {
+                display: block;
+                clear: both;
+                padding-right: 0 !important;
+                width: 100% !important;
+            }
+                .force-col.col2 {
+                    padding-right: 10px !important;
+                }
+
+            td[class=container-padding] {
+                padding-left: 2px !important;
+                padding-right: 2px !important;
+            }
+
+            table[class=hide],
+            tr[class=hide],
+            td[class=hide],
+            img[class=hide] {
+                display: none !important;
+            }
+
+            td[class=navSpcr] {
+                height: 5px !important;
+            }
+
+            .colHead {
+                padding: 0 5px;
+            }
+        }
+
+        /* Give content more room on iPhone5 */
+        @media screen and (max-width: 335px) {
+            table[class=email-container] {
+                width: 320px;
+            }
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .fl {
+            float: left;
+            position: relative;
+        }
+
+        .fr {
+            float: right;
+            position: relative;
+        }
+
+        .dn {
+            display: none;
+        }
+
+        .db {
+            display: block;
+        }
+
+        .dib {
+            display: inline-block;
+        }
+
+        .tal {
+            text-align: left;
+        }
+
+        .tar {
+            text-align: right;
+        }
+
+        .tac {
+            text-align: center;
+        }
+
+        .m0 {
+            margin: 0 !important;
+        }
+
+        .p0 {
+            padding: 0 !important;
+        }
+
+        .fw {
+            width: 100%;
+        }
+
+        .uc {
+            text-transform: uppercase;
+        }
+
+        .lc {
+            text-transform: lowercase;
+        }
+
+        .cc {
+            text-transform: capitalize;
+        }
+
+        .au {
+            text-decoration: underline;
+        }
+
+            .au:hover {
+                text-decoration: none;
+            }
+
+        .disabled {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .noBg {
+            background: none !important;
+        }
+
+        .cbox {
+            border: 1px solid #eee;
+        }
+
+        .bkg-status {
+            padding: 3px 7px;
+            font-size: 8.5pt;
+            line-height: 125%;
+            border-radius: 4px;
+            color: #fff;
+            width: 80px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .off {
+            font-size: 11px;
+            line-height: 1;
+            background: #62b017;
+            border-radius: 3px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 1px 4px;
+            display: inline-block;
+            text-align: center;
+        }
+        .font24 {
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+        }
+
+        td[class=logoTd] img {
+            margin: auto !important;
+        }
+    </style>
+</head>
+
+<body style="margin: 0;padding:5px;background:#FFFFFF;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <!--[if gte mso 9]>
+        <center>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td width="700">
+        <![endif]-->
+    <table width="100%" style="max-width: 700px;margin:0 auto;background: #FFFFFF;border-collapse: collapse;border: 0 none;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <table width="100%" style="max-width: 700px;margin:0 auto;background: #FFFFFF;border-collapse: collapse;border: 0 none;" cellpadding="0" cellspacing="0" border="0" class="email-container">
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    #AffiliateNameLogo#
+                                    <!--<td style="width: 120px; text-align: left;border-bottom: 1px solid #EEE;height: 70px;vertical-align: middle;">
+                                    <img height="42" style="max-width:99px" alt="isango!" src="#AffiliateNameLogo#" />
+                                    </td>-->
+                                    <!--<td width="445" style="border-bottom: 1px solid #EEE;">
+                                        <p style="font-size: 16px; font-weight: bold; display: none;">
+                                            <div style="font:bold 16px 'Poppins', sans-serif; text-align:center">   <span style="color:#139ab8">   </span></div>
+                                        </p>
+                                    </td>-->
+                                    #showlogo#
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #EEE;border-bottom-width: 0px;overflow:hidden;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                ##TopMessage##
+                                <tr>
+                                    <td height="10" style="height: 10px;font-size: 0px;line-height: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tac" style="font-size: 24px;font-family: 'Roboto', sans-serif;padding: 30px 0 20px;">R&#xE9;sum&#xE9; de la r&#xE9;servation et du paiement</td>
+                    </tr>
+                    ##ProductData##
+                    <tr>
+                        <td class="cbox cnf-total" style="border: 1px solid #EEE;overflow:hidden;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 20px; color: #333;padding: 10px 0 10px 10px;text-align:left;border-bottom: 1px solid #EEE">
+                                        <strong class="bt-l"><b>Total de la r&#xE9;servation: </b></strong>
+                                    </td>
+                                    <td style="font-size: 20px; color: #333;padding: 10px 10px 10px 0;width: 165px;text-align:right;border-bottom: 1px solid #EEE" class="tar"><b>#TotalAmount#</b></td>
+                                </tr>
+                                <tr style="display:#displayVoucherDiscount#">
+                                    <td style="padding: 8px 10px 8px 15px;font-size: 12px;text-align:left;border-bottom: 1px solid #EEE" class="tal">Bon de r&#xE9;duction: </td>
+                                    <td style="padding: 8px 15px 8px 0;font-size: 12px;text-align:right;border-bottom: 1px solid #EEE" class="tar">##VoucherDiscount##</td>
+                                </tr>
+                                <tr style="display:#displayMultiSaveDiscount#">
+                                    <td style="padding: 8px 10px 8px 15px;font-size: 12px;text-align:left;border-bottom: 1px solid #EEE" class="tal">R&#xE9;duction multi-sauvegarde: </td>
+                                    <td style="padding: 8px 15px 8px 0;font-size: 12px;text-align:right;border-bottom: 1px solid #EEE" class="tar">##MultisaveDiscount##</td>
+                                </tr>
+                                <tr style="display:#displayAmountAfterDiscount#">
+                                    <td style="padding: 8px 10px 8px 15px;font-size: 12px;text-align:left;border-bottom: 1px solid #EEE" class="tal">Montant apr&#xE8;s remise: </td>
+                                    <td style="padding: 8px 15px 8px 0;font-size: 12px;text-align:right;border-bottom: 1px solid #EEE" class="tar">##AmountAfterDiscount##</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 10px 8px 15px;font-size: 12px;text-align:left;" class="tal">Montant total factur&#xE9;: </td>
+                                    <td style="padding: 8px 15px 8px 0;font-size: 12px;text-align:right;" class="tar">##TotalChargedAmount##</td>
+                                </tr>
+                                <tr style="display:##displayToBeChargedAmount##;">
+                                    <td style="padding: 8px 10px 8px 15px;font-size: 12px;border-top: 1px solid #EEE" class="tal">
+                                        &#xC0; d&#xE9;biter lors de la confirmation de la demande de r&#xE9;servation en attente:
+                                    </td>
+                                    <td style="padding: 8px 15px 8px 0;font-size: 12px;border-top: 1px solid #EEE" class="tar">##AmountAfterConfirmation##</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="height: 20px;font-size: 0px;line-height: 1px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center">
+                            <a href="##invoicelink##">##BtnDownloadInvoice##</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="height: 20px;font-size: 0px;line-height: 1px;font-size: 1px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="txt cbox" style="text-align:center;padding: 15px 0; font-size: 11px;color: #333;background-color: #EDEDF2;border: 1px solid #EEE;overflow:hidden;padding: 10px;">
+                            <b>NOTE:-</b> Pour toute assistance suppl&#xE9;mentaire, veuillez nous contacter &#xE0; l&#x27;adresse  <a href="mailto:#SupportEmail#"><b>##SupportEmail##</b></a> ou nous laisser un message via le chat sur <a href="#SiteUrl#">#SiteName#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="height: 20px;font-size: 0px;line-height: 1px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="mybook tac cbox" style="padding: 10px;text-align:center;border: 1px solid #EEE;overflow:hidden;">
+                            <p style="padding: 0;margin: 0;text-align:center;">Vous pouvez toujours vous rendre sur la page Mes r&#xE9;servations pour consulter les d&#xE9;tails de l&#x27;itin&#xE9;raire, apporter des modifications, etc.</p><br />
+                            <a href="##MyBookingsWebsite##">##BtnMyBooking##</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="height: 20px;font-size: 0px;line-height: 1px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 24px;font-family:'Roboto', sans-serif;color: #333333;text-align: center;##displayCrossSell##;" class="tac font24">Fr&#xE9;quemment achet&#xE9;s ensemble</td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="height: 20px;font-size: 0px;line-height: 1px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" style="max-width: 700px;margin:0" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    ##CrossSellData##
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="height: 20px;font-size: 0px;line-height: 1px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin: auto; background-color: #EDEDF2;" class="email-container">
+                                <tr>
+                                    <td height="10" style="height:10px;font-size:0.0001em;line-height:1px;"><img src="##BaseUrl##/Images/spcr.gif" height="10" width="10" alt="" />
+                                </tr>
+                                <tr>
+                                    <td style="height: 36px; width: 100%; font-family: roboto, sans-serif; mso-height-rule:exactly; font-size: 12px; line-height: 20px; letter-spacing: 00.12px; text-align: center; color: #212121;">
+                                        Nous vous souhaitons une nouvelle ann&#xE9;e pleine de possibilit&#xE9;s de voyage.<br> isango! Team
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="height:10px;font-size:0.0001em;line-height:1px;"><img src="##BaseUrl##/Images/spcr.gif" height="10" width="10" alt="" />
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; height: 20px;background: #EDEDF2;">
+                                        <table style="padding: 12px 0px 10px 0px;background: #EDEDF2;" width="200" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width:40px">
+                                                        <a href="https://www.facebook.com/isangotravels" target="_blank" title="facebook">
+                                                            <img src="https://marketing.isango.com/newsletters/emailers/booking/facebook.png" alt="FB" class="social" title="facebook" width="11" height="auto" />
+                                                        </a>
+                                                    </td>
+                                                    <td style="width:40px">
+                                                        <a href="https://twitter.com/isango" target="_blank" title="twitter">
+                                                            <img src="https://marketing.isango.com/newsletters/emailers/booking/twitter.png" alt="TW" class="social" title="twitter" width="20" height="auto" />
+                                                        </a>
+                                                    </td>
+                                                    <td style="width:40px">
+                                                        <a href="https://www.instagram.com/isangotravels" target="_blank" title="instagram">
+                                                            <img src="https://marketing.isango.com/newsletters/emailers/booking/instagram.png" alt="IG" class="social" title="instagram" width="20" height="auto" />
+                                                        </a>
+                                                    </td>
+                                                    <td style="width:40px">
+                                                        <a href="https://uk.pinterest.com/isango/" target="_blank" title="pintrest">
+                                                            <img src="https://marketing.isango.com/newsletters/emailers/booking/pintrest.png" alt="PIN" class="social" title="pinterest" width="15" height="auto" />
+                                                        </a>
+                                                    </td>
+                                                    <td style="width:40px">
+                                                        <a href="https://www.youtube.com/channel/UClSR166Oe6pL_qb2HE2ZY5w" target="_blank" title="youtube">
+                                                            <img src="https://marketing.isango.com/newsletters/emailers/booking/youtube.png" alt="YOU" class="social" title="youtube" width="20" height="auto" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="height:10px;font-size:0.0001em;line-height:1px;"><img src="##BaseUrl##/Images/spcr.gif" height="10" width="10" alt="" />
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--[if gte mso 9]>
+       </td>
+       <td>&nbsp;</td>
+       </tr>
+       </table>
+        </center>
+       <![endif]-->
+</body>
+</html>

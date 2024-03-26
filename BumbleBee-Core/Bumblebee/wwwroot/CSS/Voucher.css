@@ -1,0 +1,252 @@
+﻿tfoot {
+    display: table-footer-group;
+}
+
+@media print, screen {
+    html {
+        height: 100%;
+    }
+
+    table {
+        border: 0 none;
+        border-collapse: collapse;
+        width: 100%;
+        position: relative;
+        z-index: 999;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .pdf-container {
+        border: 0px;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .pdf-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    .box {
+        border: 1px solid #d8d59c;
+    }
+
+    .txt-blu {
+        color: #0075a7;
+    }
+
+    .h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 2;
+        /*border-top: 2px dotted #5f9165;*/
+        border-bottom: 2px dotted #5f9165;
+        margin: 0 0 15px;
+    }
+
+    .h2,
+    .h3,
+    .hh1 {
+        color: #7da231;
+        margin: 0;
+    }
+
+    .hh1 {
+        background-color: #f2f2d2;
+        padding: 5pt 10pt;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .h2 {
+        background-color: #f2f2d2;
+        color: #7da231;
+        border-top: 1px solid #d8d59c;
+        border-bottom: 1px solid #d8d59c;
+        margin: 0;
+        font-size: 25px;
+        padding: 5pt 10pt;
+        position: relative;
+    }
+
+        .h2::before,
+        .hh1::before {
+            content: "";
+            height: 1px;
+            width: 100%;
+            border-bottom: 48px solid #f2f2d2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .h2 b,
+        .hh1 b {
+            position: relative;
+            z-index: 2;
+        }
+
+    .bullet {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 100%;
+        border: 14px solid #7da231;
+        color: #FFFFFF;
+        line-height: 0px;
+        text-align: center;
+        text-indent: -3px;
+        font-style: normal;
+        font-size: 23px;
+    }
+
+    .spcr {
+        width: 15px;
+    }
+
+    .col1 {
+        width: 45%;
+        text-align: right;
+        vertical-align: top;
+    }
+
+    .hSpcr {
+        height: 20px;
+        font-size: 1px;
+    }
+
+    .hSpcr10 {
+        height: 10px;
+        font-size: 1px;
+    }
+
+    .cols {
+        text-align: right;
+        vertical-align: top;
+        width: 200px;
+    }
+
+    .brdrBtm {
+        border-bottom: 2px dotted #5f9165;
+    }
+
+    .pdf-footer {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    img {
+        border: 0 none;
+    }
+
+    .link {
+        text-decoration: underline;
+        color: #003d90;
+    }
+
+    .igo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+        .igo img {
+            display: block;
+        }
+
+    .bdr-rt {
+        border-right: 1px solid #999999;
+    }
+
+    .w50 {
+        width: 50%;
+    }
+
+    .warn {
+        text-align: center;
+        color: #ee1d25;
+        font-size: 20px;
+    }
+
+    .mSave {
+        background-color: #f2f2d2;
+    }
+
+    .priceTable td {
+        padding: 2px 5px;
+    }
+
+    .vat {
+        vertical-align: top !important;
+    }
+
+    .contactWrap {
+        display: flex;
+    }
+
+    .contact1,
+    .contact2,
+    .contact3 {
+        flex: 1;
+        float: left;
+    }
+
+    .contact1,
+    .contact2 {
+        padding-right: 15px;
+    }
+}
+
+.printBtn {
+    margin: -5px 0 0 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #fa673a;
+    background-color: #f94008;
+    color: #fff;
+    font-size: 23px;
+    border-radius: 3px;
+}
+
+.header,
+.headerSpace,
+.footer,
+.footerSpace {
+    height: 80px;
+}
+
+.header {
+    position: fixed;
+    text-align: left;
+    padding: 20px 0 0 20px;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    text-align: center;
+    z-index: 1000;
+    padding: 20px 0 0 0;
+    height: 60px;
+}

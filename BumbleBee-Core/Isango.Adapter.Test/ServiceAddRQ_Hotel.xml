@@ -1,0 +1,37 @@
+<ServiceAddRQ xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hotelbeds.com/schemas/2005/06/messages ServiceAddRQ.xsd" echoToken="token">
+	<Language>ENG</Language>
+	<Credentials>
+		<User>ISANGOUK1013</User>
+		<Password>ISANGOUK1013</Password>
+	</Credentials>
+	<Service xsi:type="ServiceHotel" availToken="gSbFSWkhW4x0dbiPLjMkvQbp">
+		<ContractList>
+			<Contract>
+				<Name>CG-BAR 1-3NTS</Name>
+				<IncomingOffice code="197" />
+			</Contract>
+		</ContractList>
+		<DateFrom date="20131029" />
+		<DateTo date="20131031" />
+		<HotelInfo xsi:type="ProductHotel">
+			<Code>211063</Code>
+			<Destination type="SIMPLE" code="PAR" />
+		</HotelInfo>
+		<AvailableRoom>
+			<HotelOccupancy>
+				<RoomCount>1</RoomCount>
+				<Occupancy>
+					<AdultCount>2</AdultCount>
+					<ChildCount>0</ChildCount>
+					<GuestList>
+						<Customer type="AD" />
+					</GuestList>
+				</Occupancy>
+			</HotelOccupancy>
+			<HotelRoom SHRUI="KGyNWDwUCQVtPm2VuQJcqg==">
+				<Board type="SIMPLE" code="RO-E10" />
+				<RoomType type="SIMPLE" code="STU-E10" characteristic="2C" />
+			</HotelRoom>
+		</AvailableRoom>
+	</Service>
+</ServiceAddRQ>

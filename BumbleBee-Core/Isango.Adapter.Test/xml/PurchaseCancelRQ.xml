@@ -1,0 +1,11 @@
+﻿<PurchaseCancelRQ xmlns="http://www.hotelbeds.com/schemas/2005/06/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2013/04" type="V">
+  <Language>ENG</Language>
+  <Credentials>
+    <User>TEST</User>
+    <Password>TEST</Password>
+  </Credentials>
+  <PurchaseReference>
+    <FileNumber>368769</FileNumber>
+    <IncomingOffice code="1"/>
+  </PurchaseReference>
+</PurchaseCancelRQ>

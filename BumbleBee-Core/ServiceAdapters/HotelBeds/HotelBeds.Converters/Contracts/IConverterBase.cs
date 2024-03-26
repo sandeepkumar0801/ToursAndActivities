@@ -1,0 +1,7 @@
+﻿namespace ServiceAdapters.HotelBeds.HotelBeds.Converters.Contracts
+{
+    public interface IConverterBase
+    {
+        object Convert(object objectresult);
+    }
+}

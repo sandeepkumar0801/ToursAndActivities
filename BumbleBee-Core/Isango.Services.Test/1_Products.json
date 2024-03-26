@@ -1,0 +1,61 @@
+[
+    {
+        "id": 20,
+        "sku": "cs_fi",
+        "title": "City Sightseeing Firenze",
+        "description": "<p>Biglietto valido 24h o 48h</p>",
+        "content": "<p>Firenze, la <strong>\"Culla del Rinascimento\"</strong>, sede di meravigliose opere d’arte amate in tutto il mondo, create da figure come Michelangelo, Giotto, Botticelli, Della Robbia, Pontormo, solo per fare alcuni nomi.</p><p>City Sightseeing® Firenze offre la possibilità di godersi, da un punto di vista privilegiato, gli scorci medievali e rinascimentali del centro storico, le piccole botteghe artigiane, le specialità enogastronomiche e le eleganti boutique.</p><p>Il tragitto dell’Open bus City Sightseeing® Firenze permette di visitare alcuni dei luoghi più belli e suggestivi di questa meravigliosa città, così ricca di arte e cultura!</p><p><strong>Scarica subito la APP Sightseeing Experience</strong>: un modo semplice e pratico per orientarsi, muoversi, visitare e conoscere la città. All'interno della APP troverai uno <strong>walking tour del centro disponibile in 5 lingue e una mappa interattiva</strong> che ti mostrerà la posizione dei bus in tempo reale, il tempo di attesa ad ogni fermata e la tua posizione in modo da poter raggiungere facilmente la fermata più vicina!</p>",
+        "notes": "",
+        "duration": "<p><strong>Linea A:</strong> circa 60 minuti&nbsp;</p><p><strong>Linea B:</strong> 120' (temporaneamente sospesa)</p>",
+        "availableDays": "<p>Dal Venerdì al Lunedì</p>",
+        "cancellationPolicy": "<p>Cancellazione gratuita fino a 1 giorno prima del del tour</p>",
+        "destination": {
+            "title": "Firenze",
+            "subTitle": "Culla del rinascimento e della lingua Italiana",
+            "shortDescription": "Firenze",
+            "geoData": {
+                "lat": 43.771426,
+                "lon": 11.263664000000063,
+                "zoom": 12.0,
+                "address": "Via dei Pepi, 38, 50121 Firenze FI, Italia"
+            }
+        },
+        "meetingPoints": [
+            {
+                "lat": 43.7762416,
+                "lon": 11.2502,
+                "zoom": 12.0,
+                "address": "Largo Fratelli Alinari, 8, 50123 Firenze FI"
+            },
+            {
+                "lat": 43.7731759,
+                "lon": 11.2527452,
+                "zoom": 12.0,
+                "address": "Piazza di Santa Maria Maggiore, 50123 Firenze FI"
+            }
+        ],
+        "variants": [
+            {
+                "id": 47,
+                "code": "cs_fi",
+                "variantCode": "47_cs_fi",
+                "title": "Biglietto valido 24h",
+                "variantName": "Biglietto valido 24h"
+            },
+            {
+                "id": 48,
+                "code": "cs_fi",
+                "variantCode": "48_cs_fi",
+                "title": "Biglietto valido 48h",
+                "variantName": "Biglietto valido 48h"
+            },
+            {
+                "id": 49,
+                "code": "cs_fi",
+                "variantCode": "49_cs_fi",
+                "title": "Biglietto valido 72h",
+                "variantName": "Biglietto valido 72h"
+            }
+        ]
+    }
+]
