@@ -240,6 +240,22 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
+# Security - Certificates and sensitive files
+*.cer
+*.p12
+*.key
+*.pem
+Certificate/
+TiqetsCertificate/
+GMapKey/
+
+# Configuration files with sensitive data
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
+connectionstrings.json
+secrets.json
+
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
 #*.snk

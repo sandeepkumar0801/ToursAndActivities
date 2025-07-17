@@ -64,8 +64,7 @@
     <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_EN.html" />
     <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_ES.html" />
     <None Remove="Templates\VoucherTemplates\PDF_WholeBookingCancel_FR.html" />
-    <None Remove="TiqetsCertificate\TiqetsProd.pfx" />
-    <None Remove="TiqetsCertificate\TiqetsTest.pfx" />
+    <!-- Certificate files removed for security - configure paths in appsettings.json -->
   </ItemGroup>
 
   <ItemGroup>
@@ -234,12 +233,7 @@
     <Content Include="Templates\VoucherTemplates\PDF_WholeBookingCancel_FR.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="TiqetsCertificate\TiqetsProd.pfx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TiqetsCertificate\TiqetsTest.pfx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <!-- Certificate files removed for security - configure paths in appsettings.json -->
   </ItemGroup>
 
   <ItemGroup>
@@ -446,17 +440,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Certificate\BbUAT.cer">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Certificate\certificate.pfx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <!-- Certificate files removed for security - configure paths in appsettings.json -->
   </ItemGroup>
 
   <PropertyGroup>
     <AllowUntrustedCertificate>true</AllowUntrustedCertificate>
-    <ApplicationInsightsResourceId>/subscriptions/a5743f28-20fe-4b8c-84e9-6acd691262c8/resourceGroups/isango-api-prod-rg/providers/microsoft.insights/components/isango-api-bumblebeecore-prod</ApplicationInsightsResourceId>
+    <!-- ApplicationInsightsResourceId should be configured in appsettings.json or environment variables -->
   </PropertyGroup>
 
 </Project>
