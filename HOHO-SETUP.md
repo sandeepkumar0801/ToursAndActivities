@@ -4,17 +4,12 @@ This guide provides specific setup instructions for deploying the BumbleBee API 
 
 ## 🚌 Platform Overview
 
-The BumbleBee API powers multiple hop-on-hop-off and tour booking websites:
+The BumbleBee API powers the hop-on-hop-off bus booking platform:
 
 ### Primary Platform
 - **www.hop-on-hop-off-bus.com** - Main HOHO bus booking platform
 
-### Regional Tour Sites
-- **www.local-gran-canaria-tours.com** - Gran Canaria tours
-- **www.alhambra-granada-tours.com** - Alhambra & Granada tours  
-- **www.localdubaitours.com** - Dubai tours
-- **www.localvenicetours.com** - Venice tours
-- **www.localparistours.com** - Paris tours
+This system specializes in hop-on-hop-off bus tours and city sightseeing experiences, providing a unified booking interface for multiple suppliers worldwide.
 
 ## 🔧 Key Supplier Integrations
 
@@ -79,30 +74,14 @@ Tiqets provides attraction tickets and experiences.
 
 ## 🌐 Multi-Site Configuration
 
-### Domain-Specific API Keys
-Each website can use different API keys for supplier integrations:
+### Domain Configuration
+The system is configured for the main hop-on-hop-off bus platform:
 
-```json
-{
-  "AppSettings": {
-    "AlternateAPIKeyHOHO": "api-key-for-hop-on-hop-off-bus-com",
-    "AlternateAPIKeyLGCT": "api-key-for-gran-canaria-tours",
-    "AlternateAPIKeyAGT": "api-key-for-alhambra-tours",
-    "AlternateAPIKeyLDT": "api-key-for-dubai-tours"
-  }
-}
-```
-
-### Website Domain Configuration
 ```json
 {
   "AppSettings": {
     "HopOnHoffOffBus": "www.hop-on-hop-off-bus.com",
-    "LocalGranCanariaTour": "www.local-gran-canaria-tours.com",
-    "AlhambraGranadaTour": "www.alhambra-granada-tours.com",
-    "LocalDubaiTours": "www.localdubaitours.com",
-    "LocalVeniceTours": "www.localvenicetours.com",
-    "LocalParisTours": "www.localparistours.com"
+    "AlternateAPIKeyHOHO": "api-key-for-hop-on-hop-off-bus-com"
   }
 }
 ```

@@ -4,32 +4,44 @@ A comprehensive .NET 6 Web API powering **www.hop-on-hop-off-bus.com** and relat
 
 ## 🚌 About the Project
 
-This API serves as the backend for several tour booking websites:
+This API serves as the backend for the hop-on-hop-off bus booking platform:
 - **www.hop-on-hop-off-bus.com** - Main hop-on-hop-off bus booking platform
-- **www.local-gran-canaria-tours.com** - Gran Canaria local tours
-- **www.alhambra-granada-tours.com** - Alhambra and Granada tours
-- **www.localdubaitours.com** - Dubai local tours
-- **www.localvenicetours.com** - Venice local tours
-- **www.localparistours.com** - Paris local tours
 
-The system specializes in hop-on-hop-off bus tours and city sightseeing experiences, integrating with major tour operators like BigBus, City Sightseeing, and many others.
+The system specializes in hop-on-hop-off bus tours and city sightseeing experiences, integrating with 20+ major tour operators and booking platforms worldwide. It provides a unified API layer that aggregates inventory, pricing, and availability from multiple suppliers into a single, consistent interface.
 
 ## 🌟 Features
 
-- **Multi-Supplier Integration**: Supports 20+ tour and activity suppliers including:
-  - **BigBus** - Global hop-on-hop-off bus operator
-  - **City Sightseeing** - Worldwide sightseeing tours
-  - **Tiqets** - Museum and attraction tickets
-  - **TourCMS** - Tour management system
-  - **Bokun** - Tour booking platform
-  - **Rezdy** - Tour and activity bookings
-  - **FareHarbor** - Activity booking software
-  - **HotelBeds** - Travel distribution platform
-  - **Ventrata** - Attraction management system
-  - **GoCity** - City attraction passes
-  - **Golden Tours** - London sightseeing tours
+- **Multi-Supplier Integration**: Supports 20+ tour and activity suppliers with comprehensive API integrations:
+
+  **🚌 Hop-on-Hop-off Bus Operators:**
+  - **BigBus** - Global hop-on-hop-off bus operator with real-time tracking
+  - **City Sightseeing** - Worldwide sightseeing tours in 100+ cities
+  - **Golden Tours** - London sightseeing and hop-on-hop-off tours
   - **Gray Line** - Sightseeing tours worldwide
-  - And many more...
+
+  **🎫 Ticketing & Attractions:**
+  - **Tiqets** - Museum and attraction tickets with certificate-based authentication
+  - **Ventrata** - Attraction management system with real-time inventory
+  - **GoCity** - City attraction passes and multi-attraction tickets
+
+  **🏢 Tour Management Platforms:**
+  - **TourCMS** - Comprehensive tour management and booking system
+  - **Bokun** - Advanced tour booking platform with Channel Manager API
+  - **Rezdy** - Tour and activity booking software with Agent API
+  - **FareHarbor** - Activity booking software with External API
+
+  **🌐 Distribution Networks:**
+  - **HotelBeds** - Travel distribution platform (APItude API Suite)
+  - **Redeam** - Tour and activity distribution network
+  - **Isango** - Global tours and activities marketplace
+
+  **🔧 Integration Features:**
+  - Real-time availability and pricing
+  - Automated booking confirmations
+  - Multi-language support
+  - Certificate-based secure connections
+  - Webhook notifications
+  - Rate limiting and caching
 
 - **Hop-on-Hop-off Bus Specialization**:
   - Real-time bus availability and scheduling
@@ -204,6 +216,84 @@ Content-Type: application/json
 - `GET /api/master/categories` - Get activity categories
 
 For complete API documentation, visit the Swagger UI at `/swagger` when running the application.
+
+## 🔌 Supplier API Integrations
+
+### BigBus API Integration
+- **Endpoint**: `https://api.bigbus.com/`
+- **Authentication**: Username/Password
+- **Features**: Real-time bus tracking, route information, multi-day passes
+- **Data Format**: JSON/XML
+- **Rate Limiting**: Standard commercial limits
+
+### Tiqets Distributor API
+- **Endpoint**: `https://api.tiqets.com/`
+- **Authentication**: Certificate-based (X.509)
+- **Features**: Museum tickets, attraction passes, real-time availability
+- **Certificates**: Production and City Sightseeing specific certificates
+- **Documentation**: [Tiqets Distributor API](https://portals.tiqets.com/distributorapi/docs)
+
+### Bokun Channel Manager API
+- **Endpoint**: `https://api.bokun.io/`
+- **Authentication**: API Key + Secret
+- **Features**: Inventory management, booking creation, real-time sync
+- **Cost**: $199/month + 0.5-1.5% booking charge
+- **Documentation**: [Bokun API Docs](https://bokun.dev/)
+
+### Rezdy Agent API
+- **Endpoint**: `https://api.rezdy.com/v1/`
+- **Authentication**: API Key (Header or Query Parameter)
+- **Features**: Product search, availability, booking management
+- **Rate Limiting**: 100 calls/minute
+- **Documentation**: [Rezdy API Specification](https://developers.rezdy.com/rezdyapi/index-agent.html)
+
+### FareHarbor External API
+- **Endpoint**: `https://fareharbor.com/api/external/v1/`
+- **Authentication**: API Key + User/App credentials
+- **Features**: Activity booking, customer management, webhooks
+- **Documentation**: [FareHarbor Integration Center](https://developer.fareharbor.com/api/external/v1/)
+
+### TourCMS API
+- **Endpoint**: `https://api.tourcms.com/`
+- **Authentication**: Channel ID + API Key with HMAC signature
+- **Features**: Tour operator content, booking management, marketplace access
+- **Documentation**: [TourCMS API Methods](https://www.tourcms.com/support/api/methods.php)
+
+### HotelBeds APItude Suite
+- **Endpoint**: `https://api.test.hotelbeds.com/` (Test) / `https://api.hotelbeds.com/` (Live)
+- **Authentication**: API Key + Secret with signature
+- **APIs**:
+  - **Activities Booking API**: Activity reservations and management
+  - **Activities Content API**: Portfolio and destination content
+  - **Activities Cache API**: Price and availability data
+- **Documentation**: [HotelBeds Developer Portal](https://developer.hotelbeds.com/)
+
+### City Sightseeing Integration
+- **Integration**: Via Tiqets API with dedicated certificates
+- **Coverage**: 100+ cities worldwide
+- **Features**: Hop-on-hop-off bus tours, audio guides, group bookings
+- **Authentication**: Certificate-based through Tiqets platform
+
+### Integration Architecture
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Frontend      │    │   BumbleBee API  │    │   Supplier APIs │
+│   Applications  │◄──►│   (Aggregator)   │◄──►│   (20+ Systems) │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+                              │
+                              ▼
+                       ┌──────────────────┐
+                       │   Database &     │
+                       │   Cache Layer    │
+                       └──────────────────┘
+```
+
+### API Response Standardization
+All supplier APIs are normalized into a consistent response format:
+- **Products**: Standardized activity/tour information
+- **Availability**: Unified availability and pricing data
+- **Bookings**: Consistent booking confirmation format
+- **Errors**: Standardized error handling and messaging
 
 ## 🧪 Testing
 
