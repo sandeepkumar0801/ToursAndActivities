@@ -257,28 +257,28 @@ graph TD
 
 ```mermaid
 graph TB
-    subgraph "🌐 Presentation Layer"
-        CONTROLLERS[🎮 API Controllers]
-        MIDDLEWARE[🔧 Middleware]
-        FILTERS[🛡️ Action Filters]
+    subgraph "Presentation Layer"
+        CONTROLLERS[API Controllers]
+        MIDDLEWARE[Middleware]
+        FILTERS[Action Filters]
     end
 
-    subgraph "⚙️ Application Layer"
-        SERVICES[🔧 Application Services]
-        DTOS[📦 DTOs & Models]
-        MAPPERS[🔄 AutoMapper Profiles]
+    subgraph "Application Layer"
+        SERVICES[Application Services]
+        DTOS[DTOs & Models]
+        MAPPERS[AutoMapper Profiles]
     end
 
-    subgraph "🎯 Domain Layer"
-        ENTITIES[📊 Domain Entities]
-        INTERFACES[🔌 Repository Interfaces]
-        RULES[📋 Business Rules]
+    subgraph "Domain Layer"
+        ENTITIES[Domain Entities]
+        INTERFACES[Repository Interfaces]
+        RULES[Business Rules]
     end
 
-    subgraph "🏗️ Infrastructure Layer"
-        REPOS[🗄️ Repository Implementations]
-        EXTERNAL[🔗 External API Clients]
-        CACHE_IMPL[⚡ Cache Implementations]
+    subgraph "Infrastructure Layer"
+        REPOS[Repository Implementations]
+        EXTERNAL[External API Clients]
+        CACHE_IMPL[Cache Implementations]
     end
 
     CONTROLLERS --> SERVICES
@@ -389,10 +389,10 @@ Configure API keys for the suppliers you want to integrate with:
 
 ```mermaid
 sequenceDiagram
-    participant Client as 🖥️ Client Application
-    participant API as 🚌 ToursAndActivitiesAPI
-    participant Auth as 🔐 Auth Service
-    participant DB as 🗄️ Database
+    participant Client as Client Application
+    participant API as ToursAndActivitiesAPI
+    participant Auth as Auth Service
+    participant DB as Database
 
     Client->>API: 1. POST /api/account/login
     Note over Client,API: { username, password }
@@ -444,20 +444,20 @@ Response:
 
 ```mermaid
 graph TB
-    subgraph "🎯 Core API Endpoints"
-        AUTH[🔐 Authentication<br/>/api/account/*]
-        SEARCH[🔍 Activity Search<br/>/api/activity/search]
-        DETAILS[📋 Activity Details<br/>/api/activity/{id}]
-        AVAIL[📅 Availability<br/>/api/activity/{id}/availability]
-        BOOKING[📝 Booking Management<br/>/api/booking/*]
-        MASTER[📊 Master Data<br/>/api/master/*]
+    subgraph "Core API Endpoints"
+        AUTH[Authentication<br/>/api/account/*]
+        SEARCH[Activity Search<br/>/api/activity/search]
+        DETAILS[Activity Details<br/>/api/activity/{id}]
+        AVAIL[Availability<br/>/api/activity/{id}/availability]
+        BOOKING[Booking Management<br/>/api/booking/*]
+        MASTER[Master Data<br/>/api/master/*]
     end
 
-    subgraph "🔧 Management APIs"
-        ADMIN[⚙️ Admin Functions<br/>/api/admin/*]
-        REPORTS[📈 Reporting<br/>/api/reports/*]
-        CACHE[⚡ Cache Management<br/>/api/cache/*]
-        HEALTH[💚 Health Checks<br/>/api/health]
+    subgraph "Management APIs"
+        ADMIN[Admin Functions<br/>/api/admin/*]
+        REPORTS[Reporting<br/>/api/reports/*]
+        CACHE[Cache Management<br/>/api/cache/*]
+        HEALTH[Health Checks<br/>/api/health]
     end
 
     subgraph "🔗 Integration APIs"
@@ -851,18 +851,18 @@ Access the Hangfire dashboard at `/hangfire` (in development).
 
 ```mermaid
 graph TB
-    subgraph "🐳 Docker Environment"
+    subgraph "Docker Environment"
         subgraph "Application Container"
-            API[🚌 ToursAndActivitiesAPI<br/>Port 80]
-            HANGFIRE[🔄 Hangfire Dashboard<br/>Port 8080]
+            API[ToursAndActivitiesAPI<br/>Port 80]
+            HANGFIRE[Hangfire Dashboard<br/>Port 8080]
         end
 
         subgraph "Database Container"
-            SQL[🗄️ SQL Server<br/>Port 1433]
+            SQL[SQL Server<br/>Port 1433]
         end
 
         subgraph "Cache Container"
-            REDIS[⚡ Redis<br/>Port 6379]
+            REDIS[Redis<br/>Port 6379]
         end
 
         subgraph "Monitoring"
@@ -960,21 +960,21 @@ graph TB
 
 ```mermaid
 graph LR
-    subgraph "🔧 Development"
-        DEV[👨‍💻 Developer<br/>Local Development]
-        GIT[📚 Git Repository<br/>Source Control]
+    subgraph "Development"
+        DEV[Developer<br/>Local Development]
+        GIT[Git Repository<br/>Source Control]
     end
 
-    subgraph "🏗️ CI/CD Pipeline"
-        BUILD[🔨 Build<br/>Compile & Test]
-        TEST[🧪 Automated Tests<br/>Unit & Integration]
-        SECURITY[🔒 Security Scan<br/>Vulnerability Check]
-        PACKAGE[📦 Package<br/>Docker Image]
+    subgraph "CI/CD Pipeline"
+        BUILD[Build<br/>Compile & Test]
+        TEST[Automated Tests<br/>Unit & Integration]
+        SECURITY[Security Scan<br/>Vulnerability Check]
+        PACKAGE[Package<br/>Docker Image]
     end
 
-    subgraph "🌍 Environments"
-        STAGING[🎭 Staging<br/>Pre-production Testing]
-        PROD[🚀 Production<br/>Live Environment]
+    subgraph "Environments"
+        STAGING[Staging<br/>Pre-production Testing]
+        PROD[Production<br/>Live Environment]
     end
 
     DEV --> GIT
@@ -1002,23 +1002,23 @@ graph LR
 
 ```mermaid
 graph TB
-    subgraph "📊 Monitoring Dashboard"
-        METRICS[📈 Performance Metrics<br/>Response Time, Throughput]
-        HEALTH[💚 Health Checks<br/>API, Database, Cache]
-        ERRORS[🚨 Error Tracking<br/>Exceptions, Failed Requests]
-        USAGE[📊 Usage Analytics<br/>API Calls, User Patterns]
+    subgraph "Monitoring Dashboard"
+        METRICS[Performance Metrics<br/>Response Time, Throughput]
+        HEALTH[Health Checks<br/>API, Database, Cache]
+        ERRORS[Error Tracking<br/>Exceptions, Failed Requests]
+        USAGE[Usage Analytics<br/>API Calls, User Patterns]
     end
 
-    subgraph "🔔 Alerting System"
-        EMAIL[📧 Email Alerts<br/>Critical Issues]
-        SMS[📱 SMS Notifications<br/>Urgent Problems]
-        SLACK[💬 Slack Integration<br/>Team Notifications]
+    subgraph "Alerting System"
+        EMAIL[Email Alerts<br/>Critical Issues]
+        SMS[SMS Notifications<br/>Urgent Problems]
+        SLACK[Slack Integration<br/>Team Notifications]
     end
 
-    subgraph "📋 Logging"
-        APPLOGS[📝 Application Logs<br/>Structured Logging]
-        WEBLOGS[🌐 Web Server Logs<br/>Access & Error Logs]
-        DBLOGS[🗄️ Database Logs<br/>Query Performance]
+    subgraph "Logging"
+        APPLOGS[Application Logs<br/>Structured Logging]
+        WEBLOGS[Web Server Logs<br/>Access & Error Logs]
+        DBLOGS[Database Logs<br/>Query Performance]
     end
 
     METRICS --> EMAIL
