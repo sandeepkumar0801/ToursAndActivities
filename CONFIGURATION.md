@@ -28,20 +28,20 @@ CREATE DATABASE BumbleBeeDB;
 CREATE DATABASE IsangoDB;
 
 -- Create user for application
-CREATE LOGIN BumbleBeeUser WITH PASSWORD = 'YourSecurePassword';
-USE BumbleBeeDB;
-CREATE USER BumbleBeeUser FOR LOGIN BumbleBeeUser;
-ALTER ROLE db_datareader ADD MEMBER BumbleBeeUser;
-ALTER ROLE db_datawriter ADD MEMBER BumbleBeeUser;
-ALTER ROLE db_ddladmin ADD MEMBER BumbleBeeUser;
+CREATE LOGIN ToursAPIUser WITH PASSWORD = 'YourSecurePassword';
+USE ToursAPIDB;
+CREATE USER ToursAPIUser FOR LOGIN ToursAPIUser;
+ALTER ROLE db_datareader ADD MEMBER ToursAPIUser;
+ALTER ROLE db_datawriter ADD MEMBER ToursAPIUser;
+ALTER ROLE db_ddladmin ADD MEMBER ToursAPIUser;
 ```
 
 ### Connection String Examples
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=BumbleBeeDB;User Id=BumbleBeeUser;Password=YourPassword;TrustServerCertificate=true;",
-    "IsangoLiveDB": "Server=localhost;Database=IsangoDB;User Id=BumbleBeeUser;Password=YourPassword;TrustServerCertificate=true;"
+    "DefaultConnection": "Server=localhost;Database=ToursAPIDB;User Id=ToursAPIUser;Password=YourPassword;TrustServerCertificate=true;",
+    "IsangoLiveDB": "Server=localhost;Database=IsangoDB;User Id=ToursAPIUser;Password=YourPassword;TrustServerCertificate=true;"
   }
 }
 ```
@@ -157,7 +157,7 @@ ALTER ROLE db_ddladmin ADD MEMBER BumbleBeeUser;
     "SmtpPassword": "your-smtp-password",
     "EnableSsl": true,
     "FromAddress": "noreply@yourdomain.com",
-    "FromName": "BumbleBee Tours"
+    "FromName": "Tours & Activities"
   }
 }
 ```
@@ -260,7 +260,7 @@ export ApplicationInsights__ConnectionString="InstrumentationKey=..."
 ### Environment File (.env)
 ```env
 ASPNETCORE_ENVIRONMENT=Production
-ConnectionStrings__DefaultConnection=Server=db;Database=BumbleBeeDB;User Id=sa;Password=YourPassword;
+ConnectionStrings__DefaultConnection=Server=db;Database=ToursAPIDB;User Id=sa;Password=YourPassword;
 Jwt__Key=your-secret-key-must-be-at-least-32-characters-long
 ApplicationInsights__ConnectionString=InstrumentationKey=your-key
 ```

@@ -1,4 +1,4 @@
-# 🚌 Tours and Activities API (BumbleBee Core)
+# Tours and Activities API
 
 <div align="center">
 
@@ -10,71 +10,71 @@
 
 **Enterprise-grade travel booking API serving 100K+ daily requests**
 
-[🌐 Live Demo](https://www.hop-on-hop-off-bus.com) • [📚 API Docs](#-api-documentation) • [🚀 Quick Start](#-getting-started) • [🔌 Integrations](#-supplier-api-integrations)
+[Live Demo](https://www.hop-on-hop-off-bus.com) • [API Docs](#api-documentation--usage) • [Quick Start](#getting-started) • [Integrations](#supplier-api-integrations)
 
 </div>
 
 ---
 
-## 📊 **Production Metrics**
+## Production Metrics
 
 <div align="center">
 
 | Metric | Value | Status |
 |--------|-------|--------|
-| **Daily API Requests** | 100,000+ | 🟢 Active |
-| **Response Time** | <200ms avg | 🟢 Optimal |
-| **Uptime SLA** | 99.9% | 🟢 Maintained |
-| **Supplier Integrations** | 20+ APIs | 🟢 Active |
-| **Supported Languages** | 4 (EN, DE, ES, FR) | 🟢 Live |
-| **Production Sites** | Multiple | 🟢 Serving |
+| **Daily API Requests** | 100,000+ | Active |
+| **Response Time** | <200ms avg | Optimal |
+| **Uptime SLA** | 99.9% | Maintained |
+| **Supplier Integrations** | 20+ APIs | Active |
+| **Supported Languages** | 4 (EN, DE, ES, FR) | Live |
+| **Production Sites** | Multiple | Serving |
 
 </div>
 
 ---
 
-A comprehensive .NET 6 Web API powering **www.hop-on-hop-off-bus.com** and related tour booking platforms. This enterprise-grade system provides a unified interface for booking hop-on-hop-off bus tours, sightseeing activities, and experiences from 20+ suppliers worldwide.
+This comprehensive .NET 6 Web API powers www.hop-on-hop-off-bus.com and several related tour booking platforms. The system provides a unified interface for booking hop-on-hop-off bus tours, sightseeing activities, and experiences from over 20 suppliers worldwide. Built with enterprise-grade architecture, it handles high-volume traffic while maintaining exceptional performance and reliability.
 
-## 🏗️ **System Architecture Overview**
+## System Architecture Overview
 
 <div align="center">
 
 ```mermaid
 graph TB
     subgraph "Frontend Layer"
-        WEB[🌐 Web Applications]
-        MOBILE[📱 Mobile Apps]
-        ADMIN[⚙️ Admin Panel]
+        WEB[Web Applications]
+        MOBILE[Mobile Apps]
+        ADMIN[Admin Panel]
     end
 
     subgraph "API Gateway Layer"
-        LB[🔄 Load Balancer]
-        AUTH[🔐 JWT Authentication]
-        RATE[⚡ Rate Limiting]
+        LB[Load Balancer]
+        AUTH[JWT Authentication]
+        RATE[Rate Limiting]
     end
 
-    subgraph "BumbleBee Core API"
-        CTRL[🎮 Controllers]
-        SVC[⚙️ Business Services]
-        REPO[📊 Repositories]
+    subgraph "Tours API Core"
+        CTRL[Controllers]
+        SVC[Business Services]
+        REPO[Repositories]
     end
 
     subgraph "Background Processing"
-        HF[🔄 Hangfire Jobs]
-        CACHE[📦 Cache Loader]
-        EMAIL[📧 Email Service]
+        HF[Hangfire Jobs]
+        CACHE[Cache Loader]
+        EMAIL[Email Service]
     end
 
     subgraph "Data Layer"
-        SQL[(🗄️ SQL Server)]
-        REDIS[(⚡ Redis Cache)]
-        BLOB[📁 Blob Storage]
+        SQL[(SQL Server)]
+        REDIS[(Redis Cache)]
+        BLOB[Blob Storage]
     end
 
     subgraph "External Integrations"
-        TIQETS[🎫 Tiqets API]
-        BOKUN[🏢 Bokun API]
-        BIGBUS[🚌 BigBus API]
+        TIQETS[Tiqets API]
+        BOKUN[Bokun API]
+        BIGBUS[BigBus API]
         OTHERS[... 17+ More APIs]
     end
 
@@ -105,25 +105,25 @@ graph TB
 
 </div>
 
-## 🚌 **About the Project**
+## About the Project
 
 This enterprise API serves as the backbone for multiple travel booking platforms:
 
-### 🌐 **Production Websites**
+### Production Websites
 - **[www.hop-on-hop-off-bus.com](https://www.hop-on-hop-off-bus.com)** - Primary hop-on-hop-off bus booking platform
 - **Multiple white-label booking sites** - Powered by the same API infrastructure
 - **Mobile applications** - iOS and Android apps using the API
 
-### 🎯 **Core Purpose**
-The system specializes in **hop-on-hop-off bus tours** and **city sightseeing experiences**, integrating with **20+ major tour operators** and booking platforms worldwide. It provides a **unified API layer** that aggregates inventory, pricing, and availability from multiple suppliers into a single, consistent interface.
+### Core Purpose
+The system specializes in hop-on-hop-off bus tours and city sightseeing experiences, integrating with over 20 major tour operators and booking platforms worldwide. It provides a unified API layer that aggregates inventory, pricing, and availability from multiple suppliers into a single, consistent interface. This approach simplifies the booking process for both developers and end users while ensuring real-time accuracy across all integrated platforms.
 
-### 💼 **Business Impact**
+### Business Impact
 - **Revenue Generation**: Powers major booking platforms generating significant daily revenue
 - **Global Reach**: Serves customers in 100+ cities worldwide
 - **Scalability**: Handles peak tourist season traffic without degradation
 - **Reliability**: Mission-critical system with 99.9% uptime SLA
 
-## 🌟 Features
+## Features
 
 - **Multi-Supplier Integration**: Supports 20+ tour and activity suppliers with comprehensive API integrations:
 
@@ -182,32 +182,32 @@ The system specializes in **hop-on-hop-off bus tours** and **city sightseeing ex
   - Dynamic pricing and discount rules engine
   - Mobile-responsive ticket delivery
 
-## 🏗️ **Project Architecture & Structure**
+## Project Architecture & Structure
 
-### 📁 **Solution Structure**
+### Solution Structure
 
 <div align="center">
 
 ```mermaid
 graph TD
-    subgraph "🎯 Core Domain"
-        API[🚌 BumbleBee API<br/>Main Web API]
-        ENTITIES[📊 Isango.Entities<br/>Domain Models]
-        SERVICE[⚙️ Isango.Service<br/>Business Logic]
-        PERSIST[🗄️ Isango.Persistence<br/>Data Access]
+    subgraph "Core Domain"
+        API[Tours API<br/>Main Web API]
+        ENTITIES[Isango.Entities<br/>Domain Models]
+        SERVICE[Isango.Service<br/>Business Logic]
+        PERSIST[Isango.Persistence<br/>Data Access]
     end
 
-    subgraph "🔌 Infrastructure"
-        ADAPTERS[🔗 ServiceAdapters<br/>External APIs]
-        CACHE[⚡ CacheManager<br/>Caching Layer]
-        LOGGER[📝 Logger<br/>Logging System]
-        UTIL[🛠️ Util<br/>Common Tools]
+    subgraph "Infrastructure"
+        ADAPTERS[ServiceAdapters<br/>External APIs]
+        CACHE[CacheManager<br/>Caching Layer]
+        LOGGER[Logger<br/>Logging System]
+        UTIL[Util<br/>Common Tools]
     end
 
-    subgraph "🔄 Background Services"
-        ASYNC[📋 AsyncBooking.HangFire<br/>Async Processing]
-        LOADER[📦 CacheLoader.HangFire<br/>Cache Management]
-        DUMP[🔄 DataDumping.HangFire<br/>Data Sync]
+    subgraph "Background Services"
+        ASYNC[AsyncBooking.HangFire<br/>Async Processing]
+        LOADER[CacheLoader.HangFire<br/>Cache Management]
+        DUMP[DataDumping.HangFire<br/>Data Sync]
     end
 
     subgraph "🧪 Testing"
@@ -235,7 +235,7 @@ graph TD
 
 </div>
 
-### 🛠️ **Technology Stack**
+### Technology Stack
 
 <div align="center">
 
@@ -253,7 +253,7 @@ graph TD
 
 </div>
 
-### 🏛️ **Clean Architecture Layers**
+### Clean Architecture Layers
 
 ```mermaid
 graph TB
@@ -288,7 +288,7 @@ graph TB
     EXTERNAL --> SERVICES
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -307,7 +307,7 @@ graph TB
 
 2. **Configure the application**
    ```bash
-   cd BumbleBee-Core/Tours-Activities-API
+   cd Tours-Activities-API
    cp appsettings.example.json appsettings.json
    ```
    
@@ -325,7 +325,6 @@ graph TB
 
 4. **Build and run**
    ```bash
-   cd BumbleBee-Core
    dotnet build
    cd Tours-Activities-API
    dotnet run
@@ -335,7 +334,7 @@ graph TB
    - Swagger UI: `https://localhost:5001/swagger`
    - API Base URL: `https://localhost:5001/api`
 
-## ⚙️ Configuration
+## Configuration
 
 ### Required Configuration
 
@@ -382,16 +381,16 @@ Configure API keys for the suppliers you want to integrate with:
 - **Email Settings**: For notification emails
 - **Certificate Paths**: For secure supplier integrations
 
-## 📚 **API Documentation & Usage**
+## API Documentation & Usage
 
-### 🔐 **Authentication Flow**
+### Authentication Flow
 
 <div align="center">
 
 ```mermaid
 sequenceDiagram
     participant Client as 🖥️ Client Application
-    participant API as 🚌 BumbleBee API
+    participant API as 🚌 ToursAndActivitiesAPI
     participant Auth as 🔐 Auth Service
     participant DB as 🗄️ Database
 
@@ -439,7 +438,7 @@ Response:
 }
 ```
 
-### 🔍 **API Endpoint Categories**
+### API Endpoint Categories
 
 <div align="center">
 
@@ -470,9 +469,9 @@ graph TB
 
 </div>
 
-### 🚀 **Key API Workflows**
+### Key API Workflows
 
-#### 🔍 **Activity Search Workflow**
+#### Activity Search Workflow
 
 ```http
 GET /api/activity/search?destination=London&startDate=2024-01-15&adults=2
@@ -504,7 +503,7 @@ Response:
 }
 ```
 
-#### 📅 **Availability Check**
+#### Availability Check
 
 ```http
 GET /api/activity/ACT001/availability?date=2024-01-15&adults=2&children=1
@@ -537,7 +536,7 @@ Response:
 }
 ```
 
-#### 📝 **Booking Creation**
+#### Booking Creation
 
 ```http
 POST /api/booking/create
@@ -594,7 +593,7 @@ Response:
 }
 ```
 
-### 📊 **API Response Standards**
+### API Response Standards
 
 All API responses follow a consistent format:
 
@@ -627,7 +626,7 @@ All API responses follow a consistent format:
 }
 ```
 
-### 📖 **Interactive Documentation**
+### Interactive Documentation
 
 - **🌐 Swagger UI**: Available at `/swagger` when running the application
 - **📋 Postman Collection**: Complete API collection with examples
@@ -643,7 +642,7 @@ dotnet run
 https://localhost:5001/swagger
 ```
 
-## 🔌 Supplier API Integrations
+## Supplier API Integrations
 
 ### BigBus API Integration
 - **Endpoint**: `https://api.bigbus.com/`
@@ -700,18 +699,18 @@ https://localhost:5001/swagger
 - **Features**: Hop-on-hop-off bus tours, audio guides, group bookings
 - **Authentication**: Certificate-based through Tiqets platform
 
-### 🔄 **API Request Flow**
+### API Request Flow
 
 <div align="center">
 
 ```mermaid
 sequenceDiagram
-    participant Client as 🖥️ Client App
-    participant API as 🚌 BumbleBee API
-    participant Cache as ⚡ Redis Cache
-    participant DB as 🗄️ SQL Server
-    participant Supplier as 🎫 Supplier API
-    participant Jobs as 🔄 Background Jobs
+    participant Client as Client App
+    participant API as Tours API
+    participant Cache as Redis Cache
+    participant DB as SQL Server
+    participant Supplier as Supplier API
+    participant Jobs as Background Jobs
 
     Client->>API: 1. Search Request
     API->>Cache: 2. Check Cache
@@ -739,42 +738,42 @@ sequenceDiagram
 
 </div>
 
-### 🏗️ **Integration Architecture**
+### Integration Architecture
 
 <div align="center">
 
 ```mermaid
 graph LR
     subgraph "Client Applications"
-        WEB[🌐 Web Portal]
-        MOBILE[📱 Mobile App]
-        API_CLIENT[🔌 API Clients]
+        WEB[Web Portal]
+        MOBILE[Mobile App]
+        API_CLIENT[API Clients]
     end
 
-    subgraph "BumbleBee API Gateway"
-        GATEWAY[🚪 API Gateway]
-        AUTH[🔐 Authentication]
-        THROTTLE[⚡ Rate Limiting]
+    subgraph "Tours API Gateway"
+        GATEWAY[API Gateway]
+        AUTH[Authentication]
+        THROTTLE[Rate Limiting]
     end
 
     subgraph "Core Services"
-        SEARCH[🔍 Search Service]
-        BOOKING[📝 Booking Service]
-        PAYMENT[💳 Payment Service]
-        NOTIFICATION[📧 Notification Service]
+        SEARCH[Search Service]
+        BOOKING[Booking Service]
+        PAYMENT[Payment Service]
+        NOTIFICATION[Notification Service]
     end
 
     subgraph "Data & Cache"
-        SQLDB[(🗄️ SQL Server)]
-        REDIS[(⚡ Redis)]
-        BLOB[📁 File Storage]
+        SQLDB[(SQL Server)]
+        REDIS[(Redis)]
+        BLOB[File Storage]
     end
 
     subgraph "External APIs"
-        TIQETS[🎫 Tiqets]
-        BOKUN[🏢 Bokun]
-        BIGBUS[🚌 BigBus]
-        HOTELBEDS[🏨 HotelBeds]
+        TIQETS[Tiqets]
+        BOKUN[Bokun]
+        BIGBUS[BigBus]
+        HOTELBEDS[HotelBeds]
         MORE[... +16 More]
     end
 
@@ -810,12 +809,11 @@ All supplier APIs are normalized into a consistent response format:
 - **Bookings**: Consistent booking confirmation format
 - **Errors**: Standardized error handling and messaging
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 
 ```bash
-cd BumbleBee-Core
 dotnet test
 ```
 
@@ -825,7 +823,7 @@ The solution includes comprehensive unit tests for:
 - External API adapters
 - Booking workflows
 
-## 🔧 Development
+## Development
 
 ### Adding New Suppliers
 
@@ -845,9 +843,9 @@ The system uses Hangfire for background processing:
 
 Access the Hangfire dashboard at `/hangfire` (in development).
 
-## 📦 **Deployment & Infrastructure**
+## Deployment & Infrastructure
 
-### 🐳 **Docker Deployment**
+### Docker Deployment
 
 <div align="center">
 
@@ -855,7 +853,7 @@ Access the Hangfire dashboard at `/hangfire` (in development).
 graph TB
     subgraph "🐳 Docker Environment"
         subgraph "Application Container"
-            API[🚌 BumbleBee API<br/>Port 80]
+            API[🚌 ToursAndActivitiesAPI<br/>Port 80]
             HANGFIRE[🔄 Hangfire Dashboard<br/>Port 8080]
         end
 
@@ -884,10 +882,10 @@ graph TB
 ```bash
 # Clone and build
 git clone https://github.com/sandeepkumar0801/ToursAndActivities.git
-cd ToursAndActivities/BumbleBee-Core
+cd ToursAndActivities
 
 # Build the image
-docker build -t bumblebee-api .
+docker build -t tours-api .
 
 # Run with docker-compose
 docker-compose up -d
@@ -898,33 +896,33 @@ docker-compose up -d
 # Hangfire: http://localhost:8080/hangfire
 ```
 
-### ☁️ **Azure Cloud Architecture**
+### Azure Cloud Architecture
 
 <div align="center">
 
 ```mermaid
 graph TB
-    subgraph "🌐 Azure Front Door"
-        AFD[🚪 Azure Front Door<br/>Global Load Balancer]
-        WAF[🛡️ Web Application Firewall]
+    subgraph "Azure Front Door"
+        AFD[Azure Front Door<br/>Global Load Balancer]
+        WAF[Web Application Firewall]
     end
 
-    subgraph "🏗️ Azure App Services"
-        API1[🚌 API Instance 1<br/>Primary Region]
-        API2[🚌 API Instance 2<br/>Secondary Region]
-        HANGFIRE[🔄 Hangfire Service<br/>Background Jobs]
+    subgraph "Azure App Services"
+        API1[API Instance 1<br/>Primary Region]
+        API2[API Instance 2<br/>Secondary Region]
+        HANGFIRE[Hangfire Service<br/>Background Jobs]
     end
 
-    subgraph "💾 Data Services"
-        SQLDB[(🗄️ Azure SQL Database<br/>Premium Tier)]
-        REDIS[(⚡ Azure Cache for Redis<br/>Standard Tier)]
-        STORAGE[📁 Azure Blob Storage<br/>Hot Tier)]
+    subgraph "Data Services"
+        SQLDB[(Azure SQL Database<br/>Premium Tier)]
+        REDIS[(Azure Cache for Redis<br/>Standard Tier)]
+        STORAGE[Azure Blob Storage<br/>Hot Tier]
     end
 
-    subgraph "🔐 Security & Monitoring"
-        KEYVAULT[🔑 Azure Key Vault<br/>Secrets Management]
-        INSIGHTS[📊 Application Insights<br/>Monitoring & Telemetry]
-        ALERTS[🚨 Azure Monitor<br/>Alerts & Notifications]
+    subgraph "Security & Monitoring"
+        KEYVAULT[Azure Key Vault<br/>Secrets Management]
+        INSIGHTS[Application Insights<br/>Monitoring & Telemetry]
+        ALERTS[Azure Monitor<br/>Alerts & Notifications]
     end
 
     AFD --> WAF
@@ -956,7 +954,7 @@ graph TB
 - ✅ **Performance**: Azure CDN for static content delivery
 - ✅ **Backup**: Automated database backups with point-in-time recovery
 
-### 🚀 **Production Deployment Pipeline**
+### Production Deployment Pipeline
 
 <div align="center">
 
@@ -998,7 +996,7 @@ graph LR
 5. **🎭 Staging**: Deployment to staging environment for final testing
 6. **🚀 Production**: Blue-green deployment to production with zero downtime
 
-### 📊 **Infrastructure Monitoring**
+### Infrastructure Monitoring
 
 <div align="center">
 
@@ -1034,7 +1032,7 @@ graph TB
 
 </div>
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -1042,18 +1040,18 @@ graph TB
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## Support
 
 For support and questions:
 - Create an issue in this repository
 - Check the [documentation](docs/)
 - Review the API documentation at `/swagger`
 
-## 🏛️ System Architecture
+## System Architecture
 
 ### Technology Stack
 
@@ -1088,7 +1086,7 @@ The system uses various integration patterns:
 6. **External APIs**: Adapter layer calls supplier APIs
 7. **Response**: Formatted response returned to client
 
-## 🔐 Security Considerations
+## Security Considerations
 
 ### Authentication & Authorization
 - JWT tokens with configurable expiration
@@ -1107,7 +1105,7 @@ The system uses various integration patterns:
 - Request signing for critical operations
 - Rate limiting and throttling
 
-## 📊 Monitoring & Observability
+## Monitoring & Observability
 
 ### Application Insights
 - Performance monitoring
@@ -1127,7 +1125,7 @@ The system uses various integration patterns:
 - Cache status
 - Background job status
 
-## 🔄 Background Processing
+## Background Processing
 
 ### Hangfire Jobs
 
@@ -1146,7 +1144,7 @@ The system uses various integration patterns:
 - **Payment Retries**: Retries failed payments
 - **Cancellation Processing**: Handles delayed cancellations
 
-## 🌍 Internationalization
+## Internationalization
 
 ### Supported Languages
 - English (EN)
@@ -1161,7 +1159,7 @@ The system uses various integration patterns:
 - Date/time formatting
 - Error messages translation
 
-## 🧪 Testing Strategy
+## Testing Strategy
 
 ### Unit Tests
 - Service layer business logic
@@ -1181,7 +1179,7 @@ The system uses various integration patterns:
 - Memory usage optimization
 - Database query performance
 
-## 🚀 Performance Optimization
+## Performance Optimization
 
 ### Caching Strategy
 - **L1 Cache**: In-memory for frequently accessed data
@@ -1201,7 +1199,7 @@ The system uses various integration patterns:
 - Lazy loading for related data
 - Minimal API responses
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with .NET 6 and ASP.NET Core
 - Uses Entity Framework Core for data access
