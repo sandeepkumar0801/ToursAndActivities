@@ -445,25 +445,25 @@ Response:
 ```mermaid
 graph TB
     subgraph "Core API Endpoints"
-        AUTH[Authentication<br/>/api/account/*]
+        AUTH[Authentication<br/>/api/account/]
         SEARCH[Activity Search<br/>/api/activity/search]
-        DETAILS[Activity Details<br/>/api/activity/{id}]
-        AVAIL[Availability<br/>/api/activity/{id}/availability]
-        BOOKING[Booking Management<br/>/api/booking/*]
-        MASTER[Master Data<br/>/api/master/*]
+        DETAILS[Activity Details<br/>/api/activity/id]
+        AVAIL[Availability<br/>/api/activity/id/availability]
+        BOOKING[Booking Management<br/>/api/booking/]
+        MASTER[Master Data<br/>/api/master/]
     end
 
     subgraph "Management APIs"
-        ADMIN[Admin Functions<br/>/api/admin/*]
-        REPORTS[Reporting<br/>/api/reports/*]
-        CACHE[Cache Management<br/>/api/cache/*]
+        ADMIN[Admin Functions<br/>/api/admin/]
+        REPORTS[Reporting<br/>/api/reports/]
+        CACHE[Cache Management<br/>/api/cache/]
         HEALTH[Health Checks<br/>/api/health]
     end
 
     subgraph "🔗 Integration APIs"
-        WEBHOOK[🔔 Webhooks<br/>/api/webhooks/*]
-        SUPPLIER[🏢 Supplier Sync<br/>/api/suppliers/*]
-        PAYMENT[💳 Payment Processing<br/>/api/payments/*]
+        WEBHOOK[🔔 Webhooks<br/>/api/webhooks/]
+        SUPPLIER[🏢 Supplier Sync<br/>/api/suppliers/]
+        PAYMENT[💳 Payment Processing<br/>/api/payments/]
     end
 ```
 
@@ -600,7 +600,7 @@ All API responses follow a consistent format:
 ```json
 {
   "success": true,
-  "data": { /* Response data */ },
+  "data": { / Response data */ },
   "message": "Operation completed successfully",
   "timestamp": "2024-01-15T10:30:00Z",
   "requestId": "req_123456789"
