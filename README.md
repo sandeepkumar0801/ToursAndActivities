@@ -24,7 +24,7 @@
 
 **Enterprise-grade travel booking API serving 100K+ daily requests**
 
-[Live Demo](https://www.hop-on-hop-off-bus.com) • [API Docs](#api-documentation--usage) • [Quick Start](#getting-started) • [Integrations](#supplier-api-integrations)
+[API Docs](#api-documentation--usage) • [Quick Start](#getting-started) • [Integrations](#supplier-api-integrations)
 
 </div>
 
@@ -47,7 +47,7 @@
 
 ---
 
-This comprehensive .NET 6 Web API powers www.hop-on-hop-off-bus.com and several related tour booking platforms. The system provides a unified interface for booking hop-on-hop-off bus tours, sightseeing activities, and experiences from over 20 suppliers worldwide. Built with enterprise-grade architecture, it handles high-volume traffic while maintaining exceptional performance and reliability.
+This comprehensive .NET 6 Web API powers multiple production tour booking platforms. The system provides a unified interface for booking hop-on-hop-off bus tours, sightseeing activities, and experiences from over 20 suppliers worldwide. Built with enterprise-grade architecture, it handles high-volume traffic while maintaining exceptional performance and reliability.
 
 ## System Architecture Overview
 
@@ -123,8 +123,8 @@ graph TB
 
 This enterprise API serves as the backbone for multiple travel booking platforms:
 
-### Production Websites
-- **[www.hop-on-hop-off-bus.com](https://www.hop-on-hop-off-bus.com)** - Primary hop-on-hop-off bus booking platform
+### Production Deployment
+- **Primary booking platform** - Enterprise hop-on-hop-off bus booking website
 - **Multiple white-label booking sites** - Powered by the same API infrastructure
 - **Mobile applications** - iOS and Android apps using the API
 
@@ -895,7 +895,7 @@ graph TB
 **Quick Docker Setup:**
 ```bash
 # Clone and build
-git clone https://github.com/sandeepkumar0801/ToursAndActivities.git
+git clone https://github.com/yourusername/ToursAndActivities.git
 cd ToursAndActivities
 
 # Build the image

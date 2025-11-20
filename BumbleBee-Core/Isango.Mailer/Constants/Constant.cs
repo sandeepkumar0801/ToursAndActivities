@@ -38,7 +38,7 @@ namespace Isango.Mailer.Constants
         public const string Spanish = "es-Es";
         public const string PostCurrencyLanguages = "PostCurrencyLanguages";
         public const string FileNotFound = "File not found at";
-        public const string FooterUrl = "https://www.isango.com/";
+        public const string FooterUrl = "https://www.example.com/";
         public const string CustomerTemplateBasePath = "CustomerTemplates";
 
         public const string SupplierConfirmationTemplateName = "SupplierTemplates";
@@ -83,7 +83,7 @@ namespace Isango.Mailer.Constants
         public const string MailCc = "mailCC";
         public const string MailBcc = "mailBCC";
         public const string MailSubject = "mailSubject";
-        public const string IsangoBaseUrl = "http:/www.isango.com/Activity/Detail/";
+        public const string IsangoBaseUrl = "http://www.example.com/Activity/Detail/";
         public const string PendingConfirmation = "Pending Confirmation";
         public const string VoucherUrl = "/voucher/book/";
         public const string CancelVoucherUrl = "/voucher/cancel/";

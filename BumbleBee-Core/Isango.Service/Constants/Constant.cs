@@ -80,13 +80,13 @@ namespace Isango.Service.Constants
         public const string AlternateAPIMode = "AlternateAPIMode";
         public const string Alternativepayment = "ALTERNATIVEPAYMENT";
 
-        public const string Authentication = "ISANGOUK1013><ISANGOUK1013";
-        public const string HopOnHoffOffBus = "www.hop-on-hop-off-bus.com";
-        public const string LocalGranCanariaTour = "www.local-gran-canaria-tours.com";
-        public const string AlhambraGranadaTour = "www.alhambra-granada-tours.com";
-        public const string LocalDubaiTours = "www.localdubaitours.com";
-        public const string LocalVeniceTours = "www.localvenicetours.com";
-        public const string LocalParisTours = "www.localparistours.com";
+        public const string Authentication = "EXAMPLE_AUTH_STRING";
+        public const string HopOnHoffOffBus = "www.example-tours.com";
+        public const string LocalGranCanariaTour = "www.example-canaria-tours.com";
+        public const string AlhambraGranadaTour = "www.example-granada-tours.com";
+        public const string LocalDubaiTours = "www.example-dubai-tours.com";
+        public const string LocalVeniceTours = "www.example-venice-tours.com";
+        public const string LocalParisTours = "www.example-paris-tours.com";
         public const string AlternateAPIKeyHOHO = "AlternateAPIKeyHOHO";
         public const string AlternateAPIKeyLGCT = "AlternateAPIKeyLGCT";
         public const string AlternateAPIKeyAGT = "AlternateAPIKeyAGT";
