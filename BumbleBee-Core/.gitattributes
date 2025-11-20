@@ -4,60 +4,121 @@
 * text=auto
 
 ###############################################################################
-# Set default behavior for command prompt diff.
-#
-# This is need for earlier builds of msysgit that does not have it on by
-# default for csharp files.
-# Note: This is only used by command line
+# Language detection and syntax highlighting
 ###############################################################################
-#*.cs     diff=csharp
+
+# C# and .NET files
+*.cs linguist-language=C#
+*.csx linguist-language=C#
+*.csproj linguist-language=XML
+*.sln linguist-language=Text
+*.config linguist-language=XML
+*.resx linguist-language=XML
+
+# SQL Server files
+*.sql linguist-language=SQL
+*.sqlproj linguist-language=XML
+
+# Docker files
+Dockerfile* linguist-language=Dockerfile
+*.dockerfile linguist-language=Dockerfile
+docker-compose*.yml linguist-language=YAML
+docker-compose*.yaml linguist-language=YAML
+
+# Azure and DevOps files
+*.bicep linguist-language=Bicep
+*.arm linguist-language=JSON
+*.json linguist-language=JSON
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+
+# Web technologies
+*.html linguist-language=HTML
+*.htm linguist-language=HTML
+*.css linguist-language=CSS
+*.scss linguist-language=SCSS
+*.sass linguist-language=Sass
+*.js linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.vue linguist-language=Vue
+
+# Configuration files
+*.xml linguist-language=XML
+*.props linguist-language=XML
+*.targets linguist-language=XML
+appsettings*.json linguist-language=JSON
+*.editorconfig linguist-language=INI
+
+# Kubernetes and Helm
+*.k8s.yml linguist-language=YAML
+*.k8s.yaml linguist-language=YAML
+charts/**/*.yaml linguist-language=YAML
+charts/**/*.yml linguist-language=YAML
+
+# PowerShell scripts
+*.ps1 linguist-language=PowerShell
+*.psm1 linguist-language=PowerShell
+
+# Batch files
+*.bat linguist-language=Batchfile
+*.cmd linguist-language=Batchfile
+
+###############################################################################
+# Files to exclude from language statistics
+###############################################################################
+
+# Generated files
+**/bin/** linguist-generated=true
+**/obj/** linguist-generated=true
+**/packages/** linguist-vendored=true
+**/node_modules/** linguist-vendored=true
+**/.vs/** linguist-generated=true
+
+# Third-party libraries
+**/wwwroot/lib/** linguist-vendored=true
+**/Scripts/** linguist-vendored=true
+**/Content/** linguist-vendored=true
+
+# Documentation that shouldn't affect language stats
+*.md linguist-documentation=true
+*.txt linguist-documentation=true
+LICENSE linguist-documentation=true
+CHANGELOG* linguist-documentation=true
+
+# Image and media files
+*.png linguist-generated=true
+*.jpg linguist-generated=true
+*.jpeg linguist-generated=true
+*.gif linguist-generated=true
+*.ico linguist-generated=true
+*.svg linguist-generated=true
 
 ###############################################################################
 # Set the merge driver for project and solution files
-#
-# Merging from the command prompt will add diff markers to the files if there
-# are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following 
-# file extensions to fail to load in VS. An alternative would be to treat
-# these files as binary and thus will always conflict and require user
-# intervention with every merge. To do so, just uncomment the entries below
 ###############################################################################
-#*.sln       merge=binary
-#*.csproj    merge=binary
-#*.vbproj    merge=binary
-#*.vcxproj   merge=binary
-#*.vcproj    merge=binary
-#*.dbproj    merge=binary
-#*.fsproj    merge=binary
-#*.lsproj    merge=binary
-#*.wixproj   merge=binary
-#*.modelproj merge=binary
-#*.sqlproj   merge=binary
-#*.wwaproj   merge=binary
+*.sln merge=binary
+*.csproj merge=binary
+*.vbproj merge=binary
+*.vcxproj merge=binary
+*.vcproj merge=binary
+*.dbproj merge=binary
+*.fsproj merge=binary
+*.lsproj merge=binary
+*.wixproj merge=binary
+*.modelproj merge=binary
+*.sqlproj merge=binary
+*.wwaproj merge=binary
 
 ###############################################################################
-# behavior for image files
-#
-# image files are treated as binary by default.
+# Diff behavior for common document formats
 ###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
-
-###############################################################################
-# diff behavior for common document formats
-# 
-# Convert binary document formats to text before diffing them. This feature
-# is only available from the command line. Turn it on by uncommenting the 
-# entries below.
-###############################################################################
-#*.doc   diff=astextplain
-#*.DOC   diff=astextplain
-#*.docx  diff=astextplain
-#*.DOCX  diff=astextplain
-#*.dot   diff=astextplain
-#*.DOT   diff=astextplain
-#*.pdf   diff=astextplain
-#*.PDF   diff=astextplain
-#*.rtf   diff=astextplain
-#*.RTF   diff=astextplain
+*.doc diff=astextplain
+*.DOC diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot diff=astextplain
+*.DOT diff=astextplain
+*.pdf diff=astextplain
+*.PDF diff=astextplain
+*.rtf diff=astextplain
+*.RTF diff=astextplain
