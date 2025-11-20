@@ -1,0 +1,176 @@
+# Azure DevOps Pipeline for Tours and Activities API
+# This pipeline demonstrates CI/CD automation for .NET 6 applications
+
+trigger:
+  branches:
+    include:
+      - main
+      - develop
+      - release/*
+  paths:
+    exclude:
+      - README.md
+      - docs/**
+      - .gitignore
+
+pr:
+  branches:
+    include:
+      - main
+      - develop
+
+variables:
+  buildConfiguration: 'Release'
+  dotNetVersion: '6.0.x'
+  vmImageName: 'ubuntu-latest'
+  azureSubscription: 'Azure-Service-Connection'
+  webAppName: 'tours-activities-api'
+  resourceGroupName: 'tours-activities-rg'
+
+stages:
+  # Build Stage
+  - stage: Build
+    displayName: 'Build and Test'
+    jobs:
+      - job: BuildJob
+        displayName: 'Build .NET Application'
+        pool:
+          vmImage: $(vmImageName)
+        
+        steps:
+          # Install .NET SDK
+          - task: UseDotNet@2
+            displayName: 'Install .NET SDK'
+            inputs:
+              version: $(dotNetVersion)
+              includePreviewVersions: false
+          
+          # Restore NuGet packages
+          - task: DotNetCoreCLI@2
+            displayName: 'Restore NuGet Packages'
+            inputs:
+              command: 'restore'
+              projects: '**/BumbleBee-Core/**/*.csproj'
+              feedsToUse: 'select'
+          
+          # Build the solution
+          - task: DotNetCoreCLI@2
+            displayName: 'Build Solution'
+            inputs:
+              command: 'build'
+              projects: '**/BumbleBee-Core/**/*.csproj'
+              arguments: '--configuration $(buildConfiguration) --no-restore'
+          
+          # Run unit tests
+          - task: DotNetCoreCLI@2
+            displayName: 'Run Unit Tests'
+            inputs:
+              command: 'test'
+              projects: '**/BumbleBee-Core/**/*Test*.csproj'
+              arguments: '--configuration $(buildConfiguration) --no-build --collect:"XPlat Code Coverage"'
+              publishTestResults: true
+          
+          # Publish code coverage
+          - task: PublishCodeCoverageResults@1
+            displayName: 'Publish Code Coverage'
+            inputs:
+              codeCoverageTool: 'Cobertura'
+              summaryFileLocation: '$(Agent.TempDirectory)/**/*coverage.cobertura.xml'
+          
+          # Publish the API
+          - task: DotNetCoreCLI@2
+            displayName: 'Publish API'
+            inputs:
+              command: 'publish'
+              publishWebProjects: false
+              projects: '**/BumbleBee-Core/Bumblebee/*.csproj'
+              arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/api'
+              zipAfterPublish: true
+          
+          # Publish Hangfire
+          - task: DotNetCoreCLI@2
+            displayName: 'Publish Hangfire'
+            inputs:
+              command: 'publish'
+              publishWebProjects: false
+              projects: '**/BumbleBee-Core/HangFireMVC/*.csproj'
+              arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/hangfire'
+              zipAfterPublish: true
+          
+          # Publish build artifacts
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Build Artifacts'
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+              ArtifactName: 'drop'
+              publishLocation: 'Container'
+
+  # Deploy to Staging
+  - stage: DeployStaging
+    displayName: 'Deploy to Staging'
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
+    jobs:
+      - deployment: DeployStaging
+        displayName: 'Deploy to Staging Environment'
+        pool:
+          vmImage: $(vmImageName)
+        environment: 'staging'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Download artifacts
+                - download: current
+                  artifact: drop
+                
+                # Deploy to Azure App Service
+                - task: AzureWebApp@1
+                  displayName: 'Deploy API to Azure App Service'
+                  inputs:
+                    azureSubscription: $(azureSubscription)
+                    appType: 'webAppLinux'
+                    appName: '$(webAppName)-staging'
+                    package: '$(Pipeline.Workspace)/drop/api/**/*.zip'
+                    runtimeStack: 'DOTNETCORE|6.0'
+                
+                # Run database migrations
+                - task: AzureCLI@2
+                  displayName: 'Run Database Migrations'
+                  inputs:
+                    azureSubscription: $(azureSubscription)
+                    scriptType: 'bash'
+                    scriptLocation: 'inlineScript'
+                    inlineScript: |
+                      echo "Running database migrations..."
+                      # Add your migration commands here
+
+  # Deploy to Production
+  - stage: DeployProduction
+    displayName: 'Deploy to Production'
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    jobs:
+      - deployment: DeployProduction
+        displayName: 'Deploy to Production Environment'
+        pool:
+          vmImage: $(vmImageName)
+        environment: 'production'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Download artifacts
+                - download: current
+                  artifact: drop
+                
+                # Deploy to Azure App Service
+                - task: AzureWebApp@1
+                  displayName: 'Deploy API to Azure App Service'
+                  inputs:
+                    azureSubscription: $(azureSubscription)
+                    appType: 'webAppLinux'
+                    appName: $(webAppName)
+                    package: '$(Pipeline.Workspace)/drop/api/**/*.zip'
+                    runtimeStack: 'DOTNETCORE|6.0'
+

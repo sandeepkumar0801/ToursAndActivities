@@ -1,0 +1,131 @@
+version: '3.8'
+
+services:
+  # Tours and Activities API
+  tours-api:
+    build:
+      context: ./BumbleBee-Core
+      dockerfile: Dockerfile
+    container_name: tours-activities-api
+    ports:
+      - "8080:80"
+      - "8081:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ToursActivitiesDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      - ConnectionStrings__IsangoLiveDB=Server=sqlserver;Database=IsangoDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      - Redis__Configuration=redis:6379
+      - Hangfire__Enabled=true
+    depends_on:
+      - sqlserver
+      - redis
+    networks:
+      - tours-network
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - ./certificates:/app/certificates:ro
+
+  # Hangfire Background Jobs
+  hangfire-jobs:
+    build:
+      context: ./BumbleBee-Core
+      dockerfile: Dockerfile-hangfire
+    container_name: tours-hangfire-jobs
+    ports:
+      - "8082:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ToursActivitiesDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      - Redis__Configuration=redis:6379
+    depends_on:
+      - sqlserver
+      - redis
+    networks:
+      - tours-network
+    restart: unless-stopped
+
+  # SQL Server Database
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: tours-sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+      - MSSQL_PID=Developer
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+      - ./docs/database:/docker-entrypoint-initdb.d:ro
+    networks:
+      - tours-network
+    restart: unless-stopped
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P YourStrong@Passw0rd -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: tours-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass YourRedisPassword
+    volumes:
+      - redis-data:/data
+    networks:
+      - tours-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # Redis Commander (Optional - for Redis management UI)
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: tours-redis-commander
+    ports:
+      - "8083:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379:0:YourRedisPassword
+    depends_on:
+      - redis
+    networks:
+      - tours-network
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy (Optional)
+  nginx:
+    image: nginx:alpine
+    container_name: tours-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - tours-api
+    networks:
+      - tours-network
+    restart: unless-stopped
+
+networks:
+  tours-network:
+    driver: bridge
+    name: tours-activities-network
+
+volumes:
+  sqlserver-data:
+    name: tours-sqlserver-data
+  redis-data:
+    name: tours-redis-data
+

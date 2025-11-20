@@ -1,0 +1,146 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+###############################################################################
+# Language detection and syntax highlighting for GitHub Linguist
+# This ensures all technologies from README are properly detected
+###############################################################################
+
+# C# and .NET files - Primary language
+*.cs linguist-language=C# linguist-detectable=true
+*.csx linguist-language=C#
+*.csproj linguist-language=XML linguist-detectable=false
+*.sln linguist-language=Text linguist-detectable=false
+*.config linguist-language=XML
+*.resx linguist-language=XML
+
+# SQL Server files - Database technology
+*.sql linguist-language=SQL linguist-detectable=true
+*.sqlproj linguist-language=XML
+*.dacpac linguist-detectable=false
+
+# T-SQL and SSIS/SSRS files
+*.dtsx linguist-language=XML linguist-detectable=true
+*.rdl linguist-language=XML linguist-detectable=true
+*.rds linguist-language=XML linguist-detectable=true
+
+# Docker files - Containerization
+Dockerfile* linguist-language=Dockerfile linguist-detectable=true
+*.dockerfile linguist-language=Dockerfile linguist-detectable=true
+docker-compose*.yml linguist-language=YAML linguist-detectable=true
+docker-compose*.yaml linguist-language=YAML linguist-detectable=true
+
+# Azure and DevOps files - Cloud infrastructure
+*.bicep linguist-language=Bicep linguist-detectable=true
+*.arm linguist-language=JSON
+*.json linguist-language=JSON
+*.yaml linguist-language=YAML linguist-detectable=true
+*.yml linguist-language=YAML linguist-detectable=true
+azure-pipelines*.yml linguist-language=YAML linguist-detectable=true
+
+# Web technologies
+*.html linguist-language=HTML linguist-detectable=true
+*.htm linguist-language=HTML
+*.css linguist-language=CSS linguist-detectable=true
+*.scss linguist-language=SCSS linguist-detectable=true
+*.sass linguist-language=Sass
+*.js linguist-language=JavaScript linguist-detectable=true
+*.ts linguist-language=TypeScript linguist-detectable=true
+*.tsx linguist-language=TypeScript
+*.jsx linguist-language=JavaScript
+*.vue linguist-language=Vue linguist-detectable=true
+
+# Configuration files
+*.xml linguist-language=XML
+*.props linguist-language=XML
+*.targets linguist-language=XML
+appsettings*.json linguist-language=JSON
+*.editorconfig linguist-language=INI
+
+# Kubernetes and Helm
+*.k8s.yml linguist-language=YAML linguist-detectable=true
+*.k8s.yaml linguist-language=YAML linguist-detectable=true
+charts/**/*.yaml linguist-language=YAML
+charts/**/*.yml linguist-language=YAML
+
+# PowerShell scripts
+*.ps1 linguist-language=PowerShell linguist-detectable=true
+*.psm1 linguist-language=PowerShell
+
+# Batch files
+*.bat linguist-language=Batchfile
+*.cmd linguist-language=Batchfile
+
+# Shell scripts
+*.sh linguist-language=Shell linguist-detectable=true
+
+###############################################################################
+# Files to exclude from language statistics
+###############################################################################
+
+# Generated files
+**/bin/** linguist-generated=true
+**/obj/** linguist-generated=true
+**/packages/** linguist-vendored=true
+**/node_modules/** linguist-vendored=true
+**/.vs/** linguist-generated=true
+**/.vscode/** linguist-generated=false
+**/dist/** linguist-generated=true
+**/build/** linguist-generated=true
+**/.next/** linguist-generated=true
+
+# Third-party libraries
+**/wwwroot/lib/** linguist-vendored=true
+**/Scripts/** linguist-vendored=true
+**/Content/** linguist-vendored=true
+**/lib/** linguist-vendored=true
+**/vendor/** linguist-vendored=true
+
+# Documentation files - mark as documentation but keep visible
+*.md linguist-documentation=true linguist-detectable=false
+*.txt linguist-documentation=true
+LICENSE linguist-documentation=true
+CHANGELOG* linguist-documentation=true
+README* linguist-documentation=true
+
+# Image and media files
+*.png linguist-generated=true
+*.jpg linguist-generated=true
+*.jpeg linguist-generated=true
+*.gif linguist-generated=true
+*.ico linguist-generated=true
+*.svg linguist-generated=true
+*.pdf linguist-generated=true
+
+###############################################################################
+# Set the merge driver for project and solution files
+###############################################################################
+*.sln merge=binary
+*.csproj merge=binary
+*.vbproj merge=binary
+*.vcxproj merge=binary
+*.vcproj merge=binary
+*.dbproj merge=binary
+*.fsproj merge=binary
+*.lsproj merge=binary
+*.wixproj merge=binary
+*.modelproj merge=binary
+*.sqlproj merge=binary
+*.wwaproj merge=binary
+
+###############################################################################
+# Diff behavior for common document formats
+###############################################################################
+*.doc diff=astextplain
+*.DOC diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot diff=astextplain
+*.DOT diff=astextplain
+*.pdf diff=astextplain
+*.PDF diff=astextplain
+*.rtf diff=astextplain
+*.RTF diff=astextplain
+
